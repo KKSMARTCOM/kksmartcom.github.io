@@ -1,0 +1,930 @@
+{
+  "Hero": {
+    "fr": {
+      "title": "Tout<br/> part <br/>d'une<br/> connexion...<br/>",
+      "videoSrc": "/assets/vid/showreel_kksmartcom_off.MP4",
+      "imageSrcSet": {
+        "large": "/assets/uploads/2021/09/decor1.png",
+        "medium": "/assets/uploads/2021/09/decor1pc.png",
+        "small": "/assets/uploads/2021/09/Layer-5-3-mob.png"
+      }
+    },
+    "en": {
+      "title": "It all<br/> starts<br/> with a<br/> connection...<br/>",
+      "videoSrc": "/assets/vid/showreel_kksmartcom_off.MP4",
+      "imageSrcSet": {
+        "large": "/assets/uploads/2021/09/decor1.png",
+        "medium": "/assets/uploads/2021/09/decor1pc.png",
+        "small": "/assets/uploads/2021/09/Layer-5-3-mob.png"
+      }
+    }
+  },
+  "Header": {
+    "fr": {
+      "nav": {
+        "services": {
+          "text": "Services",
+          "href": "https://comeup.com/fr/@kk-smart-com",
+          "subMenu": {
+            "cta": "Voir tous nos services",
+            "columns": [
+              {
+                "title": "Digital",
+                "items": [
+                  { "text": "Réseaux sociaux", "href": "https://comeup.com/fr/@kk-smart-com" },
+                  { "text": "Design Web", "href": "https://comeup.com/fr/@kk-smart-com" },
+                  { "text": "Sites Web", "href": "https://comeup.com/fr/@kk-smart-com" },
+                  { "text": "Applications web", "href": "https://comeup.com/fr/@kk-smart-com" },
+                  { "text": "Applications Mobile", "href": "https://comeup.com/fr/@kk-smart-com" }
+                ]
+              },
+              {
+                "title": "Design",
+                "items": [
+                  { "text": "Identité de marque", "href": "https://comeup.com/fr/@kk-smart-com" },
+                  { "text": "Graphisme", "href": "https://comeup.com/fr/@kk-smart-com" },
+                  { "text": "Impression numérique", "href": "https://comeup.com/fr/@kk-smart-com" }
+                ]
+              },
+              {
+                "title": "Studio",
+                "items": [
+                  { "text": "Photographie", "href": "https://comeup.com/fr/@kk-smart-com" },
+                  { "text": "Vidéographie", "href": "https://comeup.com/fr/@kk-smart-com" }
+                ]
+              }
+            ]
+          }
+        },
+        "projects": {
+          "text": "Projets",
+          "href": "https://comeup.com/fr/@kk-smart-com",
+          "subMenu": {
+            "cta": "Parlons-en !",
+            "columns": [
+              {
+                "title": "Étape découverte",
+                "items": [
+                  { "text": "Chatbot", "href": "#" },
+                  { "text": "SMART QR", "href": "#" },
+                  { "text": "SMART AFRICA SPACE", "href": "#" },
+                  { "text": "La marque du battant", "href": "#" }
+                ]
+              }
+            ]
+          }
+        },
+        "company": {
+          "text": "Entreprise",
+          "href": "/apropos",
+          "subMenu": {
+            "cta": "Parlons-en !",
+            "columns": [
+              {
+                "title": "En savoir plus sur nous",
+                "items": [
+                  { "text": "A propos", "href": "/apropos" },
+                  { "text": "Blog", "href": "https://www.behance.net/kksmartcom" },
+                  { "text": "Carrières", "href": "#" }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "contactModal": {
+        "title": "Avez-vous besoin d'aide pour concrétiser une idée ?",
+        "email": "hello@kksmartcom.com",
+        "whatsapp": "Whatsapp",
+        "whatsappLink": "https://wa.me/22956141438",
+        "form": {
+          "name": "Votre nom & prénoms<sup>*</sup>",
+          "email": "Votre email<sup>*</sup>",
+          "project": "Parlez nous de votre projet<sup>*</sup>",
+          "submit": "Soumettre"
+        }
+      },
+      "ctaButton": {
+        "text": "Cliquez ici !",
+        "href": "#contact-form"
+      },
+      "mobileMenu": {
+        "cta": "Avez-vous une idée?",
+        "whatsapp": "Whatsapp"
+      }
+    },
+    "en": {
+      "nav": {
+        "services": {
+          "text": "Services",
+          "href": "https://comeup.com/en/@kk-smart-com",
+          "subMenu": {
+            "cta": "See all our services",
+            "columns": [
+              {
+                "title": "Digital",
+                "items": [
+                  { "text": "Social networks", "href": "https://comeup.com/en/@kk-smart-com" },
+                  { "text": "Web Design", "href": "https://comeup.com/en/@kk-smart-com" },
+                  { "text": "Websites", "href": "https://comeup.com/en/@kk-smart-com" },
+                  { "text": "Web applications", "href": "https://comeup.com/en/@kk-smart-com" },
+                  { "text": "Mobile applications", "href": "https://comeup.com/en/@kk-smart-com" }
+                ]
+              },
+              {
+                "title": "Design",
+                "items": [
+                  { "text": "Brand identity", "href": "https://comeup.com/en/@kk-smart-com" },
+                  { "text": "Graphic design", "href": "https://comeup.com/en/@kk-smart-com" },
+                  { "text": "Digital printing", "href": "https://comeup.com/en/@kk-smart-com" }
+                ]
+              },
+              {
+                "title": "Studio",
+                "items": [
+                  { "text": "Photography", "href": "https://comeup.com/en/@kk-smart-com" },
+                  { "text": "Videography", "href": "https://comeup.com/en/@kk-smart-com" }
+                ]
+              }
+            ]
+          }
+        },
+        "projects": {
+          "text": "Projects",
+          "href": "https://comeup.com/en/@kk-smart-com",
+          "subMenu": {
+            "cta": "Let's talk!",
+            "columns": [
+              {
+                "title": "Discovery step",
+                "items": [
+                  { "text": "Chatbot", "href": "#" },
+                  { "text": "SMART QR", "href": "#" },
+                  { "text": "SMART AFRICA SPACE", "href": "#" },
+                  { "text": "The fighter's brand", "href": "#" }
+                ]
+              }
+            ]
+          }
+        },
+        "company": {
+          "text": "Company",
+          "href": "/en/about",
+          "subMenu": {
+            "cta": "Let's talk!",
+            "columns": [
+              {
+                "title": "Learn more about us",
+                "items": [
+                  { "text": "About", "href": "/en/about" },
+                  { "text": "Blog", "href": "https://www.behance.net/kksmartcom" },
+                  { "text": "Careers", "href": "#" }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "contactModal": {
+        "title": "Do you need help to bring an idea to life?",
+        "email": "hello@kksmartcom.com",
+        "whatsapp": "Whatsapp",
+        "whatsappLink": "https://wa.me/22956141438",
+        "form": {
+          "name": "Your name & surnames*",
+          "email": "Your email*",
+          "project": "Tell us about your project*",
+          "submit": "Submit"
+        }
+      },
+      "ctaButton": {
+        "text": "Click here!",
+        "href": "#contact-form"
+      },
+      "mobileMenu": {
+        "cta": "Have an idea?",
+        "whatsapp": "Whatsapp"
+      }
+    }
+  },
+  "Service": {
+    "fr": {
+      "subheading": "Projets sélectionnés",
+      "heading": "Service de communication <br/> complet pour <br/>les startups <br/>et les entreprises.",
+      "cta": "Voir plus",
+      "cards": [
+        {
+          "href": "https://www.behance.net/gallery/182237251/KK-SMART-DIGITAL-WEBSITE-PORTFOLIO-2023",
+          "imgSources": [
+            { "media": "(min-width: 1600px)", "srcSet": "/assets/projets/digital.png" },
+            { "media": "(max-width: 1100px)", "srcSet": "/assets/projets/digital.png" },
+            { "media": "(min-width: 1101px) and (max-width:1599px)", "srcSet": "/assets/projets/digital.png" }
+          ],
+          "img": {
+            "src": "/assets/projets/digital.png",
+            "alt": "KK SMART DIGITAL - WEBSITE PORTFOLIO"
+          },
+          "name": "KK SMART DIGITAL - WEBSITE PORTFOLIO",
+          "btnHref": "https://www.behance.net/gallery/182237251/KK-SMART-DIGITAL-WEBSITE-PORTFOLIO-2023",
+          "tags": [
+            { "href": "https://www.behance.net/gallery/182237251/KK-SMART-DIGITAL-WEBSITE-PORTFOLIO-2023", "label": "Digital" }
+          ],
+          "description": "KK SMART DIGITAL propose de communiquer là où sont vos cibles, en utilisant des stratégies sociales marketing, inbound marketing, création de contenus, référencement naturel, publicités en ligne, publicités mobiles…",
+          "consultBtn": "Consulter"
+        },
+        {
+          "href": "https://www.behance.net/gallery/182231733/KK-SMART-DESIGN-PORTFOLIO-2023",
+          "imgSources": [
+            { "media": "(min-width: 1600px)", "srcSet": "/assets/projets/design.png" },
+            { "media": "(max-width: 1100px)", "srcSet": "/assets/projets/design.png" },
+            { "media": "(min-width: 1101px) and (max-width:1599px)", "srcSet": "/assets/projets/design.png" }
+          ],
+          "img": {
+            "src": "/assets/projets/design.png",
+            "alt": "KK SMART DESIGN - PORTFOLIO"
+          },
+          "name": "KK SMART DESIGN - PORTFOLIO",
+          "btnHref": "https://www.behance.net/gallery/182231733/KK-SMART-DESIGN-PORTFOLIO-2023",
+          "tags": [
+            { "href": "https://www.behance.net/gallery/182231733/KK-SMART-DESIGN-PORTFOLIO-2023", "label": "Design" },
+            { "href": "https://www.behance.net/gallery/182231733/KK-SMART-DESIGN-PORTFOLIO-2023", "label": "Branding" },
+            { "href": "https://www.behance.net/gallery/182231733/KK-SMART-DESIGN-PORTFOLIO-2023", "label": "Goodies & Packaging" }
+          ],
+          "description": "KK SMART DESIGN met tout en œuvre pour développer votre marque au travers de votre identité visuelle (Logo, Papeterie, Plaquette commerciale, tout travaux d’impression, …)",
+          "consultBtn": "Consulter"
+        },
+        {
+          "href": "https://www.behance.net/gallery/174863971/KK-SMART-STUDIO-PHOTOBOOK-2023",
+          "imgSources": [
+            { "media": "(min-width: 1600px)", "srcSet": "/assets/projets/studiobook.png" },
+            { "media": "(max-width: 1100px)", "srcSet": "/assets/projets/studiobook.png" },
+            { "media": "(min-width: 1101px) and (max-width:1599px)", "srcSet": "/assets/projets/studiobook.png" }
+          ],
+          "img": {
+            "src": "/assets/projets/studiobook.png",
+            "alt": "TikTok Marketing au Bénin: Astuces pour Promouvoir Votre Marque"
+          },
+          "name": "KK SMART STUDIO - PHOTOBOOK",
+          "btnHref": "https://www.behance.net/gallery/174863971/KK-SMART-STUDIO-PHOTOBOOK-2023",
+          "tags": [
+            { "href": "https://www.behance.net/gallery/174863971/KK-SMART-STUDIO-PHOTOBOOK-2023", "label": "Studio" },
+            { "href": "https://www.behance.net/gallery/174863971/KK-SMART-STUDIO-PHOTOBOOK-2023", "label": "Photos" },
+            { "href": "https://www.behance.net/gallery/174863971/KK-SMART-STUDIO-PHOTOBOOK-2023", "label": "Book" }
+          ],
+          "description": "KK SMART STUDIO vous offre le meilleur accompagnement pour réaliser, produire et diffuser vos vidéos publicitaires, qu’il s’agisse de raconter une histoire à propos de votre marque (storytelling), ou de réaliser le spot publicitaire de votre produit phare…",
+          "consultBtn": "Consulter"
+        },
+        {
+          "href": "https://www.behance.net/gallery/174850339/KK-SMART-STUDIO-PHOTOS-PRODUITS-2023",
+          "imgSources": [
+            { "media": "(min-width: 1600px)", "srcSet": "/assets/projets/studioproduits.png" },
+            { "media": "(max-width: 1100px)", "srcSet": "/assets//projets/studioproduits.png" },
+            { "media": "(min-width: 1101px) and (max-width:1599px)", "srcSet": "/assets/projets/studioproduits.png" }
+          ],
+          "img": {
+            "src": "/assets/projets/studioproduits.png",
+            "alt": "KK SMART STUDIO - PHOTOS PRODUITS"
+          },
+          "name": "KK SMART STUDIO - PHOTOS PRODUITS",
+          "btnHref": "https://www.behance.net/gallery/174850339/KK-SMART-STUDIO-PHOTOS-PRODUITS-2023",
+          "tags": [
+            { "href": "https://www.behance.net/gallery/174850339/KK-SMART-STUDIO-PHOTOS-PRODUITS-2023", "label": "Studio" },
+            { "href": "https://www.behance.net/gallery/174850339/KK-SMART-STUDIO-PHOTOS-PRODUITS-2023", "label": "Photos" },
+            { "href": "https://www.behance.net/gallery/174850339/KK-SMART-STUDIO-PHOTOS-PRODUITS-2023", "label": "Produits" }
+          ],
+          "description": "KK SMART STUDIO réalise aussi les photos packshots de vos produits, mis en scène en studio ou en extérieur. Notre équipe s’occupera de toute la chaîne de production de l’image pour mettre en valeur vos produits. Obtenez le maximum de vos créations en réalisant votre shooting chez nous. Notre Studio s’engage techniquement et vous propose des solutions adaptées à la hauteur de vos exigences.",
+          "consultBtn": "Consulter"
+        }
+      ],
+      "bottomSection": {
+        "heading": "Nous vous soutenons dans l'atteinte de vos objectifs.",
+        "paragraph": "Nous analysons les projets sous un nouvel angle. Nos experts en analytique, marketing, conception et développement vous donneront une vision à 360 degrés de vos enjeux."
+      }
+    },
+    "en": {
+      "subheading": "Selected Projects",
+      "heading": "Complete communication service <br/> for startups <br/>and businesses.",
+      "cta": "See more",
+      "cards": [
+        {
+          "href": "https://www.behance.net/gallery/182237251/KK-SMART-DIGITAL-WEBSITE-PORTFOLIO-2023",
+          "imgSources": [
+            { "media": "(min-width: 1600px)", "srcSet": "/assets/projets/digital.png" },
+            { "media": "(max-width: 1100px)", "srcSet": "/assets/projets/digital.png" },
+            { "media": "(min-width: 1101px) and (max-width:1599px)", "srcSet": "/assets/projets/digital.png" }
+          ],
+          "img": {
+            "src": "/assets/projets/digital.png",
+            "alt": "KK SMART DIGITAL - WEBSITE PORTFOLIO"
+          },
+          "name": "KK SMART DIGITAL - WEBSITE PORTFOLIO",
+          "btnHref": "https://www.behance.net/gallery/182237251/KK-SMART-DIGITAL-WEBSITE-PORTFOLIO-2023",
+          "tags": [
+            { "href": "https://www.behance.net/gallery/182237251/KK-SMART-DIGITAL-WEBSITE-PORTFOLIO-2023", "label": "Digital" }
+          ],
+          "description": "KK SMART DIGITAL offers to communicate where your targets are, using social marketing strategies, inbound marketing, content creation, natural referencing, online advertising, mobile advertising…",
+          "consultBtn": "Consult"
+        },
+        {
+          "href": "https://www.behance.net/gallery/182231733/KK-SMART-DESIGN-PORTFOLIO-2023",
+          "imgSources": [
+            { "media": "(min-width: 1600px)", "srcSet": "/assets/projets/design.png" },
+            { "media": "(max-width: 1100px)", "srcSet": "/assets/projets/design.png" },
+            { "media": "(min-width: 1101px) and (max-width:1599px)", "srcSet": "/assets/projets/design.png" }
+          ],
+          "img": {
+            "src": "/assets/projets/design.png",
+            "alt": "KK SMART DESIGN - PORTFOLIO"
+          },
+          "name": "KK SMART DESIGN - PORTFOLIO",
+          "btnHref": "https://www.behance.net/gallery/182231733/KK-SMART-DESIGN-PORTFOLIO-2023",
+          "tags": [
+            { "href": "https://www.behance.net/gallery/182231733/KK-SMART-DESIGN-PORTFOLIO-2023", "label": "Design" },
+            { "href": "https://www.behance.net/gallery/182231733/KK-SMART-DESIGN-PORTFOLIO-2023", "label": "Branding" },
+            { "href": "https://www.behance.net/gallery/182231733/KK-SMART-DESIGN-PORTFOLIO-2023", "label": "Goodies & Packaging" }
+          ],
+          "description": "KK SMART DESIGN does everything possible to develop your brand through your visual identity (Logo, Stationery, Commercial brochure, all printing work, …)",
+          "consultBtn": "Consult"
+        },
+        {
+          "href": "https://www.behance.net/gallery/174863971/KK-SMART-STUDIO-PHOTOBOOK-2023",
+          "imgSources": [
+            { "media": "(min-width: 1600px)", "srcSet": "/assets/projets/studiobook.png" },
+            { "media": "(max-width: 1100px)", "srcSet": "/assets/projets/studiobook.png" },
+            { "media": "(min-width: 1101px) and (max-width:1599px)", "srcSet": "/assets/projets/studiobook.png" }
+          ],
+          "img": {
+            "src": "/assets/projets/studiobook.png",
+            "alt": "TikTok Marketing in Benin: Tips to Promote Your Brand"
+          },
+          "name": "KK SMART STUDIO - PHOTOBOOK",
+          "btnHref": "https://www.behance.net/gallery/174863971/KK-SMART-STUDIO-PHOTOBOOK-2023",
+          "tags": [
+            { "href": "https://www.behance.net/gallery/174863971/KK-SMART-STUDIO-PHOTOBOOK-2023", "label": "Studio" },
+            { "href": "https://www.behance.net/gallery/174863971/KK-SMART-STUDIO-PHOTOBOOK-2023", "label": "Photos" },
+            { "href": "https://www.behance.net/gallery/174863971/KK-SMART-STUDIO-PHOTOBOOK-2023", "label": "Book" }
+          ],
+          "description": "KK SMART STUDIO offers you the best support to create, produce and distribute your advertising videos, whether it's telling a story about your brand (storytelling), or creating the advertising spot for your flagship product…",
+          "consultBtn": "Consult"
+        },
+        {
+          "href": "https://www.behance.net/gallery/174850339/KK-SMART-STUDIO-PHOTOS-PRODUITS-2023",
+          "imgSources": [
+            { "media": "(min-width: 1600px)", "srcSet": "/assets/projets/studioproduits.png" },
+            { "media": "(max-width: 1100px)", "srcSet": "/assets//projets/studioproduits.png" },
+            { "media": "(min-width: 1101px) and (max-width:1599px)", "srcSet": "/assets/projets/studioproduits.png" }
+          ],
+          "img": {
+            "src": "/assets/projets/studioproduits.png",
+            "alt": "KK SMART STUDIO - PRODUCT PHOTOS"
+          },
+          "name": "KK SMART STUDIO - PRODUCT PHOTOS",
+          "btnHref": "https://www.behance.net/gallery/174850339/KK-SMART-STUDIO-PHOTOS-PRODUITS-2023",
+          "tags": [
+            { "href": "https://www.behance.net/gallery/174850339/KK-SMART-STUDIO-PHOTOS-PRODUITS-2023", "label": "Studio" },
+            { "href": "https://www.behance.net/gallery/174850339/KK-SMART-STUDIO-PHOTOS-PRODUITS-2023", "label": "Photos" },
+            { "href": "https://www.behance.net/gallery/174850339/KK-SMART-STUDIO-PHOTOS-PRODUITS-2023", "label": "Products" }
+          ],
+          "description": "KK SMART STUDIO also produces packshot photos of your products, staged in the studio or outdoors. Our team will take care of the entire image production chain to highlight your products. Get the most out of your creations by having your shoot with us. Our Studio is technically committed and offers you solutions adapted to your requirements.",
+          "consultBtn": "Consult"
+        }
+      ],
+      "bottomSection": {
+        "heading": "We support you in achieving your goals.",
+        "paragraph": "We analyze projects from a new angle. Our experts in analytics, marketing, design, and development will give you a 360-degree view of your challenges."
+      }
+    }
+  },
+  "PreuveSocial": {
+    "fr": {
+      "title": "Que disent <strong>les gens</strong> <br />à propos de nous?",
+      "title_mob": "Que disent <strong>les </strong> <br /> <strong>gens</strong> à propos de nous?",
+      "getQuote": "Obtenez un devis",
+      "collaborate": "Collaborez avec nous",
+      "trustedBy": "Ils nous ont fait confiance",
+      "prizeTitle": "01 Prix",
+      "prizeDescription": "3ème Lauréat 2022 du Prix Innovation Afrique chez Engie.",
+      "reviews": [
+        {
+          "text": "La rapidité de réponse, la qualité du service, l'amabilité du personnel sont vraiment impressionnantes...",
+          "author": "Roméo DEWASSONOU",
+          "readMore": "Lire plus"
+        },
+        {
+          "text": "Votre entreprise de Com se distingue par sa créativité et son engagement envers la satisfaction client...",
+          "author": "Bruno Veran",
+          "readMore": "Lire plus"
+        },
+        {
+          "text": "Entreprise très à l'écoute. KK SMART COM fait preuve d'une créativité hors du commun sur chaque projet...",
+          "author": "Kelly ANATO",
+          "readMore": "Lire plus"
+        },
+        {
+          "text": "De l'accueil jusqu'à la prestation, il n'y qu'un seul mot à dire : SATISFACTION ! Je recommande à 100%...",
+          "author": "Charlyce HOUSSOU",
+          "readMore": "Lire plus"
+        },
+        {
+          "text": "Un cadre spécial très sobre! Idéal pour le travail créatif.Je le recommande vivement pour le coworking...",
+          "author": "Andric ADOYINDE",
+          "readMore": "Lire plus"
+        },
+        {
+          "text": "Une entreprise de communication de bon niveau gérant aussi d'autres volets affiliés à la communication...",
+          "author": "Didier ALVARO",
+          "readMore": "Lire plus"
+        }
+      ],
+      "clients": [
+        { "name": "ANPE BENIN", "description": "Service Public d'Emploi Ecoute, Conseil, Orientation Accompagnement des jeunes diplômés vers l'emploi." },
+        { "name": "MYSOL", "description": "ENGIE Energy Access Bénin à travers Mysol propose des systèmes et appareils solaires adaptés aux besoins des ménages." },
+        { "name": "SPIRO", "description": "Fabrication et Commercialisation de véhicules électriques et écologiques" },
+        { "name": "ART RESIDENCE", "description": "ART Résidence est une résidence hôtelière implantée à Porto-Novo dans la capitale du Bénin." },
+        { "name": "SOBEBRA", "description": "La SOBEBRA (Société Béninoise de Boissons Rafraichissantes) est une filiale de Castel au Bénin." },
+        { "name": "CANAL+ WB", "description": "Chaîne de télévision généraliste nationale française privée à péage, axée sur le cinéma et le sport." },
+        { "name": "CANAL+", "description": "Une entreprise Kenyane de lunetterie basé au Bénin et dans d'autres pays de la sous-région." },
+        { "name": "BEC SARL", "description": "BEC Sarl (Bureau D'Expertise Comptable et de Commissariat aux Comptes) ·" },
+        { "name": "Le Hublot", "description": "Le Hublot est un restaurant gastronomique et un Guest House." },
+        { "name": "AFRO", "description": "Beauté, cosmétique et soins. Racines Afro, apprend aux femmes à prendre soin de leurs cheveux crépus, au travers de leur espace de beauté." },
+        { "name": "Pinecrest", "description": "Service de nettoyage à sec avec service de dépôt et de récupération 24 heures sur 24." },
+        { "name": "Mary House", "description": "Résidence située à proximité de la plage de Fidjrossè et de l'aéroport de Cotonou." },
+        { "name": "Bfret", "description": "Entreprise de fret, cargo et de vente de marchandises et de voitures d'occasion entre la France et le Bénin." },
+        { "name": "Origine Terre", "description": "Origine Terre est une marque de produits cosmétiques 100% naturels faits main au Bénin. Savons, laits..." },
+        { "name": "PECB", "description": "PECB, Professional Evaluation and certification Board est un organisme de certification accrédité selon ISO/IEC 17024." }
+      ]
+    },
+    "en": {
+      "title": "What do <strong>people</strong> say <br />about us?",
+      "title_mob": "What do <strong>people</strong> <br />say about us?",
+      "getQuote": "Get a quote",
+      "collaborate": "Collaborate with us",
+      "trustedBy": "They trusted us",
+      "prizeTitle": "01 Prize",
+      "prizeDescription": "3rd Laureate 2022 of the Africa Innovation Prize at Engie.",
+      "reviews": [
+        {
+          "text": "The speed of response, the quality of service, the friendliness of the staff are truly impressive...",
+          "author": "Roméo DEWASSONOU",
+          "readMore": "Read more"
+        },
+        {
+          "text": "Your Com company stands out for its creativity and its commitment to customer satisfaction...",
+          "author": "Bruno Veran",
+          "readMore": "Read more"
+        },
+        {
+          "text": "A very attentive company. KK SMART COM shows extraordinary creativity on each project...",
+          "author": "Kelly ANATO",
+          "readMore": "Read more"
+        },
+        {
+          "text": "From the reception to the service, there is only one word to say: SATISFACTION! I recommend 100%...",
+          "author": "Charlyce HOUSSOU",
+          "readMore": "Read more"
+        },
+        {
+          "text": "A special, very sober setting! Ideal for creative work. I highly recommend it for coworking...",
+          "author": "Andric ADOYINDE",
+          "readMore": "Read more"
+        },
+        {
+          "text": "A good level communication company also managing other aspects related to communication...",
+          "author": "Didier ALVARO",
+          "readMore": "Read more"
+        }
+      ],
+      "clients": [
+        { "name": "ANPE BENIN", "description": "Public Employment Service Listening, Advice, Orientation Support for young graduates towards employment." },
+        { "name": "MYSOL", "description": "ENGIE Energy Access Benin through Mysol offers solar systems and devices adapted to household needs." },
+        { "name": "SPIRO", "description": "Manufacturing and Marketing of electric and ecological vehicles" },
+        { "name": "ART RESIDENCE", "description": "ART Residence is a hotel residence located in Porto-Novo in the capital of Benin." },
+        { "name": "SOBEBRA", "description": "SOBEBRA (Beninese Soft Drinks Company) is a subsidiary of Castel in Benin." },
+        { "name": "CANAL+ WB", "description": "French private national generalist pay television channel, focused on cinema and sport." },
+        { "name": "CANAL+", "description": "A Kenyan eyewear company based in Benin and other countries in the sub-region." },
+        { "name": "BEC SARL", "description": "BEC Sarl (Accounting and Statutory Audit Firm) ·" },
+        { "name": "Le Hublot", "description": "Le Hublot is a gourmet restaurant and a Guest House." },
+        { "name": "AFRO", "description": "Beauty, cosmetics and care. Afro roots, teaches women to take care of their frizzy hair, through their beauty space." },
+        { "name": "Pinecrest", "description": "Dry cleaning service with 24-hour drop-off and pick-up service." },
+        { "name": "Mary House", "description": "Residence located near Fidjrossè beach and Cotonou airport." },
+        { "name": "Bfret", "description": "Freight, cargo and sale of second-hand goods and cars between France and Benin." },
+        { "name": "Origine Terre", "description": "Origine Terre is a brand of 100% natural handmade cosmetics in Benin. Soaps, milks..." },
+        { "name": "PECB", "description": "PECB, Professional Evaluation and certification Board is a certification body accredited according to ISO/IEC 17024." }
+      ]
+    }
+  },
+  "PreuveSocial": {
+    "fr": {
+      "title": "Que disent <strong>les gens</strong> <br />à propos de nous?",
+      "title_mob": "Que disent <strong>les </strong> <br /> <strong>gens</strong> à propos de nous?",
+      "getQuote": "Obtenez un devis",
+      "collaborate": "Collaborez avec nous",
+      "trustedBy": "Ils nous ont fait confiance",
+      "prizeTitle": "01 Prix",
+      "prizeDescription": "3ème Lauréat 2022 du Prix Innovation Afrique chez Engie.",
+      "reviews": [
+        {
+          "text": "La rapidité de réponse, la qualité du service, l'amabilité du personnel sont vraiment impressionnantes...",
+          "author": "Roméo DEWASSONOU",
+          "authorImg": "/assets/uploads/2022/12/bru.png",
+          "reviewImg": "/assets/uploads/2022/12/avis.png",
+          "etoilesImg": "/assets/uploads/etoiles.png",
+          "lirePlusHref": "https://www.google.com/search?q=kk+smart+com&oq=kk+smart+com&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPDIGCAMQRRg80gEIMjkwMmowajmoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x10235798a3364b93:0x2e31cf5b35f72be8,1,,,,,",
+          "readMoreText": "Lire plus"
+        },
+        {
+          "text": "Votre entreprise de Com se distingue par sa créativité et son engagement envers la satisfaction client...",
+          "author": "Bruno Veran",
+          "authorImg": "/assets/uploads/2022/12/bru.png",
+          "reviewImg": "/assets/uploads/2022/12/avis.png",
+          "etoilesImg": "/assets/uploads/etoiles.png",
+          "lirePlusHref": "https://www.google.com/search?q=kk+smart+com&oq=kk+smart+com&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPDIGCAMQRRg80gEIMjkwMmowajmoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x10235798a3364b93:0x2e31cf5b35f72be8,1,,,,,",
+          "readMoreText": "Lire plus"
+        },
+        {
+          "text": "Entreprise très à l'écoute. KK SMART COM fait preuve d'une créativité hors du commun sur chaque projet...",
+          "author": "Kelly ANATO",
+          "authorImg": "/assets/uploads/2022/12/bru.png",
+          "reviewImg": "/assets/uploads/2022/12/avis.png",
+          "etoilesImg": "/assets/uploads/etoiles.png",
+          "lirePlusHref": "https://www.google.com/search?q=kk+smart+com&oq=kk+smart+com&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPDIGCAMQRRg80gEIMjkwMmowajmoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x10235798a3364b93:0x2e31cf5b35f72be8,1,,,,,",
+          "readMoreText": "Lire plus"
+        }
+      ],
+      "clients": [
+        { "type": "text_and_image", "name": "ANPE BENIN", "image": "/assets/clients/anpe.jpg", "description": "Service Public d'Emploi Ecoute, Conseil, Orientation Accompagnement des jeunes diplômés vers l'emploi." },
+        { "type": "image", "name": "MYSOL", "logo": "/assets/clients/logos/MYSOL.png", "description": "ENGIE Energy Access Bénin à travers Mysol propose des systèmes et appareils solaires adaptés aux besoins des ménages." },
+        { "type": "image", "name": "SPIRO", "logo": "/assets/clients/logos/SPIRO.png", "description": "Fabrication et Commercialisation de véhicules électriques et écologiques" },
+        { "type": "text_and_image", "name": "Le Hublot", "image": "/assets/clients/hublot-wb.png", "description": "Le Hublot est un restaurant gastronomique et un Guest House." }
+      ]
+    },
+    "en": {
+      "title": "What do <strong>people</strong> say <br />about us?",
+      "title_mob": "What do <strong>people</strong> <br />say about us?",
+      "getQuote": "Get a quote",
+      "collaborate": "Collaborate with us",
+      "trustedBy": "They trusted us",
+      "prizeTitle": "01 Prize",
+      "prizeDescription": "3rd Laureate 2022 of the Africa Innovation Prize at Engie.",
+      "reviews": [
+        {
+          "text": "The speed of response, the quality of service, the friendliness of the staff are truly impressive...",
+          "author": "Roméo DEWASSONOU",
+          "authorImg": "/assets/uploads/2022/12/bru.png",
+          "reviewImg": "/assets/uploads/2022/12/avis.png",
+          "etoilesImg": "/assets/uploads/etoiles.png",
+          "lirePlusHref": "https://www.google.com/search?q=kk+smart+com&oq=kk+smart+com&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPDIGCAMQRRg80gEIMjkwMmowajmoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x10235798a3364b93:0x2e31cf5b35f72be8,1,,,,,",
+          "readMoreText": "Read more"
+        },
+        {
+          "text": "Your Com company stands out for its creativity and its commitment to customer satisfaction...",
+          "author": "Bruno Veran",
+          "authorImg": "/assets/uploads/2022/12/bru.png",
+          "reviewImg": "/assets/uploads/2022/12/avis.png",
+          "etoilesImg": "/assets/uploads/etoiles.png",
+          "lirePlusHref": "https://www.google.com/search?q=kk+smart+com&oq=kk+smart+com&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPDIGCAMQRRg80gEIMjkwMmowajmoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x10235798a3364b93:0x2e31cf5b35f72be8,1,,,,,",
+          "readMoreText": "Read more"
+        },
+        {
+          "text": "A very attentive company. KK SMART COM shows extraordinary creativity on each project...",
+          "author": "Kelly ANATO",
+          "authorImg": "/assets/uploads/2022/12/bru.png",
+          "reviewImg": "/assets/uploads/2022/12/avis.png",
+          "etoilesImg": "/assets/uploads/etoiles.png",
+          "lirePlusHref": "https://www.google.com/search?q=kk+smart+com&oq=kk+smart+com&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPDIGCAMQRRg80gEIMjkwMmowajmoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x10235798a3364b93:0x2e31cf5b35f72be8,1,,,,,",
+          "readMoreText": "Read more"
+        }
+      ],
+      "clients": [
+        { "type": "text_and_image", "name": "ANPE BENIN", "image": "/assets/clients/anpe.jpg", "description": "Public Employment Service Listening, Advice, Orientation Support for young graduates towards employment." },
+        { "type": "image", "name": "MYSOL", "logo": "/assets/clients/logos/MYSOL.png", "description": "ENGIE Energy Access Benin through Mysol offers solar systems and devices adapted to household needs." },
+        { "type": "image", "name": "SPIRO", "logo": "/assets/clients/logos/SPIRO.png", "description": "Manufacturing and Marketing of electric and ecological vehicles" },
+        { "type": "text_and_image", "name": "Le Hublot", "image": "/assets/clients/hublot-wb.png", "description": "Le Hublot is a gourmet restaurant and a Guest House." }
+      ]
+    }
+  },
+  "CTA": {
+    "fr": {
+      "title": "Explorer les opportunités <br /> pour créer <strong> d'excellents</strong> <br /> des produits",
+      "title_mob": "Explorer <br /> les opportunités <br />pour créer <br /> <strong> d'excellents</strong> <br /> des produits",
+      "projects": {
+        "title": "Projets",
+        "description": "Découvrez les projets que nous avons <br />réalisé pour nos clients",
+        "button": "En savoir plus"
+      },
+      "services": {
+        "title": "Services",
+        "description": "Découvrez nos services et nos solutions <br />pour booster votre business",
+        "button": "En savoir plus"
+      }
+    },
+    "en": {
+      "title": "Explore opportunities <br /> to create <strong> excellent</strong> <br /> products",
+      "title_mob": "Explore <br /> opportunities <br />to create <br /> <strong> excellent</strong> <br /> products",
+      "projects": {
+        "title": "Projects",
+        "description": "Discover the projects we have <br />carried out for our clients",
+        "button": "Learn more"
+      },
+      "services": {
+        "title": "Services",
+        "description": "Discover our services and solutions <br />to boost your business",
+        "button": "Learn more"
+      }
+    }
+  },
+  "ContactSection": {
+    "fr": {
+      "subheading": "Avez-vous une idée?",
+      "heading": "Ecrivez-nous !",
+      "email": "hello@kksmartcom.com",
+      "whatsapp": "Whatsapp",
+      "form": {
+        "name": "Votre nom & prénoms<sup>*</sup>",
+        "email": "Votre email<sup>*</sup>",
+        "project": "Parlez nous de votre projet <sup>*</sup>",
+        "submit": "Soumettre"
+      }
+    },
+    "en": {
+      "subheading": "Have an idea?",
+      "heading": "Write to us!",
+      "email": "hello@kksmartcom.com",
+      "whatsapp": "Whatsapp",
+      "form": {
+        "name": "Your name & surnames<sup>*</sup>",
+        "email": "Your email<sup>*</sup>",
+        "project": "Tell us about your project <sup>*</sup>",
+        "submit": "Submit"
+      }
+    }
+  },
+  "AproposHero": {
+  "fr": {
+    "title": {
+      "desktop": "Stratégie de<br/><div><b>communication</b> la plus<br/></div> <u>rentable</u>",
+      "mobile": "Stratégie de<br/><b>communication</b> la plus<br/><u>rentable</u>"
+    },
+    "description": "Notre équipe dénommée \"SMART TEAM\" met à disposition son expertise dans les domaines du numérique à savoir: l'audiovisuelle, le graphisme, l'impression numérique sur tous supports, le marketing digital et la programmation informatique.<br/>Nous sommes spécialisés dans la conception de chatbot pour les entreprises qui doivent répondre à de fortes demandes en service clientèle.",
+    "image": "/assets/uploads/2023/05/Services.png"
+  },
+  "en": {
+    "title": {
+      "desktop": "Most <u>cost-effective</u><br/><div><b>communication</b> strategy</div>",
+      "mobile": "Most <u>cost-effective</u><br/><b>communication</b> strategy"
+    },
+    "description": "Our team called \"SMART TEAM\" provides its expertise in digital fields including: audiovisual, graphic design, digital printing on all media, digital marketing, and computer programming.<br/>We specialize in creating chatbots for businesses that need to handle high customer service demands.",
+    "image": "/assets/uploads/2023/05/Services.png"
+  }
+},
+"WhoUs": {
+  "fr": {
+    "title": "Qui sommes-nous ?",
+    "description": [
+      "KK SMART COM est une entreprise de communication globale basée à Cotonou spécialisée en communication digitale, visuelle et audiovisuelle. Elle utilise aussi les moyens de communication traditionnels (panneaux publicitaires, médias, télémarketing et prospection), pour connecter les entreprises à leurs cibles à travers des stratégies marketing adaptées et innovantes.",
+      "KK SMART COM offre aussi des formations aux entreprises et aux particuliers.",
+      "Elle dispose de trois véritables agences de communication au service de ses clients à savoir :"
+    ],
+    "agencies": [
+      {
+        "name": "KK SMART DESIGN",
+        "description": "met tout en oeuvre pour développer votre marque au travers de votre identité visuelle (Logo, Papeterie, Charte graphique, etc.) et de supports de communication imprimés (Flyers, Dépliants, Affiches, etc.) ou digitaux (Bannières, Posts pour réseaux sociaux, etc.)."
+      },
+      {
+        "name": "KK SMART PRINT",
+        "description": "est spécialisée dans l'impression numérique grand format (Bâches, Autocollants, Stickers, etc.) et petit format (Cartes de visite, Flyers, Dépliants, etc.)."
+      },
+      {
+        "name": "KK SMART MEDIA",
+        "description": "est spécialisée dans la production audiovisuelle (Reportages, Clips, Publicités, etc.) et la communication digitale (Community Management, Rédaction web, etc.)."
+      }
+    ],
+    "image": "/assets/uploads/2021/10/chain.svg"
+  },
+  "en": {
+    "title": "Who are we?",
+    "description": [
+      "KK SMART COM is a global communication company based in Cotonou, specializing in digital, visual, and audiovisual communication. It also uses traditional communication channels (billboards, media, telemarketing, and prospecting) to connect businesses with their targets through tailored and innovative marketing strategies.",
+      "KK SMART COM also provides training for businesses and individuals.",
+      "It has three distinct communication agencies serving its clients:"
+    ],
+    "agencies": [
+      {
+        "name": "KK SMART DESIGN",
+        "description": "works to develop your brand through your visual identity (Logo, Stationery, Graphic Charter, etc.) and printed (Flyers, Brochures, Posters, etc.) or digital (Banners, Social Media Posts, etc.) communication materials."
+      },
+      {
+        "name": "KK SMART PRINT",
+        "description": "specializes in large-format (Banners, Stickers, Decals, etc.) and small-format (Business Cards, Flyers, Brochures, etc.) digital printing."
+      },
+      {
+        "name": "KK SMART MEDIA",
+        "description": "specializes in audiovisual production (Reports, Music Videos, Advertisements, etc.) and digital communication (Community Management, Web Content Writing, etc.)."
+      }
+    ],
+    "image": "/assets/uploads/2021/10/chain.svg"
+  }
+},
+"Mission": {
+    "fr": {
+      "title": "Nous travaillons avec les entreprises <br/> pour les aider <strong>à relever les défis</strong> commerciaux en constante évolution.",
+      "cards": [
+        {
+          "id": "01",
+          "title": "Passion et <br/> personnalité",
+          "text": "Notre équipe est composée de personnes passionnées et intelligentes."
+        },
+        {
+          "id": "02",
+          "title": "Mesurez deux fois, <br/>codez une fois",
+          "text": "Notre dévouement et notre souci du détail nous permettent de fournir des produits et services de haute qualité."
+        },
+        {
+          "id": "03",
+          "title": "Non conventionnel — <br/> et très efficace",
+          "text": "Nous considérons nos clients comme des partenaires et travaillons à leurs côtés pour réaliser de grandes choses ensemble."
+        },
+        {
+          "id": "04",
+          "title": "Un nouveau design, des processus métiers intelligents",
+          "text": "Nous adoptons une approche flexible et libre d'esprit pour chaque tâche, ce qui nous permet de livrer d'excellentes solutions pour nos clients."
+        }
+      ]
+    },
+    "en": {
+      "title": "We work with companies <br/> to help them <strong>meet evolving</strong> business challenges.",
+      "cards": [
+        {
+          "id": "01",
+          "title": "Passion and <br/> personality",
+          "text": "Our team is made up of passionate and intelligent people."
+        },
+        {
+          "id": "02",
+          "title": "Measure twice, <br/>code once",
+          "text": "Our dedication and attention to detail allow us to provide high-quality products and services."
+        },
+        {
+          "id": "03",
+          "title": "Unconventional — <br/> and very effective",
+          "text": "We consider our clients as partners and work alongside them to achieve great things together."
+        },
+        {
+          "id": "04",
+          "title": "A new design, smart business processes",
+          "text": "We take a flexible and open-minded approach to every task, allowing us to deliver excellent solutions for our clients."
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "fr": {
+      "quickLinks": {
+        "title": "Liens rapides",
+        "links": [
+          { "text": "Services", "href": "https://comeup.com/fr/@kk-smart-com", "target": "_blank" },
+          { "text": "Projets", "href": "https://www.behance.net/kksmartcom", "target": "_blank" },
+          { "text": "À propos", "href": "apropos.html", "target": "_self" },
+          { "text": "Blog", "href": "blog.html", "target": "_self" },
+          { "text": "Carrière", "href": "https://comeup.com/fr/@kk-smart-com", "target": "_blank" }
+        ]
+      },
+      "agencies": {
+        "title": "Agences",
+        "locations": [
+          { "city": "Cotonou", "country": "Bénin" },
+          { "city": "Lomé", "country": "Togo" },
+          { "city": "Abidjan", "country": "Côte d'Ivoire" }
+        ],
+        "phone": "+229 56 14 14 38"
+      },
+      "social": {
+        "title": "Suivez-nous sur les réseaux sociaux",
+        "icons": [
+          {
+            "href": "https://www.behance.net/kksmartcom",
+            "className": "behance",
+            "imgSrc": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSBmSKvWVnUI_BcvxPHQl0kwwVOknXz7qdNult5wPaquoXaxnPds8qpxNiVHgq8KJUnC7YboUUaNmMIN_r8rtYgQtBeQsbaEr1w0y4nbUL6UGKpoQZD8AtAmamBx3HFuYku0rEAXWhnV7xDYK0pSDmSzhu7zj-_0scJx18Q1SO-TDq5CVLg26HfHYavQ/s24/s1.png",
+            "alt": "Behance"
+          },
+          {
+            "href": "https://comeup.com/fr/@kk-smart-com",
+            "className": "comeup",
+            "imgSrc": "/assets/img/Comeup0.png",
+            "alt": "Comeup",
+            "width": 20,
+            "height": 20
+          },
+          {
+            "href": "https://www.linkedin.com/company/kksmartcom",
+            "className": "linkedin",
+            "imgSrc": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFHU8GCdNGH6ooQuhNU-z-_tRpFuWkdR0CWOU5y8IJwMfapYoqLyxkgJTOmfHNa9IVbxT2PH_eUMGwi5nqLDV8GYU9sQM4cDaEEQMQ5sNHUj4d7U_FC8BNJ1QLx3-AkSSw6nXeU0T2RBqjWADokJwtwzDhqdatW1U7xUJ_lSgqfOJxWHSx7kXfZq8k1w/s21/s6.png",
+            "alt": "LinkedIn"
+          },
+          {
+            "href": "https://www.instagram.com/kksmartcom",
+            "className": "instagram",
+            "imgSrc": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhWLlNLKgfa1B48upjA_al8C5vYN7SEFqgyjaKIxm0KYqNUK984S4y5dUKPeQACMyhg6vi0-LrdU1OCDldC5maGh45B1gdIwpdWCIK2P_5x-GiVDtN9nheArsvIDpuJZnIl-BAFuO-d8PjLBaViNepWARJU0HXjeaAbItt2gKA50Z-lsU4sAa-_XzYWA/s22/s4.png",
+            "alt": "Instagram"
+          },
+          {
+            "href": "https://www.facebook.com/kksmartcomm",
+            "className": "facebook",
+            "imgSrc": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI1t6BLC0iSA7wzU9eA-DDTUjVfTpDG2hmyYf5I7EsX5Gi3x2DUBuQkx6W--_J3W435Nf19WASdtu2NOvHgGJVZRAx30oL6W65XSiSLEg4wFNSfKTkn5QyvlMyYnF8VqasNyNzLm670lqJkcHCO4dp32HMLoBcv655VnFp-itHiYAyzjS91Y61PAcV3A/s21/s5.png",
+            "alt": "Facebook"
+          },
+          {
+            "href": "https://twitter.com/kksmartcom",
+            "className": "twitter",
+            "imgSrc": "/assets/img/twitter0.png",
+            "alt": "Twitter"
+          },
+          {
+            "href": "https://wa.me/22956141438",
+            "className": "whatsapp",
+            "imgSrc": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUlB3pkVmkOosBK4T9OHK9gJZXoRJGW9JjC1oeck05b1RKD-aduM_geg_yNewqkmP1eJ_a6mpDiumZbowCW7Og1LLNE-XH4kILgKlueCyazjyWSHtI4JsNQzIuRE_sOsoXLw37AQrd4DkzsJ9nAEQ7w5zS9pwjNuRuU6Izk4thvjo_adzg46SXpq952Q/s24/s8%201.png",
+            "alt": "WhatsApp"
+          }
+        ]
+      },
+      "map": {
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.1639292867094!2d2.3553105746980005!3d6.372826593617385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10235798a3364b93%3A0x2e31cf5b35f72be8!2sKK%20SMART%20COM!5e0!3m2!1sfr!2sbj!4v1686445030526!5m2!1sfr!2sbj0"
+      },
+      "copyright": "KK SMART COM"
+    },
+    "en": {
+      "quickLinks": {
+        "title": "Quick Links",
+        "links": [
+          { "text": "Services", "href": "https://comeup.com/en/@kk-smart-com", "target": "_blank" },
+          { "text": "Projects", "href": "https://www.behance.net/kksmartcom", "target": "_blank" },
+          { "text": "About", "href": "about.html", "target": "_self" },
+          { "text": "Blog", "href": "blog.html", "target": "_self" },
+          { "text": "Careers", "href": "https://comeup.com/en/@kk-smart-com", "target": "_blank" }
+        ]
+      },
+      "agencies": {
+        "title": "Agencies",
+        "locations": [
+          { "city": "Cotonou", "country": "Benin" },
+          { "city": "Lome", "country": "Togo" },
+          { "city": "Abidjan", "country": "Ivory Coast" }
+        ],
+        "phone": "+229 56 14 14 38"
+      },
+      "social": {
+        "title": "Follow us on social media",
+        "icons": [
+          {
+            "href": "https://www.behance.net/kksmartcom",
+            "className": "behance",
+            "imgSrc": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSBmSKvWVnUI_BcvxPHQl0kwwVOknXz7qdNult5wPaquoXaxnPds8qpxNiVHgq8KJUnC7YboUUaNmMIN_r8rtYgQtBeQsbaEr1w0y4nbUL6UGKpoQZD8AtAmamBx3HFuYku0rEAXWhnV7xDYK0pSDmSzhu7zj-_0scJx18Q1SO-TDq5CVLg26HfHYavQ/s24/s1.png",
+            "alt": "Behance"
+          },
+          {
+            "href": "https://comeup.com/en/@kk-smart-com",
+            "className": "comeup",
+            "imgSrc": "/assets/img/Comeup0.png",
+            "alt": "Comeup",
+            "width": 20,
+            "height": 20
+          },
+          {
+            "href": "https://www.linkedin.com/company/kksmartcom",
+            "className": "linkedin",
+            "imgSrc": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFHU8GCdNGH6ooQuhNU-z-_tRpFuWkdR0CWOU5y8IJwMfapYoqLyxkgJTOmfHNa9IVbxT2PH_eUMGwi5nqLDV8GYU9sQM4cDaEEQMQ5sNHUj4d7U_FC8BNJ1QLx3-AkSSw6nXeU0T2RBqjWADokJwtwzDhqdatW1U7xUJ_lSgqfOJxWHSx7kXfZq8k1w/s21/s6.png",
+            "alt": "LinkedIn"
+          },
+          {
+            "href": "https://www.instagram.com/kksmartcom",
+            "className": "instagram",
+            "imgSrc": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhWLlNLKgfa1B48upjA_al8C5vYN7SEFqgyjaKIxm0KYqNUK984S4y5dUKPeQACMyhg6vi0-LrdU1OCDldC5maGh45B1gdIwpdWCIK2P_5x-GiVDtN9nheArsvIDpuJZnIl-BAFuO-d8PjLBaViNepWARJU0HXjeaAbItt2gKA50Z-lsU4sAa-_XzYWA/s22/s4.png",
+            "alt": "Instagram"
+          },
+          {
+            "href": "https://www.facebook.com/kksmartcomm",
+            "className": "facebook",
+            "imgSrc": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI1t6BLC0iSA7wzU9eA-DDTUjVfTpDG2hmyYf5I7EsX5Gi3x2DUBuQkx6W--_J3W435Nf19WASdtu2NOvHgGJVZRAx30oL6W65XSiSLEg4wFNSfKTkn5QyvlMyYnF8VqasNyNzLm670lqJkcHCO4dp32HMLoBcv655VnFp-itHiYAyzjS91Y61PAcV3A/s21/s5.png",
+            "alt": "Facebook"
+          },
+          {
+            "href": "https://twitter.com/kksmartcom",
+            "className": "twitter",
+            "imgSrc": "/assets/img/twitter0.png",
+            "alt": "Twitter"
+          },
+          {
+            "href": "https://wa.me/22956141438",
+            "className": "whatsapp",
+            "imgSrc": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUlB3pkVmkOosBK4T9OHK9gJZXoRJGW9JjC1oeck05b1RKD-aduM_geg_yNewqkmP1eJ_a6mpDiumZbowCW7Og1LLNE-XH4kILgKlueCyazjyWSHtI4JsNQzIuRE_sOsoXLw37AQrd4DkzsJ9nAEQ7w5zS9pwjNuRuU6Izk4thvjo_adzg46SXpq952Q/s24/s8%201.png",
+            "alt": "WhatsApp"
+          }
+        ]
+      },
+      "map": {
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.1639292867094!2d2.3553105746980005!3d6.372826593617385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10235798a3364b93%3A0x2e31cf5b35f72be8!2sKK%20SMART%20COM!5e0!3m2!1sen!2sbj!4v1686445030526!5m2!1sen!2sbj"
+      },
+      "copyright": "KK SMART COM"
+    }
+  }
+}

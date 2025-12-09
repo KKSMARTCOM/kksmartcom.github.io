@@ -1,0 +1,356 @@
+
+/* Reviews Carousel Styles */
+.reviewsSlider {
+  margin-top: 20px;
+  width: calc(100% + 2px) !important;
+  margin-left: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: visible; /* Allow overflow for shadow/effects if needed, but Swiper handles it */
+}
+
+.reviewsSlider :global(.swiper-wrapper) {
+  padding-top: 60px;
+  display: flex;
+  align-items: stretch;
+}
+
+.reviewsSlider :global(.swiper-slide) {
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  height: auto; /* Ensure equal height */
+}
+
+.slide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewInner {
+  border: 1px solid #404242;
+  padding: 40px 40px 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 470px; /* Increase height to match original */
+  background: transparent; /* Ensure background matches */
+}
+
+.topWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -80px auto -5px;
+  border-radius: 50%;
+  background: white;
+  width: 80px;
+  height: 80px;
+}
+
+.topWrap img {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  max-height: 35px;
+  object-fit: contain;
+}
+
+.text {
+  color: rgba(255, 254, 253, 0.7);
+  position: relative;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 170%;
+}
+
+.text:before {
+  content: "";
+  width: 32px;
+  height: 24px;
+  background: url("/assets/img/qu.svg") no-repeat center;
+  background-size: contain;
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.author img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bio {
+  width: calc(100% - 60px);
+}
+
+.bio span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFEFD;
+  display: block;
+}
+
+.bio p {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 254, 253, 0.7);
+  margin-top: 4px;
+}
+
+.bottom {
+  border-top: 1px solid #404242;
+  padding: 20px 40px;
+  width: calc(100% + 80px);
+  margin-left: -40px;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.bottom a {
+  color: #FFFEFD;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.bottom a img {
+  margin-right: 10px;
+}
+
+/* Clients Carousel Styles */
+.awardsDetails {
+  margin-top: 105px;
+  /* Swiper container styles */
+  width: 100%;
+  overflow: hidden;
+}
+
+.clientRow {
+  /* width: calc(25% - 30px); Removed fixed width as Swiper handles it */
+  margin-bottom: 45px;
+  border: 1px solid #404243;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px 32px 20px; /* Reduced left padding from 32px to 20px */
+  height: 220px; /* Fixed height for uniform dimensions */
+  overflow: hidden;
+  background: transparent; /* Or specific background */
+}
+
+.clientRow.light {
+  background: rgba(217, 217, 217, 0.02);
+}
+
+/* Modifiers */
+.w35 {}
+.big {}
+.full {}
+.light {}
+.small {}
+.kubok {}
+.none {}
+.prizeCard {}
+
+.clientRow.full {
+  width: 100%;
+}
+
+.clientRow.full .h {
+  margin-top: 50px;
+}
+
+.clientRow.full .top {
+  align-items: flex-start;
+}
+
+/* Prize card specific styles */
+.clientRow.prizeCard {
+  min-height: 220px;
+  margin-bottom: 0;
+}
+
+.clientRow.prizeCard .h {
+  margin-top: 10px;
+}
+
+.clientRow.prizeCard .p {
+  margin-top: 18px;
+}
+
+.clientRow.big .top {
+  align-items: flex-start;
+}
+
+.clientRow.big .top .right {
+  margin-top: -25px;
+  margin-right: -25px;
+}
+
+.clientRow.big .top .right img {
+  width: 135px;
+  max-height: 110px;
+  object-fit: contain;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: auto;
+}
+
+.top .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top .left img {
+  max-height: 40px;
+  display: block;
+  margin-right: 32px;
+  max-width: 232px;
+}
+
+.top .right {
+    margin-top: -25px;
+    margin-right: -25px;
+}
+
+.top .right img {
+    width: 40px; /* Default width */
+}
+
+.top .right.kubok {
+    margin-top: -20px;
+    margin-right: -20px;
+}
+
+.top .right.kubok img {
+    width: 95px;
+}
+
+.h {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  line-height: 90%;
+  margin-top: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.p {
+  color: white;
+  font-size: 16px;
+  color: rgba(255, 254, 253, 0.7);
+  line-height: 150%;
+  margin-top: 40px;
+}
+
+.p.big {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 120%;
+    color: white;
+}
+
+.p.small {
+    /* Add specific styles for small p if needed, or rely on default */
+}
+
+/* General Section Styles */
+.sectionHeading {
+    font-size: 80px;
+    line-height: 90%;
+    font-weight: 700;
+    display: inline;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFEFD;
+}
+
+.pcVisible {
+    display: block;
+}
+
+.mobVisible {
+    display: none;
+}
+
+@media (max-width: 1110px) {
+    .pcVisible {
+        display: none;
+    }
+    .mobVisible {
+        display: block;
+    }
+    .sectionHeading {
+        font-size: 45px;
+    }
+
+    /* Mobile: cards adapt to content and inner elements never overflow */
+    .clientRow {
+        height: auto;
+        padding: 20px;
+    }
+    .clientRow.prizeCard {
+        padding: 26px 20px 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+    .clientRow.full .h {
+        margin-top: 50px;
+    }
+    .clientRow.full .p.big {
+        line-height: 120%;
+        margin-top: 18px;
+    }
+    .clientRow .h + .p {
+        margin-top: 2px;
+    }
+
+    .top {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: flex-between;
+    }
+    .top .left img {
+        max-width: 100%;
+        height: auto;
+        max-height: 60px;
+        margin-right: 0;
+    }
+    .top .right img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 80px;
+    }
+    .clientRow.big .top .right img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 110px;
+    }
+    .h {
+        font-size: 28px;
+    }
+    .p {
+        margin-top: 16px;
+    }
+}
