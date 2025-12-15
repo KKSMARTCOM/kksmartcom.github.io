@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useLang } from '@/context/LangContext';
 /**
  * Composant de carte de projet
  * @param {Object} props - Les propriétés du composant
@@ -56,7 +56,7 @@ const ProjectCard = ({ project }) => (
                 <svg fill="none" height="10" viewBox="0 0 9 10" width="9" xmlns="http://www.w3.org/2000/svg">
                     <path clipRule="evenodd" d="m.455752.5h8.544248v8.54425h-1.28906v-6.34368l-6.799434 6.79943-.911506-.91151 6.79943-6.79943h-6.343678z" fill="#fffefd" fillRule="evenodd"/>
                 </svg>
-                See case
+                {useLang().lang === 'fr' ? 'Voir le projet' : 'See case'}
             </span>
         </a>
     </div>

@@ -318,11 +318,11 @@ body.loading:after {
     color: white;
 }
 
-#cases-inner .tags-list a.tag {
+#cases-inner .tags-list2 a.tag {
     height: 35px
 }
 
-.tags-list a.tag.empty {
+.tags-list2 a.tag.empty {
     cursor: none
 }
 
@@ -330,7 +330,7 @@ body.loading:after {
     display: block !important
 }
 
-.tags-list a.disabled_link {
+.tags-list2 a.disabled_link {
     pointer-events: none !important;
     color: #BCBCBB !important
 }
@@ -348,14 +348,14 @@ body.loading:after {
     color: #1F2122 !important
 }
 
-.tags-list:not(.cats-list) {
+.tags-list2:not(.cats-list) {
     padding-bottom: 20px;
     border-bottom: none;
     position: relative;
     margin-bottom: -30px
 }
 
-.tags-list:not(.cats-list):after {
+.tags-list2:not(.cats-list):after {
     content: '';
     width: calc(100% - 10px);
     height: 1px;
@@ -366,7 +366,7 @@ body.loading:after {
     display: block
 }
 
-.tags-list.cats-list a:not(.empty):hover span {
+.tags-list2.cats-list a:not(.empty):hover span {
     color: #1F2122 !important
 }
 
@@ -493,7 +493,7 @@ body.loading:after {
 }
 
 @media (min-width: 1110px) {
-    .cats-select-wrap .tags-list.cats-list {
+    .cats-select-wrap .tags-list2.cats-list {
         margin-top: 40px !important
     }
 
@@ -2878,33 +2878,33 @@ h4.viewed i,
     margin-bottom: 10px
 }
 
-.tags-list {
+.tags-list2 {
     width: calc(100% + 10px)
 }
 
-.tags-list a {
+.tags-list2 a {
     margin-right: 10px;
     margin-top: 10px
 }
 
-.tags-list a:not(.empty) {
+.tags-list2 a:not(.empty) {
     transition: unset;
     color: #FFFEFD !important
 }
 
-.tags-list a:not(.empty):before {
+.tags-list2 a:not(.empty):before {
     display: none
 }
 
-.tags-list a:not(.empty):hover {
+.tags-list2 a:not(.empty):hover {
     color: #FFFEFD
 }
 
-.tags-list a:not(.empty):hover span {
+.tags-list2 a:not(.empty):hover span {
     color: #FFFEFD
 }
 
-.tags-list a.active:hover {
+.tags-list2 a.active:hover {
     opacity: 1
 }
 
@@ -2920,7 +2920,7 @@ h4.viewed i,
     font-feature-settings: 'pnum' on, 'lnum' on
 }
 
-.screen2 .tags-list {
+.screen2 .tags-list2 {
     margin-top: 64px
 }
 
@@ -3820,7 +3820,7 @@ a, button {
 }
 
 .main-btn,
-.tags-list a.tag {
+.tags-list2 a.tag {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -3857,7 +3857,7 @@ a, button {
 }
 
 .main-btn span,
-.tags-list a.tag span {
+.tags-list2 a.tag span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3868,101 +3868,101 @@ a, button {
 
 .main-btn path,
 .main-btn svg,
-.tags-list a.tag path,
-.tags-list a.tag svg {
+.tags-list2 a.tag path,
+.tags-list2 a.tag svg {
     transition: 0.5s all
 }
 
 .main-btn:hover,
-.tags-list a.tag:hover {
+.tags-list2 a.tag:hover {
     background: #FF0062
 }
 
 #btnservices:hover,
-.tags-list a.tag:hover {
+.tags-list2 a.tag:hover {
     background: #4285F4
 }
 
 
 .main-btn:hover svg path,
-.tags-list a.tag:hover svg path {
+.tags-list2 a.tag:hover svg path {
     fill: #1F2122
 }
 
 .main-btn.white,
-.tags-list a.tag.white {
+.tags-list2 a.tag.white {
     background: #FFFEFD;
     color: #1F2122
 }
 
 .main-btn.white:hover,
-.tags-list a.tag.white:hover {
+.tags-list2 a.tag.white:hover {
     color: #1F2122
 }
 
 .main-btn.white:hover img,
-.tags-list a.tag.white:hover img {
+.tags-list2 a.tag.white:hover img {
     filter: invert(0)
 }
 
 .main-btn.white.arrow,
-.tags-list a.tag.white.arrow {
+.tags-list2 a.tag.white.arrow {
     background: #FFFEFD;
     color: #1F2122
 }
 
 .main-btn.white.arrow:hover,
-.tags-list a.tag.white.arrow:hover {
+.tags-list2 a.tag.white.arrow:hover {
     color: #1F2122 !important
 }
 
 .main-btn.gray,
-.tags-list a.tag.gray {
+.tags-list2 a.tag.gray {
     background: #EBEBEB;
     color: #1F2122;
     cursor: default !important
 }
 
 .main-btn.gray:hover,
-.tags-list a.tag.gray:hover {
+.tags-list2 a.tag.gray:hover {
     color: #1F2122 !important
 }
 
 .main-btn.gray:hover:before,
-.tags-list a.tag.gray:hover:before {
+.tags-list2 a.tag.gray:hover:before {
     display: none
 }
 
 .main-btn.gray:hover img,
-.tags-list a.tag.gray:hover img {
+.tags-list2 a.tag.gray:hover img {
     filter: invert(0)
 }
 
 .main-btn.empty,
-.tags-list a.tag.empty {
+.tags-list2 a.tag.empty {
     background: transparent;
     color: #1F2122
 }
 
 .main-btn.empty:before,
-.tags-list a.tag.empty:before {
+.tags-list2 a.tag.empty:before {
     display: none
 }
 
 .main-btn:hover,
-.tags-list a.tag:hover {
+.tags-list2 a.tag:hover {
     color: #1F2122
 }
 
 .main-btn:hover img,
-.tags-list a.tag:hover img {
+.tags-list2 a.tag:hover img {
     filter: invert(100%)
 }
 
 .main-btn img,
 .main-btn svg,
-.tags-list a.tag img,
-.tags-list a.tag svg {
+.tags-list2 a.tag img,
+.tags-list2 a.tag svg {
     margin-right: 8px;
     width: 9px;
     transition: 0.5s all
@@ -5485,7 +5485,7 @@ a.tag span {
     }
 
     .main-btn,
-    .tags-list a.tag {
+    .tags-list2 a.tag {
         height: 40px;
         border-radius: 20px;
         font-size: 14px;
@@ -5493,7 +5493,7 @@ a.tag span {
     }
 
     .main-btn img,
-    .tags-list a.tag img {
+    .tags-list2 a.tag img {
         margin-right: 8px;
         width: 9px
     }
@@ -5908,11 +5908,11 @@ a.tag span {
         margin-left: 3px
     }
 
-    .mob-select-wrap .tags-list.cats-list a:not(.empty):hover span {
+    .mob-select-wrap .tags-list2.cats-list a:not(.empty):hover span {
         color: #FF0062 !important
     }
 
-    .mob-select-wrap .tags-list {
+    .mob-select-wrap .tags-list2 {
         position: absolute;
         top: calc(100%);
         left: 0;
@@ -5929,7 +5929,7 @@ a.tag span {
         display: none
     }
 
-    .mob-select-wrap .tags-list a {
+    .mob-select-wrap .tags-list2 a {
         height: unset !important;
         padding: 5px 0 !important;
         margin-right: 0 !important;
@@ -5937,25 +5937,25 @@ a.tag span {
         display: block
     }
 
-    .mob-select-wrap .tags-list a:hover span {
+    .mob-select-wrap .tags-list2 a:hover span {
         color: #FF0062 !important
     }
 
-    .mob-select-wrap .tags-list a:not(:last-of-type) {
+    .mob-select-wrap .tags-list2 a:not(:last-of-type) {
         margin-bottom: 5px;
         margin-right: 0
     }
 
-    .mob-select-wrap .tags-list a:not(.empty) {
+    .mob-select-wrap .tags-list2 a:not(.empty) {
         background: transparent !important;
         color: #FF0062 !important
     }
 
-    .tags-list:not(.cats-list)::after {
+    .tags-list2:not(.cats-list)::after {
         display: none !important
     }
 
-    .tags-list.cats-list {
+    .tags-list2.cats-list {
         padding-bottom: 15px;
         border-bottom: none;
         margin-bottom: -15px
@@ -7021,16 +7021,16 @@ a.tag span {
         width: 14px
     }
 
-    .tags-list {
+    .tags-list2 {
         width: calc(100% + 10px)
     }
 
-    .tags-list a {
+    .tags-list2 a {
         margin-right: 10px;
         margin-top: 10px
     }
 
-    .screen2 .tags-list {
+    .screen2 .tags-list2 {
         margin-top: 20px
     }
 
@@ -7297,7 +7297,7 @@ a.tag span {
     }
 
     .main-btn,
-    .tags-list a.tag {
+    .tags-list2 a.tag {
         height: 40px;
         border-radius: 20px;
         font-size: 14px;
@@ -7305,32 +7305,32 @@ a.tag span {
     }
 
     .main-btn img,
-    .tags-list a.tag img {
+    .tags-list2 a.tag img {
         margin-right: 8px;
         width: 9px
     }
 
     .main-btn.empty:after,
-    .tags-list a.tag.empty:after {
+    .tags-list2 a.tag.empty:after {
         display: none
     }
 
     .main-btn.empty:hover,
-    .tags-list a.tag.empty:hover {
+    .tags-list2 a.tag.empty:hover {
         opacity: 1
     }
 
     .main-btn.empty:hover span,
-    .tags-list a.tag.empty:hover span {
+    .tags-list2 a.tag.empty:hover span {
         transform: unset
     }
 
     .main-btn.empty:hover:after,
-    .tags-list a.tag.empty:hover:after {
+    .tags-list2 a.tag.empty:hover:after {
         display: none
     }
 
-    .tags-list a.tag:not(.empty):hover {
+    .tags-list2 a.tag:not(.empty):hover {
         background: #1F2122
     }
 

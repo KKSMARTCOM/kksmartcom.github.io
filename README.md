@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KK SMART COM - Site Web
 
-## Getting Started
+Site web officiel de KK SMART COM, une agence de communication digitale offrant des services complets pour les entreprises et les startups.
 
-First, run the development server:
+## Fonctionnalités
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 🌍 **Internationalisation** : Support multilingue (Français et Anglais)
+- 🚀 **Composants dynamiques** : Données gérées via un fichier JSON centralisé
+- 📱 **Design responsive** : Adapté à tous les appareils
+- ⚡ **Optimisé pour les performances** : Chargement rapide et expérience utilisateur fluide
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Structure du Projet
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- `/src/components` : Composants React réutilisables
+  - `Footer.jsx` : Pied de page dynamique avec année de copyright automatique
+  - `Header.jsx` : En-tête de navigation
+  - `Service.jsx` : Section des services
+  - `PreuveSocial.jsx` : Témoignages et avis clients
+  - `CTA.jsx` : Appels à l'action
+  - `ContactSection.jsx` : Formulaire de contact
+  - `AproposHero.jsx` : Section héro de la page À propos
+  - `WhoUs.jsx` : Section "Qui sommes-nous"
+  - `Mission.jsx` : Section mission et valeurs
+- `/src/data` : Données du site
+  - `siteData.json` : Fichier JSON centralisé pour tout le contenu du site
+- `/public` : Fichiers statiques (images, vidéos, etc.)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Configuration requise
 
-## Learn More
+- Node.js 14.6.0 ou plus récent
+- npm ou yarn
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Cloner le dépôt :
+   ```bash
+   git clone [URL_DU_DEPOT]
+   cd kksmartcom.com.stack.reveiw
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Installer les dépendances :
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
 
-## Deploy on Vercel
+3. Lancer le serveur de développement :
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Ouvrir [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Internationalisation
+
+Le site supporte actuellement le français et l'anglais. Les textes sont gérés dans le fichier `src/data/siteData.json` avec les clés `fr` et `en`.
+
+## Déploiement
+
+Le site peut être déployé sur n'importe quelle plateforme prenant en charge les applications Next.js, notamment :
+
+- [Vercel](https://vercel.com)
+- [Netlify](https://www.netlify.com/)
+- Hébergement Node.js standard
+
+## Contribution
+
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
+
+## Licence
+
+Ce projet est sous licence MIT.

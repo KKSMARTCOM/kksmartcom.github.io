@@ -1,24 +1,44 @@
 import React from 'react';
 
-const ArticleHero = () => {
+const ArticleHero = ({ data }) => {
+    console.log('ArticleHero - received data:', data);
+    console.log('ArticleHero - data.title:', data.title);
+    console.log('ArticleHero - data.tags:', data.tags);
+    
     return (
         <>
-	        
-                    <h1 className="view text-left">JoCreate &#8211; Application for creating NFT collections</h1>
-                    <div className="tags-wrap view textslide text-left">
-                        <a href="../projects4230.html?cat=crypto-nft" className="tag">Crypto &amp; NFT</a>
-                        <a href="../projectsb62f.html?tag=web-app" className="tag">Web app</a>
-                        <a href="../projectsb43a.html?tag=website" className="tag">Website</a>
-                        <a href="../projects69b3.html?tag=mobile-app" className="tag">Mobile app</a>
-                    </div>
-                    <div className="case-image view fadein delay0-5">
-                        <picture>
-                            <source media="(min-width: 1600px)" srcSet="https://phenomenonstudio.com/wp-content/uploads/2023/02/0-scaled.jpg"/>
-                            <source media="(max-width: 1100px)" srcSet="https://phenomenonstudio.com/wp-content/uploads/2023/02/Cover-mobile.jpg"/>
-                            <source media="(min-width: 1101px) and (max-width:1599px)" srcSet="https://phenomenonstudio.com/wp-content/uploads/2023/02/0@2x-scaled.jpg"/>
-                            <img width="1300" height="630" className="" loading="lazy" src="../wp-content/uploads/2023/02/0%402x-scaled.jpg"  alt="JoCreate &#8211; Application for creating NFT collections - Website Development - Photo 1"/>
-                        </picture>		
-                    </div>
+            {/* Titre principal de l'article */}
+            {data.title && (
+                <h1 className="view text-left" dangerouslySetInnerHTML={{ __html: data.title }}></h1>
+            )}
+            
+            {/* Tags/Catégories de l'article */}
+            {data.tags && data.tags.length > 0 && (
+                <div className="tags-wrap view textslide text-left">
+                    {data.tags.map((tag, index) => (
+                        <a key={index} href={tag.href || "#"} className="tag">{tag.label}</a>
+                    ))}
+                </div>
+            )}
+            
+            {/* Image principale de l'article */}
+            {data.image && (
+                <div className="case-image view fadein delay0-5">
+                    <picture>
+                        <source media="(min-width: 1600px)" srcSet={data.image}/>
+                        <source media="(max-width: 1100px)" srcSet={data.image}/>
+                        <source media="(min-width: 1101px) and (max-width:1599px)" srcSet={data.image}/>
+                        <img 
+                            width="1300" 
+                            height="630" 
+                            className="" 
+                            loading="lazy" 
+                            src={data.image} 
+                            alt={data.imageAlt || data.title || "Article hero image"}
+                        />
+                    </picture>		
+                </div>
+            )}
         </>
     );
 };

@@ -1,0 +1,892 @@
+{
+    "1": {
+      
+      "fr": {
+        "id" : 1,
+        "date": "2024-01-15",
+        "author": "KKsmartcom Team",
+        "activeSection": ["ArticleHero","ArticleOverview","ArticleBussinesNeed","ArticleProblem","ArticleResearch","ArticleDesign","ArticleProject","ArticleFunctional","ArticleResult"],
+        "cards": [
+          {
+            "url": "/articlespages?id=1",
+            "title": "JoCreate – Application pour créer des collections NFT",
+            "images": {
+              "x1": "/assets/uploads/2023/02/0@2x-scaled.jpg",
+              "x2": "/assets/uploads/2023/02/0@2x-scaled.jpg", 
+              "x3": "/assets/uploads/2023/02/0@2x-scaled.jpg"
+            },
+            "tags": [
+              { "name": "Crypto & NFT", "url": "/projects?cat=crypto-nft" },
+              { "name": "Application web", "url": "/projects?tag=web-app" }
+            ],
+            "description": "Application complète pour créer, gérer et vendre des collections NFT avec plateforme d'échange intégrée."
+          }
+        ],
+        "Header":{
+          
+        },
+        "Hero": {
+          "title": "JoCreate &#8211; Application de création de collections NFT",
+          "description": "Nous avons développé une plateforme complète de création NFT qui révolutionne la manière dont les utilisateurs interagissent avec les collectibles numériques.",
+          "image": "/assets/uploads/2023/02/0@2x-scaled.jpg",
+          "imageAlt": "Interface de l'application NFT JoCreate",
+          "tags": [
+            {
+              "label": "Crypto & NFT",
+              "href": "/projects?cat=crypto-nft"
+            },
+            {
+              "label": "Application web",
+              "href": "/projects?tag=web-app"
+            },
+            {
+              "label": "Site web",
+              "href": "/projects?tag=website"
+            },
+            {
+              "label": "Application mobile",
+              "href": "/projects?tag=mobile-app"
+            }
+          ]
+        },
+        "overview": {
+          "SectionTitle" : "Aperçu",
+          "title": "Un service qui vous permet de créer des collections NFT en quelques clics",
+          "description": "Le service vous permet de modéliser un ensemble d'éléments et de générer une collection de NFT basée sur ceux-ci. Sa fonctionnalité vise un public jeune - les arrière-plans, filtres et effets visuels de cette application sont extrêmement pertinents et modernes. Avec cette application, les utilisateurs peuvent également vendre leurs œuvres : une fois terminée, elle peut être exportée vers les places de marché NFT populaires.",
+          "client": {
+            "name": "JoCreate LLC",
+            "location": "San Francisco"
+          },
+          "services": [
+            "Research",
+            "Wireframing", 
+            "UI design",
+            "Development"
+          ],
+          "gallery": [
+            {
+              "src": "/assets/uploads/2023/02/Frame-1519.jpg",
+              "src2x": "/assets/uploads/2023/02/Frame-1519@2x.jpg",
+              "alt": "JoCreate Application Interface - Photo 2",
+              "width": 630,
+              "height": 650
+            },
+            {
+              "src": "/assets/uploads/2023/02/Frame-1520.jpg", 
+              "src2x": "/assets/uploads/2023/02/Frame-1520@2x.jpg",
+              "alt": "JoCreate Application Features - Photo 3",
+              "width": 630,
+              "height": 650
+            }
+          ]
+        },
+        "businessNeed": {
+          "SectionTitle": "Besoin client",
+          "clientRequestTitle": "Demande client",
+          "clientRequestDescription": "L'équipe JoCreate nous a demandé de développer un service élégant et facile à utiliser pour créer des collections NFT pour les versions desktop et mobile, avec une intégration dans les places de marché les plus populaires.",
+          "ourRoleTitle": "Notre rôle",
+          "ourRoleDescription": "Le rôle de notre équipe dans ce projet n'était pas seulement d'implémenter des solutions. L'objectif principal était d'identifier ces solutions grâce à une recherche UX et une analyse concurrentielle et commerciale, comme le choix des meilleures technologies, intégrations, et même la meilleure façon de synchroniser différentes plates-formes tierces avec notre service.",
+          "ctaText": "Obtenir un devis",
+          "ctaLink": "#contact-form",
+          "gallery": [
+            {
+              "src": "/assets/uploads/2023/02/Frame-1518.jpg",
+              "src2x": "/assets/uploads/2023/02/Frame-1518@2x.jpg",
+              "alt": "JoCreate Business Analysis - Photo 4",
+              "width": 630,
+              "height": 650
+            },
+            {
+              "src": "/assets/uploads/2023/02/Frame-1517.jpg",
+              "src2x": "/assets/uploads/2023/02/Frame-1517@2x.jpg",
+              "alt": "JoCreate Requirements Gathering - Photo 5",
+              "width": 630,
+              "height": 650
+            }
+          ]
+        },
+        "problem": {
+          "SectionTitle": "Projet",
+          "MainTitle": "Problèmes & solutions",
+          "ProblemsTitle": "Problème",
+          "SolutionsTitle": "Solution",
+          "Problems": [
+            {
+              "number": 1,
+              "text": "Les générateurs existants sur le marché ont une interface confuse et complexe avec des fonctionnalités limitées. Il n'est pas facile de comprendre comment télécharger votre contenu et générer des collections."
+            },
+            {
+              "number": 2,
+              "text": "En recherchant le marché, notre équipe a découvert qu'il n'existe aucun service qui permette de télécharger votre collection créée sur la marketplace pour la vendre immédiatement."
+            },
+            {
+              "number": 3,
+              "text": "La plupart des services concurrents n'ont qu'une version desktop et une adaptation mobile. Il existe également des applications séparées dans l'Apple Store et Google Play, mais elles n'ont pas de version desktop."
+            }
+          ],
+          "Solutions": [
+            {
+              "number": 1,
+              "text": "La création d'une collection a la forme d'un constructeur, où toutes les actions sont divisées en étapes logiques. À chaque étape, l'utilisateur comprend quoi faire, comment revenir à l'étape précédente et combien d'informations supplémentaires remplir."
+            },
+            {
+              "number": 2,
+              "text": "Sur notre plateforme, les utilisateurs peuvent synchroniser leurs comptes des marketplaces telles qu'Opensea, etc., et télécharger des collections entières et des NFT individuels directement sur la marketplace avec quelques clics."
+            },
+            {
+              "number": 3,
+              "text": "Notre service dispose à la fois d'applications web et mobiles. L'utilisateur peut commencer à créer une collection depuis la plateforme web, puis passer à l'application mobile et terminer la génération. C'est possible grâce à la sauvegarde automatique et à la synchronisation entre les versions desktop et mobile."
+            }
+          ]
+        },
+        "research": {
+          "SectionTitle": "Étapes de recherche",
+          "MainTitle": "Processus de recherche",
+          "MainDescription": "Nous avons analysé les meilleurs concurrents dans le domaine des crypto & NFT en utilisant une analyse SWOT. Nous avons mené une analyse commerciale pour trouver la meilleure façon d'implémenter les fonctionnalités correctement et apporter des bénéfices au produit.",
+          "imagePrincipal": {
+                "src": "../assets/uploads/2023/02/Images-scaled.jpg",
+                "src2x": "../assets/uploads/2023/02/Images%402x-scaled.jpg",
+                "alt": "JoCreate &#8211; Application for creating NFT collections - Website Development - Photo 6",
+                "width": 1300,
+                "height": 630
+              },
+          "Stages": [
+            "Analyse SWOT",
+            "Analyse commerciale",
+            "Cartographie",
+            "User Flow"
+          ],
+          "StagesData": [
+            {
+              "stageTitle": "Étape 1",
+              "title": "Analyse SWOT",
+              "description": "L'objectif principal de l'analyse SWOT pour cette plateforme était d'identifier les faiblesses des plateformes concurrentes et de les transformer en nos forces.",
+              "whatWeDidTitle": "Ce que nous avons fait",
+              "problems": [
+                "Interface confuse, pas d'onboarding pour les nouveaux utilisateurs",
+                "Fonctionnalités limitées, seuls les NFT et collections peuvent être créés",
+                "Il y a soit une plateforme web soit une application"
+              ],
+              "solutions": "Ainsi nous avons pu optimiser le constructeur et ajouter des fonctionnalités importantes et uniques telles que la synchronisation avec les marketplaces les plus populaires, le suivi des statistiques de vos collections et profils en un seul endroit, la génération sous forme de constructeur, la liaison de vos crypto-portefeuilles pour retirer des fonds des marketplaces, applications web et mobiles avec sauvegarde automatique.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Images-scaled.jpg",
+                "src2x": "/assets/uploads/2023/02/Images@2x-scaled.jpg",
+                "alt": "JoCreate SWOT Analysis - Photo 6",
+                "width": 1300,
+                "height": 630
+              }
+            },
+            {
+              "stageTitle": "Étape 2",
+              "title": "Analyse commerciale",
+              "description": "L'objectif principal de l'analyse commerciale pour cette plateforme était de décrire la fonctionnalité à travers les user stories et la documentation de chaque fonction, via :",
+              "analysisPoints": [
+                "Analyse du domaine",
+                "Identification des problèmes actuels et leurs solutions",
+                "Recommandations et conseils sur la manière d'implémenter la solution",
+                "Liste de fonctionnalités priorisée"
+              ],
+              "whatWeDidTitle": "Ce que nous avons fait",
+              "achievements": [
+                "Initialement, il a été décidé d'implémenter la fonctionnalité principale de la plateforme - le constructeur de collection. Pour le MVP, nous avons développé la génération d'images et d'objets 3D. Ensuite, nous avons ajouté les collections vidéo et audio.",
+                "Notre prochaine priorité était d'intégrer le service avec les marketplaces NFT. D'abord, nous avons synchronisé Opensea et Binance NFT. Ensuite, nous avons ajouté Magic Eden, Rarible, et Coinbase NFT.",
+                "La fonctionnalité de plus faible priorité était le thème sombre, qui est très demandé et essentiel dans le monde moderne. Du fait que notre équipe travaille toujours avec des composants et des styles au stade UI, cette fonctionnalité a été implémentée très rapidement et sans aucun problème."
+              ],
+              "image": {
+                "src": "/assets/uploads/2023/02/Images1-scaled.jpg",
+                "src2x": "/assets/uploads/2023/02/Images1@2x-scaled.jpg",
+                "alt": "JoCreate Business Analysis - Photo 7",
+                "width": 1300,
+                "height": 630
+              }
+            },
+            {
+              "stageTitle": "Étape 3",
+              "title": "Cartographie",
+              "description": "Basé sur les données de notre client et les résultats de notre recherche, nous avons créé une architecture informationnelle pour la plateforme.",
+              "details": "À travers une série d'itérations et de sessions d'exploration plus approfondies, nous avons clarifié la vision pour l'application, nous permettant de travailler sur les détails ensemble, y compris l'intégration des marketplaces NFT avec notre plateforme pour téléchargement instantané des collections générées, analytics synchronisés et statistiques sur les collections et NFT, le constructeur pour 4 types d'actifs. En conséquence, nous sommes arrivés à sept flux principaux que nous avons continué à développer : autorisation, onboarding, constructeur de collection, téléchargement d'une collection sur la marketplace, analyse et visualisation des statistiques, connexion des crypto-portefeuilles, et retrait de fonds.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Images2-scaled.jpg",
+                "src2x": "/assets/uploads/2023/02/Images2@2x-scaled.jpg",
+                "alt": "JoCreate Information Architecture - Photo 8",
+                "width": 1300,
+                "height": 630
+              }
+            },
+            {
+              "stageTitle": "Étape 4",
+              "title": "User flow",
+              "description": "Le user flow est une représentation visuelle de la séquence d'actions que l'utilisateur entreprend pour atteindre son objectif. Notre équipe a construit les futures étapes et a continué à travailler sur l'interface pour déterminer comment les utilisateurs atteignent l'objectif, en calculant les scénarios positifs et négatifs. Le diagramme ci-dessous montre à quel point le constructeur est facile à utiliser. Il y a des étapes claires, la collection peut être prévisualisée à n'importe quelle étape, et une fois créée, elle peut être téléchargée sur la marketplace en quelques clics.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Images3-scaled.jpg",
+                "src2x": "/assets/uploads/2023/02/Images3@2x-scaled.jpg",
+                "alt": "JoCreate User Flow - Photo 9",
+                "width": 1300,
+                "height": 630
+              }
+            }
+          ]
+        },
+        "design": {
+          "SectionTitle": "Étapes de design",
+          "MainTitle": "Design",
+          "MainDescription": "Transformer les résultats de l'analyse en une interface conviviale qui suit de bonnes règles d'utilisabilité, résout les besoins des utilisateurs et rend leur parcours aussi fluide que possible.",
+          "Stages": [
+            "Wireframe",
+            "Moodboard",
+            "Concept de Design",
+            "Design UI"
+          ],
+          "StagesData": [
+            {
+              "stageTitle": "Étape 1",
+              "title": "Wireframes",
+              "description": "Nous avons créé des wireframes et des prototypes cliquables comme partie intégrante du travail sur la structure du design, en testant et améliorant le parcours utilisateur avant de passer au design de maquette final.",
+              "details": "Cette étape nous a aidés à comprendre la logique et la structure du futur service. Nous avons créé et approuvé des prototypes pour chaque flux, en élaborant tous les états possibles pour chaque écran, en décidant de la taille et du nombre de conteneurs pour les illustrations, et en vérifiant l'utilisabilité et la clarté de chaque flux.",
+              "imageSplitter": {
+                "leftImage": {
+                  "src": "/assets/uploads/2023/02/UI-scaled.jpg",
+                  "src2x": "/assets/uploads/2023/02/UI%402x-scaled.jpg",
+                  "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 10",
+                  "width": 1300,
+                  "height": 630
+                },
+                "rightImage": {
+                  "src": "/assets/uploads/2023/02/Wireframes-scaled.jpg",
+                  "src2x": "/assets/uploads/2023/02/Wireframes%402x-scaled.jpg",
+                  "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 11",
+                  "width": 1300,
+                  "height": 630
+                }
+              }
+            },
+            {
+              "stageTitle": "Étape 2",
+              "title": "Moodboard & Concept de Design",
+              "description": "Pour déterminer la direction visuelle et le style de l'interface, notre équipe a créé un mood board et l'a coordonné avec le client. Cela nous a permis de choisir la solution la plus appropriée au plus stade précoce.",
+              "details": "Basé sur la recherche et la direction choisie dans le mood board, notre équipe a créé le premier concept visuel du site, qui a démontré le style choisi dans des conditions réelles avant de créer le design UI fini. Le mood board nous a aidés à décider que la plateforme devrait être dans des couleurs pastel claires, avec un accent sur la typographie et les accents de couleur muted, des icônes de ligne minimalistes et des illustrations."
+            },
+            {
+              "stageTitle": "Étape 3",
+              "title": "Design UI",
+              "description": "La couleur principale de l'interface a été choisie comme un beige pastel pour qu'elle ne distrait pas des informations importantes et ne surcharge pas le design, en plus des actifs N lumineux. Nous avons choisi une couleur spécifique pour chaque étape du processus de création d'une collection et de son téléchargement sur la marketplace, qui n'est associée qu'à cette étape. Le style général est sous forme de cartes, qui ressemble à un actif NFT.",
+              "gallery": [
+                {
+                  "src": "/assets/uploads/2023/02/11.jpg",
+                  "src2x": "/assets/uploads/2023/02/11@2x.jpg",
+                  "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 12",
+                  "width": 630,
+                  "height": 650
+                },
+                {
+                  "src": "/assets/uploads/2023/02/22.jpg",
+                  "src2x": "/assets/uploads/2023/02/22@2x.jpg",
+                  "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 13",
+                  "width": 630,
+                  "height": 650
+                }
+              ],
+              "finalImage": {
+                "src": "/assets/uploads/2023/02/Images4-scaled.jpg",
+                "src2x": "/assets/uploads/2023/02/Images4%402x-scaled.jpg",
+                "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 14",
+                "width": 1300,
+                "height": 630
+              }
+            }
+          ]
+        },
+        "project": {
+          "SectionTitle": "Projet",
+          "MainTitle": "Fonctionnalités que nous avons implémentées",
+          "Features": [
+            {
+              "title": "Onboarding",
+              "description": "Le processus de création et de vente de collections NFT est une nouvelle technologie et n'est pas immédiatement clair pour tout le monde. C'est pourquoi nous avons créé un onboarding agréable et compréhensible qui décrit le processus. De plus, l'utilisateur est guidé à travers l'application avec des indices et des tutoriels, améliorant l'expérience utilisateur et aidant à atteindre les objectifs dans l'interface plus rapidement.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Frame-75853075.jpg",
+                "src2x": "/assets/uploads/2023/02/Frame-75853075@2x.jpg",
+                "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 15",
+                "width": 600,
+                "height": 630
+              }
+            },
+            {
+              "title": "Analytics synchronisés",
+              "description": "En synchronisant avec différentes marketplaces, les utilisateurs peuvent suivre toutes les statistiques de leurs collections, actifs NFT et profil via notre plateforme. Dans l'onglet Dashboard, ils peuvent suivre leurs transactions NFT et suivre la conversion pour chaque collection (vues, achetées, favorisées, collectées). Et avec un abonnement premium, ils peuvent même comparer les analytics de différentes marketplaces pour la même collection / NFT.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Frame-7585307.jpg",
+                "src2x": "/assets/uploads/2023/02/Frame-7585307@2x.jpg",
+                "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 16",
+                "width": 600,
+                "height": 630
+              }
+            },
+            {
+              "title": "Ajouter n'importe quelles couches",
+              "description": "Les utilisateurs peuvent ajouter jusqu'à 30 couches différentes à une collection. Ils peuvent choisir parmi les couches les plus populaires, divisées en 4 catégories (personnages, vie végétale, objets inanimés, abstraction), ou ajouter les leurs (s'ils n'en ont pas trouvé dans la liste). Lors de l'ajout de votre couche, vous pouvez choisir n'importe quelle icône disponible sur la plateforme ou télécharger la vôtre.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Frame-758530.jpg",
+                "src2x": "/assets/uploads/2023/02/Frame-758530@2x.jpg",
+                "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 17",
+                "width": 600,
+                "height": 630
+              }
+            },
+            {
+              "title": "Définir les propriétés",
+              "description": "Dans l'étape finale de création d'une collection, l'utilisateur doit spécifier les propriétés pour chaque couche ajoutée. À ce stade, il peut supprimer la couche inutile s'il change d'avis concernant son ajout à la collection. L'ordre des couches peut être facilement modifié en faisant glisser et en échangeant les couches souhaitées. Lors de l'ajout d'images à une couche, vous devez définir la rareté pour chaque objet ajouté et pour toute la couche.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Frame-7585307588.jpg",
+                "src2x": "/assets/uploads/2023/02/Frame-7585307588@2x.jpg",
+                "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 18",
+                "width": 600,
+                "height": 630
+              }
+            },
+            {
+              "title": "Définir le prix",
+              "description": "Étant donné que le téléchargement de la collection est synchronisé avec les marketplaces NFT, lors de la définition du prix des objets NFT, l'utilisateur peut choisir parmi les blockchains et tokens de paiement disponibles (par exemple, Opensea n'a que 2 blockchains disponibles - Ethereum et Polygon). De plus, à ce stade, vous pouvez supprimer le NFT de la collection si vous changez d'avis concernant son téléchargement, vous n'avez donc pas à retourner à la première étape (sélection NFT).",
+              "image": {
+                "src": "/assets/uploads/2023/02/Frame-75853075888.jpg",
+                "src2x": "/assets/uploads/2023/02/Frame-75853075888@2x.jpg",
+                "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 19",
+                "width": 600,
+                "height": 630
+              }
+            },
+            {
+              "title": "Paramètres NFT avancés",
+              "description": "Le prix pour chaque NFT est défini séparément. Vous pouvez choisir un prix fixe ou une enchère chronométrée. Les paramètres changent en fonction de l'option sélectionnée. L'utilisateur peut également définir une durée fixe, réserver le NFT pour un acheteur spécifique et définir une commission séparée pour chaque actif.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Frame-758530758.jpg",
+                "src2x": "/assets/uploads/2023/02/Frame-758530758@2x.jpg",
+                "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 20",
+                "width": 600,
+                "height": 630
+              }
+            }
+          ]
+        },
+        "functional": {
+          "SectionTitle": "Fonctionnalités",
+          "MainTitle": "Le travail continue sur de nouvelles fonctionnalités",
+          "Features": [
+            {
+              "title": "Types de contenu additionnels",
+              "description": "Notre équipe travaille actuellement sur l'ajout de 2 nouveaux types de contenu - mondes virtuels et noms de domaine - pour attirer encore plus de personnes talentueuses et d'entreprises sur notre plateforme."
+            },
+            {
+              "title": "Marketplace dédiée",
+              "description": "Nous prévoyons de développer notre marketplace afin que les utilisateurs puissent vendre des collections et des NFT directement sur notre plateforme via 3 blockchains (Ethereum, Bitcoin et Polygon)."
+            },
+            {
+              "title": "La collection NFT de la plateforme",
+              "description": "Notre équipe de design crée la collection de NFTs de la plateforme - des héros 2D animés qui seront vendus sur notre plateforme et des services tiers."
+            }
+          ],
+          "Gallery": [
+            {
+              "src": "/assets/uploads/2023/02/1.jpg",
+              "src2x": "/assets/uploads/2023/02/1@2x.jpg",
+              "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 21",
+              "width": 630,
+              "height": 650
+            },
+            {
+              "src": "/assets/uploads/2023/02/2.jpg",
+              "src2x": "/assets/uploads/2023/02/2@2x.jpg",
+              "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 22",
+              "width": 630,
+              "height": 650
+            }
+          ]
+        },
+        "result": {
+          "SectionTitle": "Conclusion",
+          "MainTitle": "Résultats",
+          "Description": "L'équipe a créé un design réfléchi et simple qui a aidé le client à se faire un nom sur le marché des crypto & NFT.",
+          "Achievements": [
+            "La plateforme a gagné plus de 40 000 utilisateurs en moins d'un semestre.",
+            "56% des utilisateurs interrogés disent que le processus de création d'une collection sur notre plateforme est beaucoup plus clair et plus facile que sur d'autres plateformes.",
+            "L'entreprise a déjà reçu plus de 500K$ d'investissement grâce à sa reconnaissance et à sa croissance rapide sur le marché.",
+            "Les clients et notre équipe reçoivent beaucoup de retours positifs de la part du public sur le style visuel et la fonctionnalité de la plateforme."
+          ],
+          "Conclusion": "Nous sommes très reconnaissants à JoCreate pour leur confiance en nos services, et notre équipe est heureuse de faire partie intégrante d'un produit aussi ambitieux !",
+          "Button": {
+            "text": "Obtenir un devis",
+            "href": "#contact-form"
+          },
+          "Statistics": [
+            {
+              "value": "10K",
+              "description": "Au moins des personnes se sont inscrites à un abonnement premium le mois dernier.",
+              "width": "w60",
+              "style": "light"
+            },
+            {
+              "value": "40K", 
+              "description": "JoCreate a atteint 40 000 utilisateurs de la plateforme !",
+              "width": "w40",
+              "style": ""
+            },
+            {
+              "value": "500K",
+              "description": "L'investissement reçu après la présentation du MVP.",
+              "width": "w40", 
+              "style": ""
+            },
+            {
+              "value": "653",
+              "description": "Les collections créées sur la plateforme vont des images aux objets 3D.",
+              "width": "w60",
+              "style": "light"
+            }
+          ]
+        }
+      },
+      "en": {
+        "id" : 1,
+        "date": "2024-01-15",
+        "author": "KKsmartcom Team",
+        "activeSection": ["ArticleHero","ArticleOverview","ArticleBussinesNeed","ArticleProblem","ArticleResearch","ArticleDesign","ArticleProject","ArticleFunctional","ArticleResult"],
+        "cards": [
+          {
+            "url": "/articlespages?id=1",
+            "title": "JoCreate – NFT Collection Creation App",
+            "images": {
+              "x1": "/assets/uploads/2023/02/0@2x-scaled.jpg",
+              "x2": "/assets/uploads/2023/02/0@2x-scaled.jpg", 
+              "x3": "/assets/uploads/2023/02/0@2x-scaled.jpg"
+            },
+            "tags": [
+              { "name": "Crypto & NFT", "url": "/projects?cat=crypto-nft" },
+              { "name": "Web app", "url": "/projects?tag=web-app" }
+            ],
+            "description": "Complete application for creating, managing and selling NFT collections with integrated exchange platform."
+          }
+        ],
+        "Header":{},
+        "Hero": {
+          "title": "JoCreate &#8211; Application for creating NFT collections",
+          "description": "We developed a comprehensive NFT creation platform that revolutionizes how users interact with digital collectibles.",
+          "image": "/assets/uploads/2023/02/0@2x-scaled.jpg",
+          "imageAlt": "JoCreate NFT Application Interface",
+          "tags": [
+            {
+              "label": "Crypto & NFT",
+              "href": "/projects?cat=crypto-nft"
+            },
+            {
+              "label": "Web app",
+              "href": "/projects?tag=web-app"
+            },
+            {
+              "label": "Website",
+              "href": "/projects?tag=website"
+            },
+            {
+              "label": "Mobile app",
+              "href": "/projects?tag=mobile-app"
+            }
+          ]
+        },
+        "overview": {
+          "SectionTitle" : "Overview",
+          "title": "A service that allows you to create NFT collections in a few clicks",
+          "description": "The service allows you to model a set of elements and generate a collection of NFTs based on them. Its functionality is aimed at a young audience - this application's backgrounds, filters, and visual effects are extremely relevant and modern. With this application, users can also sell their artwork: once it's finished, it can be exported to the popular NFT marketplaces.",
+          "client": {
+            "name": "JoCreate LLC",
+            "location": "San Francisco"
+          },
+          "services": [
+            "Research",
+            "Wireframing", 
+            "UI design",
+            "Development"
+          ],
+          "gallery": [
+            {
+              "src": "/assets/uploads/2023/02/Frame-1519.jpg",
+              "src2x": "/assets/uploads/2023/02/Frame-1519@2x.jpg",
+              "alt": "JoCreate Application Interface - Photo 2",
+              "width": 630,
+              "height": 650
+            },
+            {
+              "src": "/assets/uploads/2023/02/Frame-1520.jpg", 
+              "src2x": "/assets/uploads/2023/02/Frame-1520@2x.jpg",
+              "alt": "JoCreate Application Features - Photo 3",
+              "width": 630,
+              "height": 650
+            }
+          ]
+        },
+        "businessNeed": {
+          "SectionTitle": "Business need",
+          "clientRequestTitle": "Client request",
+          "clientRequestDescription": "The JoCreate team asked us to develop a stylish and easy-to-use service for creating NFT collections for desktop and mobile versions, with integration into the most popular marketplaces.",
+          "ourRoleTitle": "Our role",
+          "ourRoleDescription": "The role of our team in this project was not only to implement solutions. The main goal was to identify these solutions through UX research and competitive and business analysis, such as choosing the best technologies, integrations, and even the best way to synchronize different third-party platforms with our service.",
+          "ctaText": "Get an estimate",
+          "ctaLink": "#contact-form",
+          "gallery": [
+            {
+              "src": "/assets/uploads/2023/02/Frame-1518.jpg",
+              "src2x": "/assets/uploads/2023/02/Frame-1518@2x.jpg",
+              "alt": "JoCreate Business Analysis - Photo 4",
+              "width": 630,
+              "height": 650
+            },
+            {
+              "src": "/assets/uploads/2023/02/Frame-1517.jpg",
+              "src2x": "/assets/uploads/2023/02/Frame-1517@2x.jpg",
+              "alt": "JoCreate Requirements Gathering - Photo 5",
+              "width": 630,
+              "height": 650
+            }
+          ]
+        },
+        "problem": {
+          "SectionTitle": "Project",
+          "MainTitle": "Problems & solutions",
+          "ProblemsTitle": "Problem",
+          "SolutionsTitle": "Solution",
+          "Problems": [
+            {
+              "number": 1,
+              "text": "The existing generators on the market have a confusing and complex interface with limited functionality. It isn't easy to figure out how to upload your content and generate collections."
+            },
+            {
+              "number": 2,
+              "text": "While researching the market, our team discovered that there is no service that allows you to upload your created collection to the marketplace for sale immediately."
+            },
+            {
+              "number": 3,
+              "text": "Most competing services only have a desktop version and a mobile adaptation. There are also separate applications in the Apple Store and Google Play, but they don't have a desktop version."
+            }
+          ],
+          "Solutions": [
+            {
+              "number": 1,
+              "text": "The creation of a collection has the form of a constructor, where all actions are divided into logical steps. At each stage, the user understands what to do, how to return to the previous step, and how much more information to fill in."
+            },
+            {
+              "number": 2,
+              "text": "On our platform, users can synchronize their accounts from marketplaces such as Opensea, etc., and upload entire collections and individual NFTs directly to the marketplace with just a few clicks."
+            },
+            {
+              "number": 3,
+              "text": "Our service has both web and mobile applications. The user can start creating a collection from the web platform, then switch to the mobile application and finish the generation. It is possible thanks to automatic saving and synchronization between the desktop and mobile versions."
+            }
+          ]
+        },
+        "research": {
+          "SectionTitle": "Research Stages",
+          "MainTitle": "Research Process",
+          "MainDescription": "We analyzed the best competitors in the crypto & NFT domain using a SWOT analysis. We conducted a business analysis to find the best way to implement features correctly and bring benefits to the product.",
+          "imagePrincipal": {
+                "src": "../assets/uploads/2023/02/Images-scaled.jpg",
+                "src2x": "../assets/uploads/2023/02/Images%402x-scaled.jpg",
+                "alt": "JoCreate &#8211; Application for creating NFT collections - Website Development - Photo 6",
+                "width": 1300,
+                "height": 630
+              },
+          "Stages": [
+            "SWOT Analysis",
+            "Business Analysis",
+            "Mapping",
+            "User Flow"
+          ],
+          "StagesData": [
+            {
+              "stageTitle": "Step 1",
+              "title": "SWOT Analysis",
+              "description": "The main goal of the SWOT analysis for this platform was to identify the weaknesses of competing platforms and turn them into our strengths. ",
+              "whatWeDidTitle": "What We Did",
+              "problems": [
+                "Confusing interface, no onboarding for new users",
+                "Limited features, only NFTs and collections can be created",
+                "There is either a web platform or an app"
+              ],
+              "solutions": "Thus, we were able to optimize the builder and add important and unique features such as synchronization with the most popular marketplaces, tracking statistics of your collections and profiles in one place, generation in the form of a builder, linking your crypto-wallets to withdraw funds from marketplaces, web and mobile applications with automatic saving.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Images-scaled.jpg",
+                "src2x": "/assets/uploads/2023/02/Images@2x-scaled.jpg",
+                "alt": "JoCreate SWOT Analysis - Photo 6",
+                "width": 1300,
+                "height": 630
+              }
+            },
+            {
+               "stageTitle": "Step 2",
+               "title": "Business Analysis",
+               "description": "The main goal of the business analysis for this platform was to describe the functionality through user stories and documentation for each function, via:",
+               "analysisPoints": [
+                 "Domain analysis",
+                 "Identification of current problems and their solutions",
+                 "Recommendations and advice on how to implement the solution",
+                 "Prioritized feature list"
+               ],
+               "whatWeDidTitle": "What We Did",
+               "achievements": [
+                 "Initially, it was decided to implement the main feature of the platform - the collection builder. For the MVP, we developed the generation of images and 3D objects. Then, we added video and audio collections.",
+                 "Our next priority was to integrate the service with NFT marketplaces. First, we synchronized Opensea and Binance NFT. Then, we added Magic Eden, Rarible, and Coinbase NFT.",
+                 "The lowest priority feature was the dark theme, which is highly requested and essential in the modern world. Due to our team always working with components and styles at the UI stage, this feature was implemented very quickly and without any problems."
+               ],
+               "image": {
+                 "src": "/assets/uploads/2023/02/Images1-scaled.jpg",
+                 "src2x": "/assets/uploads/2023/02/Images1@2x-scaled.jpg",
+                 "alt": "JoCreate Business Analysis - Photo 7",
+                 "width": 1300,
+                 "height": 630
+               }
+            },
+            {
+              "stageTitle": "Step 3",
+              "title": "Mapping",
+              "description": "Based on our client's data and the results of our research, we created an information architecture for the platform. ",
+              "details": "Through a series of iterations and more in-depth exploration sessions, we clarified the vision for the application, allowing us to work on the details together, including the integration of NFT marketplaces with our platform for instant download of generated collections, synchronized analytics and statistics on collections and NFTs, the builder for 4 types of assets. As a result, we arrived at seven main flows that we continued to develop: authorization, onboarding, collection builder, downloading a collection to the marketplace, analysis and visualization of statistics, connecting crypto-wallets, and withdrawing funds.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Images2-scaled.jpg",
+                "src2x": "/assets/uploads/2023/02/Images2@2x-scaled.jpg",
+                "alt": "JoCreate Information Architecture - Photo 8",
+                "width": 1300,
+                "height": 630
+              }
+            },
+            {
+              "stageTitle": "Step 4",
+              "title": "User Flow",
+              "description": "The user flow is a visual representation of the sequence of actions the user takes to achieve their goal. Our team built the future steps and continued to work on the interface to determine how users achieve the goal, calculating positive and negative scenarios. The diagram below shows how easy the builder is to use. There are clear steps, the collection can be previewed at any stage, and once created, it can be uploaded to the marketplace in a few clicks. ",
+              "image": {
+                "src": "/assets/uploads/2023/02/Images3-scaled.jpg",
+                "src2x": "/assets/uploads/2023/02/Images3@2x-scaled.jpg",
+                "alt": "JoCreate User Flow - Photo 9",
+                "width": 1300,
+                "height": 630
+              }
+            }
+          ]
+        },
+        "design": {
+          "SectionTitle": "Design stages",
+          "MainTitle": "Design",
+          "MainDescription": "Turn the analysis results into a user-friendly interface that follows good usability rules, solves users' needs, and makes their journey as smooth as possible.",
+          "Stages": [
+            "Wireframe",
+            "Moodboard",
+            "Design Concept",
+            "UI Design"
+          ],
+          "StagesData": [
+            {
+              "stageTitle": "Stage 1",
+              "title": "Wireframes",
+              "description": "We created wireframes and clickable prototypes as an integral part of working on the design structure, testing and improving the user journey before moving on to the final mockup design.",
+              "details": "This stage helped us understand the logic and structure of the future service. We created and approved prototypes for each flow, working out all possible states for each screen, deciding on the size and number of containers for illustrations, and checking the usability and clarity of each flow.",
+              "imageSplitter": {
+                "leftImage": {
+                  "src": "/assets/uploads/2023/02/UI-scaled.jpg",
+                  "src2x": "/assets/uploads/2023/02/UI%402x-scaled.jpg",
+                  "alt": "JoCreate - Application for creating NFT collections - Website Development - Photo 10",
+                  "width": 1300,
+                  "height": 630
+                },
+                "rightImage": {
+                  "src": "/assets/uploads/2023/02/Wireframes-scaled.jpg",
+                  "src2x": "/assets/uploads/2023/02/Wireframes%402x-scaled.jpg",
+                  "alt": "JoCreate - Application for creating NFT collections - Website Development - Photo 11",
+                  "width": 1300,
+                  "height": 630
+                }
+              }
+            },
+            {
+              "stageTitle": "Stage 2",
+              "title": "Moodboard & Design Concept",
+              "description": "To determine the visual direction and style of the interface, our team created a mood board and coordinated it with the client. It allowed us to choose the most appropriate solution at the earliest stage.",
+              "details": "Based on the research and the direction chosen in the mood board, our team created the first visual concept of the site, which demonstrated the chosen style in real conditions before creating the finished UI design. The mood board helped us decide that the platform should be in light pastel colors, with an emphasis on typography and muted color accents, minimalist line icons, and illustrations."
+            },
+            {
+              "stageTitle": "Stage 3",
+              "title": "UI Design",
+              "description": "The main color for the interface was chosen to be a pastel beige so that it doesn't distract from important information and doesn't overload the design, in addition to the bright N assets. We chose a specific color for each step in the process of creating a collection and uploading it to the marketplace, which is associated only with that step. The general style is in the form of cards, which resembles an NFT asset.",
+              "gallery": [
+                {
+                  "src": "/assets/uploads/2023/02/11.jpg",
+                  "src2x": "/assets/uploads/2023/02/11@2x.jpg",
+                  "alt": "JoCreate - Application for creating NFT collections - Website Development - Photo 12",
+                  "width": 630,
+                  "height": 650
+                },
+                {
+                  "src": "/assets/uploads/2023/02/22.jpg",
+                  "src2x": "/assets/uploads/2023/02/22@2x.jpg",
+                  "alt": "JoCreate - Application for creating NFT collections - Website Development - Photo 13",
+                  "width": 630,
+                  "height": 650
+                }
+              ],
+              "finalImage": {
+                "src": "/assets/uploads/2023/02/Images4-scaled.jpg",
+                "src2x": "/assets/uploads/2023/02/Images4%402x-scaled.jpg",
+                "alt": "JoCreate - Application for creating NFT collections - Website Development - Photo 14",
+                "width": 1300,
+                "height": 630
+              }
+            }
+          ]
+        },
+        "project": {
+          "SectionTitle": "Project",
+          "MainTitle": "Features we implemented",
+          "Features": [
+            {
+              "title": "Onboarding",
+              "description": "The process of creating and selling NFT collections is a new technology and not immediately clear to everyone. Therefore, we created a nice and understandable onboarding that describes the process. In addition, the user is guided through the application with hints and tutorials, improving the user experience and helping to achieve goals in the interface faster.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Frame-75853075.jpg",
+                "src2x": "/assets/uploads/2023/02/Frame-75853075@2x.jpg",
+                "alt": "JoCreate - Application for creating NFT collections - Website Development - Photo 15",
+                "width": 600,
+                "height": 630
+              }
+            },
+            {
+              "title": "Synchronized analytics",
+              "description": "By synchronizing with different marketplaces, users can track all the statistics for their collections, NFT assets, and profile through our platform. On the Dashboard tab, they can follow their NFT transactions and track the conversion for each collection (viewed, purchased, favorited, collected). And with a premium subscription, they can even compare analytics from different marketplaces for the same collection / NFT.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Frame-7585307.jpg",
+                "src2x": "/assets/uploads/2023/02/Frame-7585307@2x.jpg",
+                "alt": "JoCreate - Application for creating NFT collections - Website Development - Photo 16",
+                "width": 600,
+                "height": 630
+              }
+            },
+            {
+              "title": "Add any layers",
+              "description": "Users can add up to 30 different layers to a collection. They can choose from the most popular layers, divided into 4 categories (characters, plant life, inanimate objects, abstraction), or add their own (if they did not find one in the list). When adding your layer, you can choose any icon available on the platform or upload your own.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Frame-758530.jpg",
+                "src2x": "/assets/uploads/2023/02/Frame-758530@2x.jpg",
+                "alt": "JoCreate - Application for creating NFT collections - Website Development - Photo 17",
+                "width": 600,
+                "height": 630
+              }
+            },
+            {
+              "title": "Setting Properties",
+              "description": "In the final step of creating a collection, the user must specify properties for each layer added. At this stage, he can remove the unnecessary layer if he changes his mind about adding it to the collection. The order of layers can be easily changed by dragging and swapping the desired layers. When adding images to a layer, you need to set the rarity for each added object and the whole layer.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Frame-7585307588.jpg",
+                "src2x": "/assets/uploads/2023/02/Frame-7585307588@2x.jpg",
+                "alt": "JoCreate - Application for creating NFT collections - Website Development - Photo 18",
+                "width": 600,
+                "height": 630
+              }
+            },
+            {
+              "title": "Setting the Price",
+              "description": "Since the collection upload is synchronized with the NFT marketplaces, when setting the price for NFT objects, the user can choose from the available blockchains and payment tokens (for example, Opensea has only 2 available blockchains - Ethereum and Polygon). Also, at this stage, you can remove the NFT from the collection if you change your mind about uploading it, so you don't have to return to the first step (NFT selection).",
+              "image": {
+                "src": "/assets/uploads/2023/02/Frame-75853075888.jpg",
+                "src2x": "/assets/uploads/2023/02/Frame-75853075888@2x.jpg",
+                "alt": "JoCreate - Application for creating NFT collections - Website Development - Photo 19",
+                "width": 600,
+                "height": 630
+              }
+            },
+            {
+              "title": "Advanced NFT Settings",
+              "description": "The price for each NFT is set separately. You can choose a fixed price or a timed auction. The settings change depending on the option selected. The user can also set a fixed duration, reserve the NFT for a specific buyer, and set a separate commission for each asset.",
+              "image": {
+                "src": "/assets/uploads/2023/02/Frame-758530758.jpg",
+                "src2x": "/assets/uploads/2023/02/Frame-758530758@2x.jpg",
+                "alt": "JoCreate - Application for creating NFT collections - Website Development - Photo 20",
+                "width": 600,
+                "height": 630
+              }
+            }
+          ]
+        },
+        "functional": {
+          "SectionTitle": "Functional",
+          "MainTitle": "Work continues on new features",
+          "Features": [
+            {
+              "title": "Additional content types",
+              "description": "Our team is currently working on adding 2 new content types - virtual worlds and domain names - to attract even more talented people and companies to our platform."
+            },
+            {
+              "title": "Dedicated Marketplace",
+              "description": "We plan to develop our marketplace so users can sell collections and NFTs directly on our platform via 3 blockchains (Ethereum, Bitcoin, and Polygon)."
+            },
+            {
+              "title": "The platform's NFT collection",
+              "description": "Our design team is creating the platform's collection of NFTs - animated 2D heroes that will be sold on our platform and third-party services."
+            }
+          ],
+          "Gallery": [
+            {
+              "src": "/assets/uploads/2023/02/1.jpg",
+              "src2x": "/assets/uploads/2023/02/1@2x.jpg",
+              "alt": "JoCreate - Application for creating NFT collections - Website Development - Photo 21",
+              "width": 630,
+              "height": 650
+            },
+            {
+              "src": "/assets/uploads/2023/02/2.jpg",
+              "src2x": "/assets/uploads/2023/02/2@2x.jpg",
+              "alt": "JoCreate - Application for creating NFT collections - Website Development - Photo 22",
+              "width": 630,
+              "height": 650
+            }
+          ]
+        },
+        "result": {
+          "SectionTitle": "Conclusion",
+          "MainTitle": "Results",
+          "Description": "The team created a thoughtful, straightforward design that helped the client make a name for itself in the crypto & NFT market.",
+          "Achievements": [
+            "The platform gained over 40,000 users in less than half a year.",
+            "56% of surveyed users say that the process of creating a collection on our platform is much clearer and easier than on other platforms.",
+            "The company has already received more than $500K in investment due to its recognition and rapid growth in the market.",
+            "Customers and our team are getting a lot of positive feedback from the audience about the visual style and functionality of the platform."
+          ],
+          "Conclusion": "We are very grateful to JoCreate for their confidence in our services, and our team is happy to be an important part of such an ambitious product!",
+          "Button": {
+            "text": "Get an estimate",
+            "href": "#contact-form"
+          },
+          "Statistics": [
+            {
+              "value": "10K",
+              "description": "At least people have signed up for a premium subscription in the last month.",
+              "width": "w60",
+              "style": "light"
+            },
+            {
+              "value": "40K", 
+              "description": "JoCreate has reached 40,000 platform users!",
+              "width": "w40",
+              "style": ""
+            },
+            {
+              "value": "500K",
+              "description": "The investment received after MVP presentation.",
+              "width": "w40", 
+              "style": ""
+            },
+            {
+              "value": "653",
+              "description": "Collections created on the platform range from images to 3D objects.",
+              "width": "w60",
+              "style": "light"
+            }
+          ]
+        }
+      }
+    }}
+
+

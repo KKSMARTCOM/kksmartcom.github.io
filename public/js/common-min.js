@@ -33,7 +33,7 @@ $(".case-nav-menu").length > 0) {
         }) 
     } 
 function toggle_tags_dropdown(e) {
-         e.prev().find(".tags-list").fadeOut(200), e.next().find(".tags-list").fadeOut(200), e.prev().find(".clicked").removeClass("clicked"), e.next().find(".clicked").removeClass("clicked"), e.find(".tags-list").fadeToggle(200) 
+         e.prev().find(".tags-list2").fadeOut(200), e.next().find(".tags-list2").fadeOut(200), e.prev().find(".clicked").removeClass("clicked"), e.next().find(".clicked").removeClass("clicked"), e.find(".tags-list2").fadeToggle(200) 
         }
 
 function load_funcs() {
@@ -55,7 +55,7 @@ $(".case-nav-menu li a").click(function (e) {
         return $(this).toggleClass("clicked"), me = $(this).parent(), $(window).width() < 1111 && toggle_tags_dropdown(me), e.stopPropagation(), !1 
     }), 
     $(document).on("click", "body", function (e) { 
-        "mob-select-wrap" !== e.target.className && $(window).width() < 1111 && ($(".tags-list").fadeOut(200), 
+        "mob-select-wrap" !== e.target.className && $(window).width() < 1111 && ($(".tags-list2").fadeOut(200), 
         $(".clicked").removeClass("clicked")) }); const commonFN = setTimeout(() => { 
             var e, t = $("#cursor"); $("a").on("click touchend", function (e) { 
                 $(this).attr("href") 
@@ -194,8 +194,8 @@ $(".case-nav-menu li a").click(function (e) {
                                                     $(".video-wrap").hover(function () { t.addClass("videocur") }, function () { t.removeClass("videocur") }), 
                                                     $(".team-wrap, .reviewsSlider").hover(function () { t.addClass("teamcur") }, function () { t.removeClass("teamcur") }), 
                                                     $(".header a, .footer a:not(.line-animation)").hover(function () { t.addClass("bigcur") }, function () { t.removeClass("bigcur") }), 
-                                                    $(document).on("mouseover", "button, .main-btn, .circle-btn, .socs a, .serv-wrap span, form input, form textarea, .inp-wrap span, .tags-list .tag:not(.empty),.clutch-widget", function () { t.addClass("none") }), 
-                                                    $(document).on("mouseleave", "button, .main-btn, .circle-btn, .socs a, .serv-wrap span, form input, form textarea, .inp-wrap span, .tags-list .tag:not(.empty),.clutch-widget", function () { t.removeClass("none") }), 
+                                                    $(document).on("mouseover", "button, .main-btn, .circle-btn, .socs a, .serv-wrap span, form input, form textarea, .inp-wrap span, .tags-list2 .tag:not(.empty),.clutch-widget", function () { t.addClass("none") }), 
+                                                    $(document).on("mouseleave", "button, .main-btn, .circle-btn, .socs a, .serv-wrap span, form input, form textarea, .inp-wrap span, .tags-list2 .tag:not(.empty),.clutch-widget", function () { t.removeClass("none") }), 
                                                     $("body").hover(function () { t.removeClass("notvis") }, function () { t.addClass("notvis") }), 
                                                     $(".serv-wrap input").click(function () { prc = 0, $(".serv-wrap input:checked").each(function () { price = parseFloat($(this).attr("data-price")), prc += price }), 
                                                             $("#price").val(prc) }), input = document.getElementById("attach"), $("#attach").change(function () { if ($(".file-err").hide(), $("#attach")[0].files.length < 6) { for (var e = 0; e < $(this)[0].files.length; e++)if ($(this)[0].files[e].size > 5e6) $(".fe2").slideDown(); else { $("#inner").append('<div><input style="display:none;" type="file" id="file-' + e + '" name="filez[]"><b>' + $(this)[0].files[e].name + '</b> <span data-index="' + e + '">✕</span></div>'); 

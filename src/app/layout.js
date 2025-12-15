@@ -24,9 +24,10 @@ const RootComponent = ({ children }) => {
   // while the page itself can be a server component.
   // A cleaner approach in a real app might involve restructuring where the provider is placed.
   return (
-    <html lang="fr"> {/* Default lang, will be updated by client-side logic if needed */}
+    <html lang="fr">{/* Default lang, will be updated by client-side logic if needed */}
       <head>
         <HeadTags />
+        <link rel="stylesheet" href="/css/owl.carousel.css" />
         <Script id="gtm-consent-default" strategy="beforeInteractive">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
@@ -46,7 +47,7 @@ const RootComponent = ({ children }) => {
           })(window,document,'script','dataLayer','GTM-NG5S546');
         `}</Script>
       </head>
-      <body className={``}>
+      <body>
         {/* Google Tag Manager noscript */}
         <noscript>
           <iframe rel="preconnect" src="https://www.googletagmanager.com/ns.html?id=GTM-NG5S546" height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe>
@@ -79,8 +80,9 @@ const RootComponent = ({ children }) => {
         <Script src="/js/jquery.min.js" strategy="beforeInteractive" />
         {/* Ajout: charger jQuery Validation avant les scripts qui l'utilisent */}
         <Script src="/js/jquery.validate.min.js" strategy="beforeInteractive" id="jquery-validate" />
-        <Script src="/js/common-min.js" strategy="afterInteractive" id="main-min-scripts-js" />
+        <Script src="/js/owl.carousel.min.js" strategy="afterInteractive" />
         <Script src="/js/swiper-bundle.min.js" strategy="afterInteractive" />
+        <Script src="/js/common-min.js" strategy="afterInteractive" id="main-min-scripts-js" />
         <Script src="/js/old-js-code1.js" strategy="afterInteractive" />
         <Script src="/js/old-js-code2.js" strategy="afterInteractive" />
         <Script src="/js/old-js-code3.js" strategy="afterInteractive" />

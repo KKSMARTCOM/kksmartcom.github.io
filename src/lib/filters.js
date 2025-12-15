@@ -1,99 +1,51 @@
-// Données des projets
-export const projects = [
-  {
-    id: 1,
-    url: "/projets/site-ecommerce",
-    title: "Site E-commerce",
-    images: {
-      x1: "/assets/projets/projet1.jpeg",
-      x2: "/assets/projets/projet1.jpeg",
-      x3: "/assets/projets/projet1.jpeg"
-    },
-    tags: [
-      { name: "Santé", url: "/tag/santé" },
-      { name: "E-commerce", url: "/tag/ecommerce" }
-    ],
-    description: "Une plateforme e-commerce complète avec paiement en ligne."
-  },
-  {
-    id: 2,
-    url: "/projets/application-mobile",
-    title: "Application Mobile",
-    images: {
-      x1: "/assets/projets/projet2.png",
-      x2: "/assets/projets/projet2.png",
-      x3: "/assets/projets/projet2.png"
-    },
-    tags: [
-      { name: "Santé", url: "/tag/mobile" },
-      { name: "iOS", url: "/tag/ios" },
-      { name: "Android", url: "/tag/android" }
-    ],
-    description: "Application mobile multiplateforme pour la gestion de tâches."
-  },
-  {
-    id: 3,
-    url: "/projets/design-interface",
-    title: "Design d'Interface",
-    images: {
-      x1: "/assets/projets/projet3.jpeg",
-      x2: "/assets/projets/projet3.jpeg",
-      x3: "/assets/projets/projet3.jpeg"
-    },
-    tags: [
-      { name: "UI/UX", url: "/tag/ui-ux" },
-      { name: "Design", url: "/tag/design" }
-    ],
-    description: "Conception d'interface utilisateur moderne et intuitive."
-  },
-  {
-    id: 4,
-    url: "/projets/saas-entreprise",
-    title: "Solution SaaS",
-    images: {
-      x1: "/assets/projets/projet4.jpeg",
-      x2: "/assets/projets/projet4.jpeg",
-      x3: "/assets/projets/projet4.jpeg"
-    },
-    tags: [
-      { name: "SaaS", url: "/tag/saas" },
-      { name: "Cloud", url: "/tag/cloud" }
-    ],
-    description: "Solution logicielle en tant que service pour les entreprises."
-  }
+import { getAllCards } from './dataManager';
+
+// Tags disponibles pour le filtrage
+export const AVAILABLE_TAGS = [
+  { name: "Crypto & NFT", url: "/projects?cat=crypto-nft" },
+  { name: "Web app", url: "/projects?tag=web-app" },
+  { name: "Mobile", url: "/projects?tag=mobile" },
+  { name: "SaaS", url: "/projects?tag=saas" },
+  { name: "UI/UX", url: "/projects?tag=ui-ux" },
+  { name: "E-commerce", url: "/projects?tag=ecommerce" },
+  { name: "Cloud", url: "/projects?tag=cloud" },
+  { name: "iOS", url: "/projects?tag=ios" },
+  { name: "Android", url: "/projects?tag=android" }
 ];
 
 /**
- * Filtre les projets en fonction des tags sélectionnés
+ * Filtre les cartes d'articles en fonction des tags sélectionnés, de la langue et du nombre de résultats
  * @param {Array} tagNames - Tableau des noms de tags à filtrer
- * @returns {Array} - Tableau des projets filtrés
+ * @param {string} lang - La langue des cartes ('fr' ou 'en')
+ * @param {number} limit - Nombre maximum de cartes à retourner (optionnel, par défaut toutes)
+ * @returns {Array} - Tableau des cartes filtrées
  */
-export function filterProjects(tagNames = []) {
+export function filterProjects(tagNames = [], lang = 'fr', limit = null) {
+  // Récupérer toutes les cartes selon la langue
+  const allCards = getAllCards(lang);
+  
   if (!tagNames || tagNames.length === 0) {
-    return projects;
+    // Si pas de tags, retourner toutes les cartes (avec limite si spécifiée)
+    return limit ? allCards.slice(0, limit) : allCards;
   }
 
-  return projects.filter(project => 
+  // Filtrer les cartes qui ont au moins un des tags spécifiés
+  const filteredCards = allCards.filter(card => 
     tagNames.some(tagName => 
-      project.tags.some(tag => 
+      card.tags && card.tags.some(tag => 
         tag.name.toLowerCase() === tagName.toLowerCase()
       )
     )
   );
+
+  // Appliquer la limite si spécifiée
+  return limit ? filteredCards.slice(0, limit) : filteredCards;
 }
 
 /**
- * Récupère tous les tags uniques depuis les projets
- * @returns {Array} - Tableau des tags uniques
+ * Récupère tous les tags disponibles (constante)
+ * @returns {Array} - Tableau des tags disponibles
  */
 export function getAllTags() {
-  const tags = new Set();
-  
-  projects.forEach(project => {
-    project.tags?.forEach(tag => {
-      tags.add(JSON.stringify({ name: tag.name, url: tag.url }));
-    });
-  });
-
-  return Array.from(tags).map(tag => JSON.parse(tag));
+  return AVAILABLE_TAGS;
 }

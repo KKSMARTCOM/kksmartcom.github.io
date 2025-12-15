@@ -245,7 +245,7 @@ export default function Header() {
 														<input type="text" id="inpname_1" placeholder=" " name="Nom"
                                                             required="" autoComplete="on" data-max-length="40"
                                                             className="required max-length pattern" data-pattern="[A-Za-z]"/>
-                                                        <span>{data.contactModal.form.name}</span>
+                                                        <span dangerouslySetInnerHTML={{ __html: data.contactModal.form.name }}></span>
 													</label>
 													<label htmlFor="inpemail_1" className="inp-wrap view textslide active viewed">
 														<input type="email" id="inpemail_1" placeholder=" " name="Email"
@@ -253,14 +253,14 @@ export default function Header() {
                                                             className="required max-length pattern"
                                                             data-pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                                             data-message-error="Your Email is invalid"/>
-                                                        <span>{data.contactModal.form.email}</span>
+                                                        <span dangerouslySetInnerHTML={{ __html: data.contactModal.form.email }}></span>
 													</label>
 													<label htmlFor="inptext_1" className="inp-wrap view textslide">
 														<textarea placeholder=" " required id="inptext_1" name="Message"
                                                             data-message-error="Max length 1000 characters"
                                                             className="max-length" data-max-length="1000">
                                                         </textarea>
-                                                        <span>{data.contactModal.form.project}</span> <span
+                                                        <span dangerouslySetInnerHTML={{ __html: data.contactModal.form.project }}></span> <span
 															className="counter" data-max="250"> <b>0</b>/1000 </span> 
 													</label>
 

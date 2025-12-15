@@ -84,7 +84,7 @@
                 "title": "En savoir plus sur nous",
                 "items": [
                   { "text": "A propos", "href": "/apropos" },
-                  { "text": "Blog", "href": "https://www.behance.net/kksmartcom" },
+                  { "text": "Blog", "href": "/blog" },
                   { "text": "Carrières", "href": "#" }
                 ]
               }
@@ -603,6 +603,66 @@
       ]
     }
   },
+  "Blog": {
+    "fr": {
+      "title": "Explorez nos projets",
+      "typeFilterLabel": "Type:",
+      "typeFilterDefault": "Tous les projets",
+      "industryFilterLabel": "Industrie:",
+      "industryFilterDefault": "Toutes les industries",
+      "seeMoreText": "Voir plus",
+      "tags": {
+        "projectTypes": [
+          { "id": "all", "label": "Tous les projets", "href": "/blog" },
+          { "id": "web-app", "label": "Application web", "href": "/blog?tags=web-app" },
+          { "id": "website", "label": "Site web", "href": "/blog?tags=website" },
+          { "id": "branding", "label": "Branding", "href": "/blog?tags=branding" },
+          { "id": "mobile-app", "label": "Application mobile", "href": "/blog?tags=mobile-app" },
+          { "id": "3d-motion-design", "label": "Design 3D motion", "href": "/blog?tags=3d-motion-design" }
+        ],
+        "industries": [
+          { "id": "all", "label": "Toutes les industries", "href": "/blog" },
+          { "id": "crypto-nft", "label": "Crypto & NFT", "href": "/blog?cat=crypto-nft" },
+          { "id": "fintech", "label": "FinTech", "href": "/blog?cat=fintech" },
+          { "id": "healthcare", "label": "Santé", "href": "/blog?cat=healthcare" },
+          { "id": "saas", "label": "SaaS", "href": "/blog?cat=saas" },
+          { "id": "education", "label": "Éducation", "href": "/blog?cat=education" },
+          { "id": "ar-vr-meta", "label": "AR/VR & Meta", "href": "/blog?cat=ar-vr-meta" },
+          { "id": "travel-booking", "label": "Voyage & Réservation", "href": "/blog?cat=travel-booking" },
+          { "id": "other", "label": "Autre", "href": "/blog?cat=other" }
+        ]
+      }
+    },
+    "en": {
+      "title": "Explore our projects",
+      "typeFilterLabel": "Type:",
+      "typeFilterDefault": "All projects",
+      "industryFilterLabel": "Industry:",
+      "industryFilterDefault": "All industries",
+      "seeMoreText": "See more",
+      "tags": {
+        "projectTypes": [
+          { "id": "all", "label": "All projects", "href": "/blog" },
+          { "id": "web-app", "label": "Web app", "href": "/blog?tags=web-app" },
+          { "id": "website", "label": "Website", "href": "/blog?tags=website" },
+          { "id": "branding", "label": "Branding", "href": "/blog?tags=branding" },
+          { "id": "mobile-app", "label": "Mobile app", "href": "/blog?tags=mobile-app" },
+          { "id": "3d-motion-design", "label": "3D motion design", "href": "/blog?tags=3d-motion-design" }
+        ],
+        "industries": [
+          { "id": "all", "label": "All industries", "href": "/blog" },
+          { "id": "crypto-nft", "label": "Crypto & NFT", "href": "/blog?cat=crypto-nft" },
+          { "id": "fintech", "label": "FinTech", "href": "/blog?cat=fintech" },
+          { "id": "healthcare", "label": "Healthcare", "href": "/blog?cat=healthcare" },
+          { "id": "saas", "label": "SaaS", "href": "/blog?cat=saas" },
+          { "id": "education", "label": "Education", "href": "/blog?cat=education" },
+          { "id": "ar-vr-meta", "label": "AR/VR & Meta", "href": "/blog?cat=ar-vr-meta" },
+          { "id": "travel-booking", "label": "Travel & Booking", "href": "/blog?cat=travel-booking" },
+          { "id": "other", "label": "Other", "href": "/blog?cat=other" }
+        ]
+      }
+    }
+  },
   "CTA": {
     "fr": {
       "title": "Explorer les opportunités <br /> pour créer <strong> d'excellents</strong> <br /> des produits",
@@ -676,7 +736,7 @@
     "description": "Our team called \"SMART TEAM\" provides its expertise in digital fields including: audiovisual, graphic design, digital printing on all media, digital marketing, and computer programming.<br/>We specialize in creating chatbots for businesses that need to handle high customer service demands.",
     "image": "/assets/uploads/2023/05/Services.png"
   }
-},
+  },
 "WhoUs": {
   "fr": {
     "title": "Qui sommes-nous ?",
@@ -724,7 +784,7 @@
     ],
     "image": "/assets/uploads/2021/10/chain.svg"
   }
-},
+  },
 "Mission": {
     "fr": {
       "title": "Nous travaillons avec les entreprises <br/> pour les aider <strong>à relever les défis</strong> commerciaux en constante évolution.",
@@ -784,7 +844,7 @@
         "links": [
           { "text": "Services", "href": "https://comeup.com/fr/@kk-smart-com", "target": "_blank" },
           { "text": "Projets", "href": "https://www.behance.net/kksmartcom", "target": "_blank" },
-          { "text": "À propos", "href": "apropos.html", "target": "_self" },
+          { "text": "À propos", "href": "/apropos", "target": "_self" },
           { "text": "Blog", "href": "blog.html", "target": "_self" },
           { "text": "Carrière", "href": "https://comeup.com/fr/@kk-smart-com", "target": "_blank" }
         ]
@@ -926,5 +986,4 @@
       },
       "copyright": "KK SMART COM"
     }
-  }
-}
+  }}
