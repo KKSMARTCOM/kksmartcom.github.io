@@ -79,11 +79,11 @@ export const getAllCards = (lang) => {
   
   if (articlesData) {
     Object.keys(articlesData).forEach(articleId => {
-      if (articlesData[articleId] && articlesData[articleId][lang]) {
-        const article = articlesData[articleId][lang];
-        if (article.cards && Array.isArray(article.cards)) {
-          allCards.push(...article.cards);
-        }
+      if (articlesData[articleId] && articlesData[articleId][lang] && articlesData[articleId][lang].cards) {
+        const card = articlesData[articleId][lang].cards;
+        // Ajouter l'ID de l'article à la carte pour référence
+        const cardWithId = { ...card, articleId };
+        allCards.push(cardWithId);
       }
     });
   }
@@ -96,33 +96,26 @@ export const getAllCards = (lang) => {
 };
 
 /**
- * Récupère les cartes d'articles spécifiques par leurs IDs pour une langue spécifique.
+ * Récupère une carte d'article spécifique par son ID et sa langue.
  * 
+ * @param {string|number} articleId - ID de l'article.
  * @param {string} lang - Le code langue ('fr' ou 'en').
- * @param {string|Array} articleIds - ID d'article unique ou tableau d'IDs d'articles.
- * @returns {Array} Tableau des cartes des articles spécifiés.
+ * @returns {Object|null} La carte de l'article ou null si non trouvée.
  */
-export const getCardsByIds = (lang, articleIds) => {
-  const cards = [];
-  const ids = Array.isArray(articleIds) ? articleIds : [articleIds];
+export const getCardsByIds = (articleId, lang) => {
+  if (!articlesData || !articlesData[articleId] || !articlesData[articleId][lang]) {
+    console.warn(`Article not found: ${articleId}, lang: ${lang}`);
+    return null;
+  }
+
+  const article = articlesData[articleId][lang];
   
-  if (articlesData) {
-    ids.forEach(articleId => {
-      if (articlesData[articleId] && articlesData[articleId][lang]) {
-        const article = articlesData[articleId][lang];
-        if (article.cards && Array.isArray(article.cards)) {
-          cards.push(...article.cards);
-        }
-      } else {
-        console.warn(`Article not found: ${articleId}, lang: ${lang}`);
-      }
-    });
+  if (!article.cards) {
+    console.warn(`No cards found for article: ${articleId}, lang: ${lang}`);
+    return null;
   }
   
-  if (cards.length === 0) {
-    console.warn(`No cards found for articles: ${ids.join(', ')}, lang: ${lang}`);
-  }
-  
-  return cards;
+  // Retourner la carte avec l'ID de l'article inclus
+  return { ...article.cards, articleId };
 };
 

@@ -31,7 +31,7 @@ const HeadTags = () => (
     <link rel="stylesheet" id="reset-css" href="/css/reset.css" media="all" />
     <link rel="stylesheet" id="ui-css" href="/css/ui.css" media="all" />
     <link rel="stylesheet" id="main-css" href="/css/main.css" media="all" />
-
+    <link rel="stylesheet" href="/css/owl.carousel.css" />
     {/* Inline vars from original head */}
     <script dangerouslySetInnerHTML={{ __html: `black_bg = "/assets/img/black-bg.png"; other_bg = "/assets/img/bg.png";` }} />
 

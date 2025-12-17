@@ -41,7 +41,7 @@ export default function ArticlesPage() {
     
     // Mapper les composants avec leurs noms de section
     const sectionComponents = {
-        'ArticleHero': <ArticleHero data={articleData.Hero || {}} />,
+        'ArticleHero': <ArticleHero data={articleData.Hero ||  {}} />,
         'ArticleOverview': <ArticleOverview data={articleData.overview || {}} />,
         'ArticleBussinesNeed': <ArticleBussinesNeed data={articleData.businessNeed || {}} />,
         'ArticleProblem': <ArticleProblem data={articleData.problem || {}} />,
@@ -76,7 +76,7 @@ export default function ArticlesPage() {
                 {isSectionActive('ArticleProject') && sectionComponents.ArticleProject}
                 {isSectionActive('ArticleFunctional') && sectionComponents.ArticleFunctional}
                 {isSectionActive('ArticleResult') && sectionComponents.ArticleResult}
-                <ArticleMoreCase data={articleData.id || {}} />
+                <ArticleMoreCase data={articleData.cards.tags || {}} />
             </div> 
 
             <ContactSection />

@@ -1,10 +1,10 @@
 "use client";
 import React from 'react';
 import { useLang } from '@/context/LangContext';
-import Hero from '../components/Hero';
-import Service from '../components/Service';
-import SocialCta from '../components/SocialCta';
-import ContactSection from '../components/ContactSection';
+import Hero from '../../components/Hero';
+import Service from '../../components/Service';
+import SocialCta from '../../components/SocialCta';
+import ContactSection from '../../components/ContactSection';
 
 export default function Home() {
   const { lang } = useLang();

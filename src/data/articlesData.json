@@ -6,8 +6,7 @@
         "date": "2024-01-15",
         "author": "KKsmartcom Team",
         "activeSection": ["ArticleHero","ArticleOverview","ArticleBussinesNeed","ArticleProblem","ArticleResearch","ArticleDesign","ArticleProject","ArticleFunctional","ArticleResult"],
-        "cards": [
-          {
+        "cards": {
             "url": "/articlespages?id=1",
             "title": "JoCreate – Application pour créer des collections NFT",
             "images": {
@@ -20,8 +19,7 @@
               { "name": "Application web", "url": "/projects?tag=web-app" }
             ],
             "description": "Application complète pour créer, gérer et vendre des collections NFT avec plateforme d'échange intégrée."
-          }
-        ],
+        },
         "Header":{
           
         },
@@ -450,8 +448,7 @@
         "date": "2024-01-15",
         "author": "KKsmartcom Team",
         "activeSection": ["ArticleHero","ArticleOverview","ArticleBussinesNeed","ArticleProblem","ArticleResearch","ArticleDesign","ArticleProject","ArticleFunctional","ArticleResult"],
-        "cards": [
-          {
+        "cards": {
             "url": "/articlespages?id=1",
             "title": "JoCreate – NFT Collection Creation App",
             "images": {
@@ -464,8 +461,7 @@
               { "name": "Web app", "url": "/projects?tag=web-app" }
             ],
             "description": "Complete application for creating, managing and selling NFT collections with integrated exchange platform."
-          }
-        ],
+        },
         "Header":{},
         "Hero": {
           "title": "JoCreate &#8211; Application for creating NFT collections",

@@ -169,15 +169,15 @@
         },
         "company": {
           "text": "Company",
-          "href": "/en/about",
+          "href": "/apropos",
           "subMenu": {
             "cta": "Let's talk!",
             "columns": [
               {
                 "title": "Learn more about us",
                 "items": [
-                  { "text": "About", "href": "/en/about" },
-                  { "text": "Blog", "href": "https://www.behance.net/kksmartcom" },
+                  { "text": "About", "href": "/apropos" },
+                  { "text": "Blog", "href": "/blog" },
                   { "text": "Careers", "href": "#" }
                 ]
               }

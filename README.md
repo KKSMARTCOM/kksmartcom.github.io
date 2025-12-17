@@ -2,74 +2,103 @@
 
 Site web officiel de KK SMART COM, une agence de communication digitale offrant des services complets pour les entreprises et les startups.
 
-## Fonctionnalités
+## 🚀 Fonctionnalités
 
-- 🌍 **Internationalisation** : Support multilingue (Français et Anglais)
-- 🚀 **Composants dynamiques** : Données gérées via un fichier JSON centralisé
-- 📱 **Design responsive** : Adapté à tous les appareils
-- ⚡ **Optimisé pour les performances** : Chargement rapide et expérience utilisateur fluide
+- 🌍 **Internationalisation** : Support multilingue (Français et Anglais) avec gestion du contexte de langue
+- 📱 **Design responsive** : Adapté à tous les appareils avec Tailwind CSS
+- ⚡ **Optimisé pour les performances** : Construit avec Next.js pour un chargement ultra-rapide
+- 📝 **Système d'articles** : Gestion de contenu dynamique avec articles et blog
+- 📅 **Intégration Calendly** : Prise de rendez-vous intégrée
+- 🍪 **Gestion des cookies** : Popup de consentement conforme RGPD
 
-## Structure du Projet
+## 🛠️ Technologies utilisées
 
-- `/src/components` : Composants React réutilisables
-  - `Footer.jsx` : Pied de page dynamique avec année de copyright automatique
-  - `Header.jsx` : En-tête de navigation
-  - `Service.jsx` : Section des services
-  - `PreuveSocial.jsx` : Témoignages et avis clients
-  - `CTA.jsx` : Appels à l'action
-  - `ContactSection.jsx` : Formulaire de contact
-  - `AproposHero.jsx` : Section héro de la page À propos
-  - `WhoUs.jsx` : Section "Qui sommes-nous"
-  - `Mission.jsx` : Section mission et valeurs
-- `/src/data` : Données du site
-  - `siteData.json` : Fichier JSON centralisé pour tout le contenu du site
-- `/public` : Fichiers statiques (images, vidéos, etc.)
+- **Framework** : Next.js 16
+- **UI** : React 19
+- **Styling** : Tailwind CSS 4
+- **Internationalisation** : Système de contexte personnalisé
+- **Gestion d'état** : Contexte React
+- **Carrousels** : Swiper.js
 
-## Configuration requise
+## 📁 Structure du Projet
 
-- Node.js 14.6.0 ou plus récent
-- npm ou yarn
+```
+src/
+├── app/                  # Routage et pages
+│   ├── apropos/          # Page À propos
+│   ├── articlespages/    # Pages d'articles
+│   ├── blog/             # Section blog
+│   └── project/          # Pages de projets
+│
+├── components/           # Composants réutilisables
+│   ├── ArticlesComponents/  # Composants d'articles
+│   ├── BoutonReservationCalendly.jsx
+│   ├── ContactModal.jsx
+│   ├── CookiePopup.jsx
+│   ├── CTA.jsx
+│   ├── Footer.jsx
+│   ├── Header.jsx
+│   ├── Hero.jsx
+│   ├── Mission.jsx
+│   ├── PreuveSocial.jsx
+│   └── WhoUs.jsx
+│
+├── context/              # Contexte React
+│   └── LangContext.jsx   # Gestion de la langue
+│
+└── data/                 # Données du site
+    ├── articlesData.json # Données des articles
+    └── siteData.json     # Contenu du site
+```
 
-## Installation
+## 🚀 Installation
 
-1. Cloner le dépôt :
+1. **Cloner le dépôt** :
    ```bash
-   git clone [URL_DU_DEPOT]
-   cd kksmartcom.com.stack.reveiw
+   git clone https://github.com/kksmartcom/kksmartcom.github.io.git
+   cd kksmartcom.github.io
    ```
 
-2. Installer les dépendances :
+2. **Installer les dépendances** :
    ```bash
    npm install
    # ou
    yarn install
    ```
 
-3. Lancer le serveur de développement :
+3. **Lancer le serveur de développement** :
    ```bash
    npm run dev
    # ou
    yarn dev
    ```
 
-4. Ouvrir [http://localhost:3000](http://localhost:3000) dans votre navigateur.
+4. **Ouvrir** [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-## Internationalisation
+## 🌍 Internationalisation
 
-Le site supporte actuellement le français et l'anglais. Les textes sont gérés dans le fichier `src/data/siteData.json` avec les clés `fr` et `en`.
+Le site supporte le français et l'anglais. La gestion de la langue se fait via le contexte React (`LangContext.jsx`) et les fichiers de données JSON.
 
-## Déploiement
+## 🚀 Déploiement
 
-Le site peut être déployé sur n'importe quelle plateforme prenant en charge les applications Next.js, notamment :
-
-- [Vercel](https://vercel.com)
+Le site est optimisé pour le déploiement sur :
+- [Vercel](https://vercel.com) (recommandé pour Next.js)
 - [Netlify](https://www.netlify.com/)
-- Hébergement Node.js standard
+- Toute plateforme supportant les applications Next.js
 
-## Contribution
+## 🤝 Contribution
 
-Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
+Les contributions sont les bienvenues ! Pour contribuer :
+1. Forkez le dépôt
+2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
+3. Committez vos changements (`git commit -m 'Ajouter une fonctionnalité incroyable'`)
+4. Poussez vers la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrez une Pull Request
 
-## Licence
+## 📝 Licence
 
-Ce projet est sous licence MIT.
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
+## 📞 Contact
+
+Pour toute question, contactez-nous via notre site web [kksmartcom.github.io](https://kksmartcom.github.io)

@@ -1,0 +1,52 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+
+// 1. Configuration du Provider (sqlite) - utilisez une base de données locale pour le développement
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+
+// 2. Modèle Utilisateur (pour l'authentification)
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String   // Le mot de passe HACHÉ
+  name      String?
+  articles  Article[]   // Relation : Un utilisateur peut avoir plusieurs articles
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// 3. Modèle Article de Blog
+model Article { // J'utilise 'Article' au lieu de 'Post' pour mieux correspondre à votre JSON
+  id        Int      @id @default(autoincrement())
+  // Champs pour les données simples et l'indexation
+  uniqueId  String   @unique // Utilisé pour le "1" dans votre JSON original
+  date      DateTime
+  author    String
+  
+  // Le champ qui va contenir toutes les données françaises (fr) et anglaises (en)
+  // Utilisation du type Json pour stocker la structure complexe du contenu de l'article.
+  contentFr Json     @map("content_fr") // Mappe à une colonne 'content_fr'
+  contentEn Json?    @map("content_en") // contentEn est optionnel
+
+  // Référence à l'auteur
+  authorUser User @relation(fields: [authorId], references: [id])
+  authorId   Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("articles") // Le nom de la table sera 'articles'
+}

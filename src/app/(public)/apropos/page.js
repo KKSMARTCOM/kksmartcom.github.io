@@ -1,11 +1,11 @@
 import React from 'react';
-import PreuveSocial from '../../components/PreuveSocial';
-import AproposHero from '../../components/AproposHero';
-import WhoUs from '../../components/WhoUs';
-import Mission from '../../components/Mission'
-import ContactSection from '../../components/ContactSection';
-import SocialCta from '../../components/SocialCta';
-import Service from '../../components/Service';
+import PreuveSocial from '../../../components/PreuveSocial';
+import AproposHero from '../../../components/AproposHero';
+import WhoUs from '../../../components/WhoUs';
+import Mission from '../../../components/Mission'
+import ContactSection from '../../../components/ContactSection';
+import SocialCta from '../../../components/SocialCta';
+import Service from '../../../components/Service';
 
 
 export const metadata = {
