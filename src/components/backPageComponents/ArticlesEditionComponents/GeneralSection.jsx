@@ -1,6 +1,7 @@
 'use client';
-import { useEffect, useState } from 'react';
-import { FiLink, FiType, FiImage, FiTag, FiPlus, FiTrash2, FiInfo, FiUploadCloud } from 'react-icons/fi';
+import { useEffect } from 'react';
+import ImageUploader from "../../ui/ImageUploader"
+import { FiLink, FiType, FiImage, FiTag, FiPlus, FiTrash2, FiInfo } from 'react-icons/fi';
 
 // Listes de référence pour les tags (à adapter selon tes besoins)
 const TAG_OPTIONS = {
@@ -19,33 +20,6 @@ const TAG_OPTIONS = {
 };
 
 export default function CardsSection({ data, articleId, updateField }) {
-  const [dragActive, setDragActive] = useState(false);
-
-  const handleImageChange = (file) => {
-    if (!file) return;
-    
-    // Vérification de la taille du fichier (max 5MB)
-    if (file.size > 5 * 1024 * 1024) {
-      alert('Le fichier est trop volumineux. Taille maximale: 5MB');
-      return;
-    }
-
-    // Vérification du type de fichier
-    if (!file.type.match('image.*')) {
-      alert('Veuillez sélectionner un fichier image valide');
-      return;
-    }
-
-    // Création d'une URL pour la prévisualisation
-    const imageUrl = URL.createObjectURL(file);
-    updateField('fr.cards.images', imageUrl);
-    
-    // Ici, vous pourriez ajouter la logique pour uploader le fichier
-    // uploadImage(file).then(publicUrl => {
-    //   updateField('fr.cards.images', publicUrl);
-    //   URL.revokeObjectURL(imageUrl); // Nettoyer l'URL de l'objet
-    // });
-  };
   
   // LOGIQUE : Génération automatique de l'URL
   useEffect(() => {
@@ -79,10 +53,10 @@ export default function CardsSection({ data, articleId, updateField }) {
   };
 
   return (
-    <div className="space-y-6 animate-in fade-in duration-500">
+    <div className="space-y-0 animate-in fade-in duration-500">
       
       {/* 1. Header de Section */}
-      <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div className="bg-white p-6  border border-gray-200 shadow-sm">
         <div className="flex items-center space-x-3 mb-6">
           <div className="p-2 bg-blue-100 text-blue-600 rounded-lg">
             <FiInfo size={20} />
@@ -121,85 +95,83 @@ export default function CardsSection({ data, articleId, updateField }) {
             />
           </div>
 
-          {/* Image avec prévisualisation */}
-          <div className="md:col-span-2 space-y-3">
-            <div className="flex items-center text-sm font-semibold text-gray-700">
-              <FiImage className="mr-2" /> Image miniature
-            </div>
-            
-            <div 
-              className={`relative border-2 border-dashed rounded-xl p-6 text-center transition-colors ${
-                dragActive ? 'border-blue-500 bg-blue-50' : 'border-gray-300 hover:border-gray-400'
-              }`}
-              onDragOver={(e) => {
-                e.preventDefault();
-                setDragActive(true);
-              }}
-              onDragLeave={() => setDragActive(false)}
-              onDrop={(e) => {
-                e.preventDefault();
-                setDragActive(false);
-                if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-                  handleImageChange(e.dataTransfer.files[0]);
-                }
-              }}
-            >
-              <input
-                type="file"
-                id="image-upload"
-                accept="image/*"
-                className="hidden"
-                onChange={(e) => {
-                  if (e.target.files && e.target.files[0]) {
-                    handleImageChange(e.target.files[0]);
-                  }
-                }}
-              />
-              
-              {data.images ? (
-                <div className="space-y-4">
-                  <div className="relative mx-auto w-full max-w-xs h-40 bg-gray-100 rounded-lg overflow-hidden">
+          {/* Upload d'image avec aperçu */}
+          <div className="md:col-span-2 w-full">
+              {/*<div className="space-y-1 text-center">
+                {data.images ? (
+                  <div className="relative group">
                     <img 
-                      src={data.images.startsWith('blob:') ? data.images : data.images} 
-                      alt="Prévisualisation" 
-                      className="w-full h-full object-cover"
+                      src={data.images} 
+                      alt="Aperçu de l'image" 
+                      className="mx-auto h-40 w-auto object-cover rounded-md"
                     />
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        updateField('fr.cards.images', '');
-                      }}
-                      className="absolute top-2 right-2 p-1.5 bg-white rounded-full shadow-md text-red-500 hover:bg-red-50"
+                    <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-md">
+                      <button
+                        type="button"
+                        onClick={() => updateField('fr.cards.images', '')}
+                        className="p-2 bg-red-500 text-white rounded-full hover:bg-red-600 transition-colors"
+                        title="Supprimer l'image"
+                      >
+                        <FiTrash2 size={16} />
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <>
+                    <svg
+                      className="mx-auto h-12 w-12 text-gray-400"
+                      stroke="currentColor"
+                      fill="none"
+                      viewBox="0 0 48 48"
+                      aria-hidden="true"
                     >
-                      <FiTrash2 size={16} />
-                    </button>
-                  </div>
-                  <p className="text-sm text-gray-600 truncate">
-                    {typeof data.images === 'string' && data.images.split('/').pop()}
-                  </p>
-                </div>
-              ) : (
-                <div className="space-y-3">
-                  <div className="mx-auto w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
-                    <FiUploadCloud className="text-gray-400" size={20} />
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    <p className="font-medium">Glissez et déposez votre image ici</p>
-                    <p className="text-xs mt-1">ou</p>
-                  </div>
-                  <label
-                    htmlFor="image-upload"
-                    className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 cursor-pointer transition-colors"
-                  >
-                    Sélectionner un fichier
-                  </label>
-                  <p className="text-xs text-gray-500">
-                    Formats supportés: JPG, PNG, WEBP (max. 5MB)
-                  </p>
-                </div>
-              )}
-            </div>
+                      <path
+                        d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    <div className="flex text-sm text-gray-600">
+                      <label
+                        htmlFor="file-upload"
+                        className="relative cursor-pointer bg-white rounded-md font-medium text-blue-600 hover:text-blue-500 focus-within:outline-none"
+                      >
+                        <span>Téléverser une image</span>
+                        <input 
+                          id="file-upload" 
+                          name="file-upload" 
+                          type="file" 
+                          className="sr-only"
+                          accept="image/*"
+                          onChange={(e) => {
+                            const file = e.target.files[0];
+                            if (file) {
+                              const reader = new FileReader();
+                              reader.onloadend = () => {
+                                updateField('fr.cards.images', reader.result);
+                              };
+                              reader.readAsDataURL(file);
+                            }
+                          }}
+                        />
+                      </label>
+                      <p className="pl-1">ou glisser-déposer</p>
+                    </div>
+                    <p className="text-xs text-gray-500">
+                      PNG, JPG, GIF jusqu'à 2MB
+                    </p>
+                  </>
+                )}
+              </div>*/}
+             <ImageUploader
+                labelCover="Image de couverture (Miniature)"
+                value={data.images || ''}
+                onChange={(value) => updateField('fr.cards.images', value)}
+                className="w-full"
+                label="Glissez-déposez l'image de couverture ou cliquez pour sélectionner"
+                helperText="Formats acceptés : PNG, JPG, GIF. Taille maximale : 2MB"
+              />
           </div>
 
           {/* Description */}
@@ -219,7 +191,7 @@ export default function CardsSection({ data, articleId, updateField }) {
       </div>
 
       {/* 2. Gestion des Tags */}
-      <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div className="bg-white p-6  border border-gray-200 shadow-sm">
         <div className="flex items-center space-x-3 mb-6">
           <div className="p-2 bg-purple-100 text-purple-600 rounded-lg">
             <FiTag size={20} />

@@ -29,17 +29,6 @@ const Header = ({ toggleSidebar, isSidebarOpen }) => {
         >
           {isSidebarOpen ? <FiChevronLeft size={20} /> : <FiChevronRight size={20} />}
         </button>
-          
-          <div className="relative ml-4">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <FiSearch className="w-5 h-5 text-gray-400" />
-            </div>
-            <input
-              type="text"
-              className="w-full py-2 pl-10 pr-4 text-sm text-gray-700 bg-gray-100 border border-transparent rounded-md focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
-              placeholder="Rechercher..."
-            />
-          </div>
         </div>
 
         <div className="flex items-center space-x-4">

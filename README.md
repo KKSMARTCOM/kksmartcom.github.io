@@ -1,53 +1,132 @@
-# KK SMART COM - Site Web
+# KK SMART COM - Plateforme de Gestion de Contenu
 
-Site web officiel de KK SMART COM, une agence de communication digitale offrant des services complets pour les entreprises et les startups.
+Plateforme complète de gestion de contenu pour KK SMART COM, une agence de communication digitale offrant des services complets pour les entreprises et les startups.
 
-## 🚀 Fonctionnalités
+## 🚀 Fonctionnalités Principales
 
+### Frontend
 - 🌍 **Internationalisation** : Support multilingue (Français et Anglais) avec gestion du contexte de langue
-- 📱 **Design responsive** : Adapté à tous les appareils avec Tailwind CSS
-- ⚡ **Optimisé pour les performances** : Construit avec Next.js pour un chargement ultra-rapide
-- 📝 **Système d'articles** : Gestion de contenu dynamique avec articles et blog
-- 📅 **Intégration Calendly** : Prise de rendez-vous intégrée
-- 🍪 **Gestion des cookies** : Popup de consentement conforme RGPD
+- 📱 **Design responsive** : Interface adaptative avec Tailwind CSS
+- ⚡ **Optimisation des performances** : Next.js 16 avec React 19 pour un chargement ultra-rapide
+- 🎨 **UI Moderne** : Composants accessibles avec Radix UI et animations fluides
 
-## 🛠️ Technologies utilisées
+### Backend & Gestion de Contenu
+- 📝 **Système d'articles avancé** : CRUD complet avec éditeur visuel
+- 🏷️ **Gestion des tags** : Catégorisation avancée avec tags par catégorie (type de projet, industrie)
+- 🖼️ **Gestion des médias** : Téléchargement d'images avec prévisualisation et glisser-déposer
+- 🔐 **Authentification** : Système sécurisé avec JWT et hachage bcrypt
 
-- **Framework** : Next.js 16
-- **UI** : React 19
-- **Styling** : Tailwind CSS 4
-- **Internationalisation** : Système de contexte personnalisé
-- **Gestion d'état** : Contexte React
-- **Carrousels** : Swiper.js
+### Fonctionnalités Administrateur
+- 📊 **Tableau de bord** : Vue d'ensemble des contenus et statistiques
+- ✏️ **Éditeur visuel** : Interface intuitive pour la création de contenu
+- 🔍 **Recherche avancée** : Filtrage et recherche dans les articles
+- 📅 **Planification** : Publication programmée des articles
 
-## 📁 Structure du Projet
+## 🛠️ Stack Technologique
+
+### Frontend
+- **Framework** : Next.js 16 avec App Router
+- **UI** : React 19 avec Server Components
+- **Styling** : Tailwind CSS 4 avec plugins personnalisés
+- **Composants UI** : Radix UI, Hero Icons, Lucide Icons
+- **Gestion d'état** : Contexte React + Hooks personnalisés
+
+### Backend
+- **Base de données** : PostgreSQL avec Prisma ORM
+- **Authentification** : JWT + bcryptjs
+- **API** : Routes API Next.js
+- **Validation** : Zod pour la validation des schémas
+
+## 🏗️ Structure du Projet
 
 ```
 src/
-├── app/                  # Routage et pages
-│   ├── apropos/          # Page À propos
-│   ├── articlespages/    # Pages d'articles
-│   ├── blog/             # Section blog
-│   └── project/          # Pages de projets
+├── app/                          # Routage et pages
+│   ├── admin/                    # Interface d'administration
+│   │   ├── articles/            # Gestion des articles
+│   │   │   └── [id]/            # Édition d'article
+│   │   └── dashboard/           # Tableau de bord
+│   ├── api/                     # Routes API
+│   │   ├── auth/                # Authentification
+│   │   ├── tags/                # Gestion des tags
+│   │   └── articles/            # Gestion des articles
+│   └── (site)/                  # Pages publiques
+│       ├── apropos/             # Page À propos
+│       ├── blog/                # Section blog
+│       └── projets/             # Page des projets
 │
-├── components/           # Composants réutilisables
-│   ├── ArticlesComponents/  # Composants d'articles
-│   ├── BoutonReservationCalendly.jsx
-│   ├── ContactModal.jsx
-│   ├── CookiePopup.jsx
-│   ├── CTA.jsx
-│   ├── Footer.jsx
-│   ├── Header.jsx
-│   ├── Hero.jsx
-│   ├── Mission.jsx
-│   ├── PreuveSocial.jsx
-│   └── WhoUs.jsx
+├── components/
+│   ├── ui/                      # Composants UI réutilisables
+│   │   ├── ImageUploader.jsx    # Upload d'images avec prévisualisation
+│   │   ├── Button.jsx           # Bouton personnalisé
+│   │   └── ...
+│   ├── backPageComponents/      # Composants admin
+│   │   ├── ArticlesEditionComponents/
+│   │   │   ├── GeneralSection.jsx
+│   │   │   └── ...
+│   │   └── ...
+│   └── ...
 │
-├── context/              # Contexte React
-│   └── LangContext.jsx   # Gestion de la langue
+├── lib/                         # Utilitaires
+│   ├── auth.js                  # Logique d'authentification
+│   ├── prisma.js                # Client Prisma
+│   └── urlUtils.js              # Gestion des URLs
 │
-└── data/                 # Données du site
-    ├── articlesData.json # Données des articles
+├── context/                     # Contexte React
+│   └── AuthContext.jsx          # Contexte d'authentification
+│
+└── styles/                      # Styles globaux
+    └── globals.css              # Feuille de style principale
+```
+
+## 🚀 Démarrage Rapide
+
+1. **Configuration initiale**
+   ```bash
+   # Installer les dépendances
+   npm install
+   
+   # Configurer les variables d'environnement
+   cp .env.example .env.local
+   # Puis éditer .env.local avec vos paramètres
+   ```
+
+2. **Base de données**
+   ```bash
+   # Appliquer les migrations
+   npx prisma migrate dev
+   
+   # Lancer le seed (optionnel)
+   npx prisma db seed
+   ```
+
+3. **Développement**
+   ```bash
+   # Lancer le serveur de développement
+   npm run dev
+   ```
+   Le site sera disponible à l'adresse [http://localhost:3000](http://localhost:3000)
+   L'interface d'administration est accessible à [http://localhost:3000/admin](http://localhost:3000/admin)
+
+## 📦 Déploiement
+
+Le projet est configuré pour un déploiement facile sur Vercel ou tout autre hébergeur compatible Next.js.
+
+```bash
+# Build pour la production
+npm run build
+
+# Lancer en production
+npm start
+```
+
+## 📝 Licence
+
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
+## 🤝 Contribution
+
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
     └── siteData.json     # Contenu du site
 ```
 
