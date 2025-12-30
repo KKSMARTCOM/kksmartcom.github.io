@@ -25,9 +25,10 @@ const ArticleHero = ({ data }) => {
             {data.image && (
                 <div className="case-image view fadein delay0-5">
                     <picture>
-                        <source media="(min-width: 1600px)" srcSet={data.image}/>
+                       {/* <source media="(min-width: 1600px)" srcSet={data.image}/>
                         <source media="(max-width: 1100px)" srcSet={data.image}/>
                         <source media="(min-width: 1101px) and (max-width:1599px)" srcSet={data.image}/>
+                        */}
                         <img 
                             width="1300" 
                             height="630" 

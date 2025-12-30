@@ -9,19 +9,12 @@
         "cards": {
             "url": "/articlespages?id=1",
             "title": "JoCreate – Application pour créer des collections NFT",
-            "images": {
-              "x1": "/assets/uploads/2023/02/0@2x-scaled.jpg",
-              "x2": "/assets/uploads/2023/02/0@2x-scaled.jpg", 
-              "x3": "/assets/uploads/2023/02/0@2x-scaled.jpg"
-            },
+            "images": "/assets/uploads/2023/02/0@2x-scaled.jpg",
             "tags": [
-              { "name": "Crypto & NFT", "url": "/projects?cat=crypto-nft" },
-              { "name": "Application web", "url": "/projects?tag=web-app" }
+              { "slug": "web-app", "label": "Application web", "href": "/blog?tags=web-app", "category": "projectType" },
+              { "slug": "crypto-nft", "label": "Crypto & NFT", "href": "/blog?cat=crypto-nft", "category": "industry" }
             ],
             "description": "Application complète pour créer, gérer et vendre des collections NFT avec plateforme d'échange intégrée."
-        },
-        "Header":{
-          
         },
         "Hero": {
           "title": "JoCreate &#8211; Application de création de collections NFT",
@@ -29,23 +22,9 @@
           "image": "/assets/uploads/2023/02/0@2x-scaled.jpg",
           "imageAlt": "Interface de l'application NFT JoCreate",
           "tags": [
-            {
-              "label": "Crypto & NFT",
-              "href": "/projects?cat=crypto-nft"
-            },
-            {
-              "label": "Application web",
-              "href": "/projects?tag=web-app"
-            },
-            {
-              "label": "Site web",
-              "href": "/projects?tag=website"
-            },
-            {
-              "label": "Application mobile",
-              "href": "/projects?tag=mobile-app"
-            }
-          ]
+              { "slug": "web-app", "label": "Application web", "href": "/blog?tags=web-app", "category": "projectType" },
+              { "slug": "crypto-nft", "label": "Crypto & NFT", "href": "/blog?cat=crypto-nft", "category": "industry" }
+            ]
         },
         "overview": {
           "SectionTitle" : "Aperçu",
@@ -64,14 +43,12 @@
           "gallery": [
             {
               "src": "/assets/uploads/2023/02/Frame-1519.jpg",
-              "src2x": "/assets/uploads/2023/02/Frame-1519@2x.jpg",
               "alt": "JoCreate Application Interface - Photo 2",
               "width": 630,
               "height": 650
             },
             {
               "src": "/assets/uploads/2023/02/Frame-1520.jpg", 
-              "src2x": "/assets/uploads/2023/02/Frame-1520@2x.jpg",
               "alt": "JoCreate Application Features - Photo 3",
               "width": 630,
               "height": 650
@@ -89,14 +66,12 @@
           "gallery": [
             {
               "src": "/assets/uploads/2023/02/Frame-1518.jpg",
-              "src2x": "/assets/uploads/2023/02/Frame-1518@2x.jpg",
               "alt": "JoCreate Business Analysis - Photo 4",
               "width": 630,
               "height": 650
             },
             {
               "src": "/assets/uploads/2023/02/Frame-1517.jpg",
-              "src2x": "/assets/uploads/2023/02/Frame-1517@2x.jpg",
               "alt": "JoCreate Requirements Gathering - Photo 5",
               "width": 630,
               "height": 650
@@ -142,8 +117,7 @@
           "MainTitle": "Processus de recherche",
           "MainDescription": "Nous avons analysé les meilleurs concurrents dans le domaine des crypto & NFT en utilisant une analyse SWOT. Nous avons mené une analyse commerciale pour trouver la meilleure façon d'implémenter les fonctionnalités correctement et apporter des bénéfices au produit.",
           "imagePrincipal": {
-                "src": "../assets/uploads/2023/02/Images-scaled.jpg",
-                "src2x": "../assets/uploads/2023/02/Images%402x-scaled.jpg",
+                "src": "../assets/uploads/2023/02/Images%402x-scaled.jpg",
                 "alt": "JoCreate &#8211; Application for creating NFT collections - Website Development - Photo 6",
                 "width": 1300,
                 "height": 630
@@ -167,8 +141,7 @@
               ],
               "solutions": "Ainsi nous avons pu optimiser le constructeur et ajouter des fonctionnalités importantes et uniques telles que la synchronisation avec les marketplaces les plus populaires, le suivi des statistiques de vos collections et profils en un seul endroit, la génération sous forme de constructeur, la liaison de vos crypto-portefeuilles pour retirer des fonds des marketplaces, applications web et mobiles avec sauvegarde automatique.",
               "image": {
-                "src": "/assets/uploads/2023/02/Images-scaled.jpg",
-                "src2x": "/assets/uploads/2023/02/Images@2x-scaled.jpg",
+                "src": "/assets/uploads/2023/02/Images@2x-scaled.jpg",
                 "alt": "JoCreate SWOT Analysis - Photo 6",
                 "width": 1300,
                 "height": 630
@@ -191,8 +164,7 @@
                 "La fonctionnalité de plus faible priorité était le thème sombre, qui est très demandé et essentiel dans le monde moderne. Du fait que notre équipe travaille toujours avec des composants et des styles au stade UI, cette fonctionnalité a été implémentée très rapidement et sans aucun problème."
               ],
               "image": {
-                "src": "/assets/uploads/2023/02/Images1-scaled.jpg",
-                "src2x": "/assets/uploads/2023/02/Images1@2x-scaled.jpg",
+                "src": "/assets/uploads/2023/02/Images1@2x-scaled.jpg",
                 "alt": "JoCreate Business Analysis - Photo 7",
                 "width": 1300,
                 "height": 630
@@ -204,8 +176,7 @@
               "description": "Basé sur les données de notre client et les résultats de notre recherche, nous avons créé une architecture informationnelle pour la plateforme.",
               "details": "À travers une série d'itérations et de sessions d'exploration plus approfondies, nous avons clarifié la vision pour l'application, nous permettant de travailler sur les détails ensemble, y compris l'intégration des marketplaces NFT avec notre plateforme pour téléchargement instantané des collections générées, analytics synchronisés et statistiques sur les collections et NFT, le constructeur pour 4 types d'actifs. En conséquence, nous sommes arrivés à sept flux principaux que nous avons continué à développer : autorisation, onboarding, constructeur de collection, téléchargement d'une collection sur la marketplace, analyse et visualisation des statistiques, connexion des crypto-portefeuilles, et retrait de fonds.",
               "image": {
-                "src": "/assets/uploads/2023/02/Images2-scaled.jpg",
-                "src2x": "/assets/uploads/2023/02/Images2@2x-scaled.jpg",
+                "src": "/assets/uploads/2023/02/Images2@2x-scaled.jpg",
                 "alt": "JoCreate Information Architecture - Photo 8",
                 "width": 1300,
                 "height": 630
@@ -216,8 +187,7 @@
               "title": "User flow",
               "description": "Le user flow est une représentation visuelle de la séquence d'actions que l'utilisateur entreprend pour atteindre son objectif. Notre équipe a construit les futures étapes et a continué à travailler sur l'interface pour déterminer comment les utilisateurs atteignent l'objectif, en calculant les scénarios positifs et négatifs. Le diagramme ci-dessous montre à quel point le constructeur est facile à utiliser. Il y a des étapes claires, la collection peut être prévisualisée à n'importe quelle étape, et une fois créée, elle peut être téléchargée sur la marketplace en quelques clics.",
               "image": {
-                "src": "/assets/uploads/2023/02/Images3-scaled.jpg",
-                "src2x": "/assets/uploads/2023/02/Images3@2x-scaled.jpg",
+                "src": "/assets/uploads/2023/02/Images3@2x-scaled.jpg",
                 "alt": "JoCreate User Flow - Photo 9",
                 "width": 1300,
                 "height": 630
@@ -243,15 +213,13 @@
               "details": "Cette étape nous a aidés à comprendre la logique et la structure du futur service. Nous avons créé et approuvé des prototypes pour chaque flux, en élaborant tous les états possibles pour chaque écran, en décidant de la taille et du nombre de conteneurs pour les illustrations, et en vérifiant l'utilisabilité et la clarté de chaque flux.",
               "imageSplitter": {
                 "leftImage": {
-                  "src": "/assets/uploads/2023/02/UI-scaled.jpg",
-                  "src2x": "/assets/uploads/2023/02/UI%402x-scaled.jpg",
+                  "src": "/assets/uploads/2023/02/UI%402x-scaled.jpg",
                   "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 10",
                   "width": 1300,
                   "height": 630
                 },
                 "rightImage": {
-                  "src": "/assets/uploads/2023/02/Wireframes-scaled.jpg",
-                  "src2x": "/assets/uploads/2023/02/Wireframes%402x-scaled.jpg",
+                  "src": "/assets/uploads/2023/02/Wireframes%402x-scaled.jpg",
                   "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 11",
                   "width": 1300,
                   "height": 630
@@ -270,23 +238,20 @@
               "description": "La couleur principale de l'interface a été choisie comme un beige pastel pour qu'elle ne distrait pas des informations importantes et ne surcharge pas le design, en plus des actifs N lumineux. Nous avons choisi une couleur spécifique pour chaque étape du processus de création d'une collection et de son téléchargement sur la marketplace, qui n'est associée qu'à cette étape. Le style général est sous forme de cartes, qui ressemble à un actif NFT.",
               "gallery": [
                 {
-                  "src": "/assets/uploads/2023/02/11.jpg",
-                  "src2x": "/assets/uploads/2023/02/11@2x.jpg",
+                  "src": "/assets/uploads/2023/02/11@2x.jpg",
                   "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 12",
                   "width": 630,
                   "height": 650
                 },
                 {
-                  "src": "/assets/uploads/2023/02/22.jpg",
-                  "src2x": "/assets/uploads/2023/02/22@2x.jpg",
+                  "src": "/assets/uploads/2023/02/22@2x.jpg",
                   "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 13",
                   "width": 630,
                   "height": 650
                 }
               ],
               "finalImage": {
-                "src": "/assets/uploads/2023/02/Images4-scaled.jpg",
-                "src2x": "/assets/uploads/2023/02/Images4%402x-scaled.jpg",
+                "src": "/assets/uploads/2023/02/Images4%402x-scaled.jpg",
                 "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 14",
                 "width": 1300,
                 "height": 630
@@ -302,8 +267,7 @@
               "title": "Onboarding",
               "description": "Le processus de création et de vente de collections NFT est une nouvelle technologie et n'est pas immédiatement clair pour tout le monde. C'est pourquoi nous avons créé un onboarding agréable et compréhensible qui décrit le processus. De plus, l'utilisateur est guidé à travers l'application avec des indices et des tutoriels, améliorant l'expérience utilisateur et aidant à atteindre les objectifs dans l'interface plus rapidement.",
               "image": {
-                "src": "/assets/uploads/2023/02/Frame-75853075.jpg",
-                "src2x": "/assets/uploads/2023/02/Frame-75853075@2x.jpg",
+                "src": "/assets/uploads/2023/02/Frame-75853075@2x.jpg",
                 "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 15",
                 "width": 600,
                 "height": 630
@@ -313,8 +277,7 @@
               "title": "Analytics synchronisés",
               "description": "En synchronisant avec différentes marketplaces, les utilisateurs peuvent suivre toutes les statistiques de leurs collections, actifs NFT et profil via notre plateforme. Dans l'onglet Dashboard, ils peuvent suivre leurs transactions NFT et suivre la conversion pour chaque collection (vues, achetées, favorisées, collectées). Et avec un abonnement premium, ils peuvent même comparer les analytics de différentes marketplaces pour la même collection / NFT.",
               "image": {
-                "src": "/assets/uploads/2023/02/Frame-7585307.jpg",
-                "src2x": "/assets/uploads/2023/02/Frame-7585307@2x.jpg",
+                "src": "/assets/uploads/2023/02/Frame-7585307@2x.jpg",
                 "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 16",
                 "width": 600,
                 "height": 630
@@ -324,8 +287,7 @@
               "title": "Ajouter n'importe quelles couches",
               "description": "Les utilisateurs peuvent ajouter jusqu'à 30 couches différentes à une collection. Ils peuvent choisir parmi les couches les plus populaires, divisées en 4 catégories (personnages, vie végétale, objets inanimés, abstraction), ou ajouter les leurs (s'ils n'en ont pas trouvé dans la liste). Lors de l'ajout de votre couche, vous pouvez choisir n'importe quelle icône disponible sur la plateforme ou télécharger la vôtre.",
               "image": {
-                "src": "/assets/uploads/2023/02/Frame-758530.jpg",
-                "src2x": "/assets/uploads/2023/02/Frame-758530@2x.jpg",
+                "src": "/assets/uploads/2023/02/Frame-758530@2x.jpg",
                 "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 17",
                 "width": 600,
                 "height": 630
@@ -335,8 +297,7 @@
               "title": "Définir les propriétés",
               "description": "Dans l'étape finale de création d'une collection, l'utilisateur doit spécifier les propriétés pour chaque couche ajoutée. À ce stade, il peut supprimer la couche inutile s'il change d'avis concernant son ajout à la collection. L'ordre des couches peut être facilement modifié en faisant glisser et en échangeant les couches souhaitées. Lors de l'ajout d'images à une couche, vous devez définir la rareté pour chaque objet ajouté et pour toute la couche.",
               "image": {
-                "src": "/assets/uploads/2023/02/Frame-7585307588.jpg",
-                "src2x": "/assets/uploads/2023/02/Frame-7585307588@2x.jpg",
+                "src": "/assets/uploads/2023/02/Frame-7585307588@2x.jpg",
                 "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 18",
                 "width": 600,
                 "height": 630
@@ -346,8 +307,7 @@
               "title": "Définir le prix",
               "description": "Étant donné que le téléchargement de la collection est synchronisé avec les marketplaces NFT, lors de la définition du prix des objets NFT, l'utilisateur peut choisir parmi les blockchains et tokens de paiement disponibles (par exemple, Opensea n'a que 2 blockchains disponibles - Ethereum et Polygon). De plus, à ce stade, vous pouvez supprimer le NFT de la collection si vous changez d'avis concernant son téléchargement, vous n'avez donc pas à retourner à la première étape (sélection NFT).",
               "image": {
-                "src": "/assets/uploads/2023/02/Frame-75853075888.jpg",
-                "src2x": "/assets/uploads/2023/02/Frame-75853075888@2x.jpg",
+                "src": "/assets/uploads/2023/02/Frame-75853075888@2x.jpg",
                 "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 19",
                 "width": 600,
                 "height": 630
@@ -357,8 +317,7 @@
               "title": "Paramètres NFT avancés",
               "description": "Le prix pour chaque NFT est défini séparément. Vous pouvez choisir un prix fixe ou une enchère chronométrée. Les paramètres changent en fonction de l'option sélectionnée. L'utilisateur peut également définir une durée fixe, réserver le NFT pour un acheteur spécifique et définir une commission séparée pour chaque actif.",
               "image": {
-                "src": "/assets/uploads/2023/02/Frame-758530758.jpg",
-                "src2x": "/assets/uploads/2023/02/Frame-758530758@2x.jpg",
+                "src": "/assets/uploads/2023/02/Frame-758530758@2x.jpg",
                 "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 20",
                 "width": 600,
                 "height": 630
@@ -385,14 +344,13 @@
           ],
           "Gallery": [
             {
-              "src": "/assets/uploads/2023/02/1.jpg",
-              "src2x": "/assets/uploads/2023/02/1@2x.jpg",
+              "src": "/assets/uploads/2023/02/1@2x.jpg",
               "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 21",
               "width": 630,
               "height": 650
             },
             {
-              "src": "/assets/uploads/2023/02/2.jpg",
+              "src": "/assets/uploads/2023/02/2@2x.jpg",
               "src2x": "/assets/uploads/2023/02/2@2x.jpg",
               "alt": "JoCreate - Application pour créer des collections NFT - Développement de Site Web - Photo 22",
               "width": 630,
@@ -457,8 +415,8 @@
               "x3": "/assets/uploads/2023/02/0@2x-scaled.jpg"
             },
             "tags": [
-              { "name": "Crypto & NFT", "url": "/projects?cat=crypto-nft" },
-              { "name": "Web app", "url": "/projects?tag=web-app" }
+              { "slug": "web-app", "label": "Web app", "href": "/blog?tags=web-app", "category": "projectType" },
+              { "slug": "crypto-nft", "label": "Crypto & NFT", "href": "/blog?cat=crypto-nft", "category": "industry" }
             ],
             "description": "Complete application for creating, managing and selling NFT collections with integrated exchange platform."
         },

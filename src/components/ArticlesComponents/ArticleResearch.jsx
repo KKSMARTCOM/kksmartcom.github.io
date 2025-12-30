@@ -31,11 +31,11 @@ const ArticleResearch = ({ data }) => {
 
 				<div className="case-image view fadein full_image_template">
 					<picture>
-						<source media="(min-width: 1600px)" srcSet={data.imagePrincipal.src}/>
+						{/*<source media="(min-width: 1600px)" srcSet={data.imagePrincipal.src}/>
 						<source media="(max-width: 1100px)" srcSet={data.imagePrincipal.src}/>
-						<source media="(min-width: 1101px) and (max-width:1599px)" srcSet={data.imagePrincipal.src2x}/>
+						<source media="(min-width: 1101px) and (max-width:1599px)" srcSet={data.imagePrincipal.src2x}/>*/}
                             <img width={data.imagePrincipal.width} height={data.imagePrincipal.height}
-							className="" loading="lazy" src={data.imagePrincipal.src2x}
+							className="" loading="lazy" src={data.imagePrincipal.src}
 							alt={data.imagePrincipal.alt}/>
 					</picture>
 				</div>
@@ -104,11 +104,11 @@ const ArticleResearch = ({ data }) => {
 						{stageData.image && (
 							<div className="case-image view fadein full_image_template">
 								<picture>
-									<source media="(min-width: 1600px)" srcSet={stageData.image.src}/>
+									{/*<source media="(min-width: 1600px)" srcSet={stageData.image.src}/>
 									<source media="(max-width: 1100px)" srcSet={stageData.image.src}/>
-									<source media="(min-width: 1101px) and (max-width:1599px)" srcSet={stageData.image.src2x}/>
+									<source media="(min-width: 1101px) and (max-width:1599px)" srcSet={stageData.image.src2x}/>*/}
 									<img width={stageData.image.width} height={stageData.image.height}
-										className="" loading="lazy" src={stageData.image.src2x}
+										className="" loading="lazy" src={stageData.image.src}
 										alt={stageData.image.alt}/>
 								</picture>
 							</div>

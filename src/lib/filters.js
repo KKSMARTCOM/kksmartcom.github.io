@@ -1,17 +1,6 @@
-import { getAllCards } from './dataManager';
+import { getAllCards} from './dataManager';
 
-// Tags disponibles pour le filtrage
-export const AVAILABLE_TAGS = [
-  { name: "Crypto & NFT", url: "/projects?cat=crypto-nft" },
-  { name: "Web app", url: "/projects?tag=web-app" },
-  { name: "Mobile", url: "/projects?tag=mobile" },
-  { name: "SaaS", url: "/projects?tag=saas" },
-  { name: "UI/UX", url: "/projects?tag=ui-ux" },
-  { name: "E-commerce", url: "/projects?tag=ecommerce" },
-  { name: "Cloud", url: "/projects?tag=cloud" },
-  { name: "iOS", url: "/projects?tag=ios" },
-  { name: "Android", url: "/projects?tag=android" }
-];
+
 
 /**
  * Filtre les cartes d'articles en fonction des tags sélectionnés, de la langue et du nombre de résultats
@@ -33,7 +22,7 @@ export function filterProjects(tagNames = [], lang = 'fr', limit = null) {
   const filteredCards = allCards.filter(card => 
     tagNames.some(tagName => 
       card.tags && card.tags.some(tag => 
-        tag.name.toLowerCase() === tagName.toLowerCase()
+        tag.slug.toLowerCase() === tagName.toLowerCase()
       )
     )
   );
@@ -42,10 +31,4 @@ export function filterProjects(tagNames = [], lang = 'fr', limit = null) {
   return limit ? filteredCards.slice(0, limit) : filteredCards;
 }
 
-/**
- * Récupère tous les tags disponibles (constante)
- * @returns {Array} - Tableau des tags disponibles
- */
-export function getAllTags() {
-  return AVAILABLE_TAGS;
-}
+

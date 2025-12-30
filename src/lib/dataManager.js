@@ -119,3 +119,40 @@ export const getCardsByIds = (articleId, lang) => {
   return { ...article.cards, articleId };
 };
 
+// src/lib/tagsService.js
+
+/**
+ * Fonction générique pour récupérer les tags depuis l'API
+ * Elle gère la sécurité pour éviter l'erreur ".filter is not a function"
+ */
+async function fetchAllTags() {
+  try {
+    const response = await fetch('/api/tags');
+    if (!response.ok) throw new Error('Erreur lors du chargement des tags');
+    
+    const data = await response.json();
+    
+    // On s'assure de toujours renvoyer un tableau
+    return Array.isArray(data) ? data : [];
+  } catch (error) {
+    console.error("Erreur TagsService:", error);
+    return []; // Retourne un tableau vide en cas de crash
+  }
+}
+
+/**
+ * Récupère uniquement les types de projets
+ */
+export async function getProjectTypes() {
+  const allTags = await fetchAllTags();
+  return allTags.filter(tag => tag.category === 'projectType');
+}
+
+/**
+ * Récupère uniquement les industries
+ */
+export async function getIndustries() {
+  const allTags = await fetchAllTags();
+  return allTags.filter(tag => tag.category === 'industry');
+}
+

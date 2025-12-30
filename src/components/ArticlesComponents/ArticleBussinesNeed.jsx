@@ -53,9 +53,10 @@ const ArticleBussinesNeed = ({ data }) => {
                         <div className="flex-row gallery">
                             {data.gallery.map((image, index) => (
                                 <picture key={index}>
-                                    <source media="(min-width: 1600px)" srcSet={image.src}/>
+                                    {/* <source media="(min-width: 1600px)" srcSet={image.src}/>
                                     <source media="(max-width: 1100px)" srcSet={image.src}/>
                                     <source media="(min-width: 1101px) and (max-width:1599px)" srcSet={image.src2x || image.src}/>
+                                    */}
                                     <img 
                                         width={image.width || 630} 
                                         height={image.height || 650} 

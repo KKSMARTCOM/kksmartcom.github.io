@@ -30,14 +30,14 @@ const ArticleProject = ({ data }) => {
 								</div>
 								<div className="right-side">
 									<picture>
-										<source media="(min-width: 1600px)"
+										{/*<source media="(min-width: 1600px)"
 											srcSet={feature.image.src}/>
 										<source media="(max-width: 1100px)"
 											srcSet={feature.image.src}/>
 										<source media="(min-width: 1101px) and (max-width:1599px)"
-											srcSet={feature.image.src2x}/>
+											srcSet={feature.image.src2x}/>*/}
 										<img width={feature.image.width} height={feature.image.height} className="" loading="lazy"
-											src={feature.image.src2x}
+											src={feature.image.src}
 											alt={feature.image.alt}/>
 									</picture>
 								</div>

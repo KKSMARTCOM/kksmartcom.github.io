@@ -36,14 +36,15 @@ export default function ArticleFunctional({ data }) {
 
 					{data.Gallery && data.Gallery.map((image, index) => (
 					<picture key={index}>
-						<source media="(min-width: 1600px)"
+						{/*<source media="(min-width: 1600px)"
 							srcSet={image.src}/>
 						<source media="(max-width: 1100px)"
 							srcSet={image.src}/>
 						<source media="(min-width: 1101px) and (max-width:1599px)"
 							srcSet={image.src2x}/>
+						*/}
 						<img width={image.width} height={image.height} className="view fadein" loading="lazy"
-							src={image.src2x}
+							src={image.src}
 							alt={image.alt}/>
 					</picture>
 				))}

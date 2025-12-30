@@ -23,8 +23,7 @@ import { useLang } from '@/context/LangContext';
  *       x3: "/images/projet-3x.jpg"
  *     },
  *     tags: [
- *       { name: "Web", url: "/categorie/web" },
- *       { name: "Mobile", url: "/categorie/mobile" }
+ *       { "slug": "crypto-nft", "label": "Crypto & NFT", "href": "/blog?cat=crypto-nft", "category": "industry" },
  *     ],
  *     description: "Description du projet..."
  *   }} 
@@ -34,16 +33,17 @@ const ProjectCard = ({ project }) => (
 <div className="case view textslide delay0">
     <a href={project.url} className="img-wrap view">
         <picture style={{height: "100%"}}>
-            {project.images.x3 && <source media="(min-width: 1600px)" srcSet={project.images.x3} />}
+            {/* {project.images.x3 && <source media="(min-width: 1600px)" srcSet={project.images.x3} />}
             {project.images.x1 && <source media="(max-width: 1100px)" srcSet={project.images.x1} />}
             {project.images.x2 && <source media="(min-width: 1101px) and (max-width:1599px)" srcSet={project.images.x2} />}
+            */}
             <img 
                 style={{height: "100%"}}
                 width="630" 
                 height="804" 
                 className="" 
                 loading="lazy" 
-                src={project.images.x2 || project.images.x1}  
+                src={project.images}  
                 alt={`${project.title} - Website Development - Photo`}
             />
         </picture>                
@@ -63,7 +63,7 @@ const ProjectCard = ({ project }) => (
     {project.tags && project.tags.length > 0 && (
         <div className="tags-wrap">
             {project.tags.map((tag, index) => (
-                <a key={index} className="tag" href={tag.url || '#'}>{tag.name}</a>
+                <a key={index} className="tag" href={tag.href || '#'}>{tag.label}</a>
             ))}
         </div>
     )}

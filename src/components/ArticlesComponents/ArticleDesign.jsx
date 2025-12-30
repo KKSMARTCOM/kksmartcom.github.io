@@ -66,23 +66,23 @@ const ArticleDesign = ({ data }) => {
 									<div className="mover"></div>
 									<div className="img-left">
 										<picture>
-											<source media="(min-width: 1600px)" srcSet={stageData.imageSplitter.leftImage.src}/>
+											{/*<source media="(min-width: 1600px)" srcSet={stageData.imageSplitter.leftImage.src}/>
 											<source media="(max-width: 1100px)" srcSet={stageData.imageSplitter.leftImage.src}/>
-											<source media="(min-width: 1101px) and (max-width:1599px)" srcSet={stageData.imageSplitter.leftImage.src2x}/>
+											<source media="(min-width: 1101px) and (max-width:1599px)" srcSet={stageData.imageSplitter.leftImage.src2x}/>*/}
 											<img width={stageData.imageSplitter.leftImage.width}
 												height={stageData.imageSplitter.leftImage.height} className="img-left" loading="lazy"
-												src={stageData.imageSplitter.leftImage.src2x}
+												src={stageData.imageSplitter.leftImage.src}
 												alt={stageData.imageSplitter.leftImage.alt}/>
 										</picture>
 									</div>
 									<div className="img-right">
 										<picture>
-											<source media="(min-width: 1600px)" srcSet={stageData.imageSplitter.rightImage.src}/>
+											{/*<source media="(min-width: 1600px)" srcSet={stageData.imageSplitter.rightImage.src}/>
 											<source media="(max-width: 1100px)" srcSet={stageData.imageSplitter.rightImage.src}/>
-											<source media="(min-width: 1101px) and (max-width:1599px)" srcSet={stageData.imageSplitter.rightImage.src2x}/>
+											<source media="(min-width: 1101px) and (max-width:1599px)" srcSet={stageData.imageSplitter.rightImage.src2x}/>*/}
 											<img width={stageData.imageSplitter.rightImage.width}
 												height={stageData.imageSplitter.rightImage.height} className="img-right" loading="lazy"
-												src={stageData.imageSplitter.rightImage.src2x}
+												src={stageData.imageSplitter.rightImage.src}
 												alt={stageData.imageSplitter.rightImage.alt}/>
 										</picture>
 									</div>
@@ -145,11 +145,11 @@ const ArticleDesign = ({ data }) => {
 							<div className="flex-row gallery">
 								{stageData.gallery.map((image, galleryIndex) => (
 									<picture key={galleryIndex}>
-										<source media="(min-width: 1600px)" srcSet={image.src}/>
+										{/*<source media="(min-width: 1600px)" srcSet={image.src}/>
 										<source media="(max-width: 1100px)" srcSet={image.src}/>
-										<source media="(min-width: 1101px) and (max-width:1599px)" srcSet={image.src2x}/>
+										<source media="(min-width: 1101px) and (max-width:1599px)" srcSet={image.src2x}/>*/}
 										<img width={image.width} height={image.height} className="view fadein" loading="lazy"
-											src={image.src2x} alt={image.alt}/>
+											src={image.src} alt={image.alt}/>
 									</picture>
 								))}
 							</div>
@@ -158,11 +158,11 @@ const ArticleDesign = ({ data }) => {
 						{stageData.finalImage && (
 							<div className="case-image view fadein full_image_template">
 								<picture>
-									<source media="(min-width: 1600px)" srcSet={stageData.finalImage.src}/>
+									{/*<source media="(min-width: 1600px)" srcSet={stageData.finalImage.src}/>
 									<source media="(max-width: 1100px)" srcSet={stageData.finalImage.src}/>
-									<source media="(min-width: 1101px) and (max-width:1599px)" srcSet={stageData.finalImage.src2x}/>
+									<source media="(min-width: 1101px) and (max-width:1599px)" srcSet={stageData.finalImage.src2x}/>*/}
 									<img width={stageData.finalImage.width} height={stageData.finalImage.height} className="" loading="lazy"
-										src={stageData.finalImage.src2x} alt={stageData.finalImage.alt}/>
+										src={stageData.finalImage.src} alt={stageData.finalImage.alt}/>
 								</picture>
 							</div>
 						)}

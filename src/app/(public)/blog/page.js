@@ -1,11 +1,12 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import ProjectCard from '@/components/ProjectCard';
 import ContactSection from '@/components/ContactSection';
 import { filterProjects } from '@/lib/filters';
 import { useLang } from '@/context/LangContext';
-import { getComponentData } from '@/lib/dataManager';
+import { getComponentData, getProjectTypes, getIndustries } from '@/lib/dataManager';
 
 // Composant pour afficher un tag
 function TagItem({ tag, isActive, className = '' }) {
@@ -26,7 +27,7 @@ function TagsList({ tags, activeItems, className = '', listClassName = '' }) {
                 <TagItem 
                     key={tag.id} 
                     tag={tag} 
-                    isActive={activeItems.includes(tag.id)}
+                    isActive={activeItems.includes(tag.slug)}
                     className={className}
                 />
             ))}
@@ -35,6 +36,24 @@ function TagsList({ tags, activeItems, className = '', listClassName = '' }) {
 }
     
 export default function Blog() {
+    const [projectTypes, setProjectTypes] = useState([]);
+    const [industries, setIndustries] = useState([]);
+
+    useEffect(() => {
+        // On crée une petite fonction interne pour gérer l'asynchrone
+        const loadData = async () => {
+        const types = await getProjectTypes();
+        const inds = await getIndustries();
+        
+        setProjectTypes(types);
+        setIndustries(inds);
+        };
+
+        loadData();
+    }, []);
+
+    console.log("donne project ",projectTypes )
+    console.log("donne industries ",industries )
     const { lang } = useLang();
     const data = getComponentData('Blog',lang);
     const searchParams = useSearchParams();
@@ -68,7 +87,7 @@ export default function Blog() {
                                     </span>
 
                                     <TagsList 
-                                        tags={data.tags.projectTypes} 
+                                        tags={projectTypes} 
                                         activeItems={activeTags.length > 0 ? activeTags : ['all']}
                                     />
                                 </div>
@@ -79,7 +98,7 @@ export default function Blog() {
                                         </svg>
                                     </span>
                                     <TagsList 
-                                        tags={data.tags.industries} 
+                                        tags={industries} 
                                         activeItems={activeCategories.length > 0 ? activeCategories : ['all']}
                                         listClassName="cats-list"
                                     />

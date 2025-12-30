@@ -30,45 +30,21 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
     { 
       name: 'Tableau de bord', 
       icon: <FiHome className="text-xl" />, 
-      path: '/admin/Dashbord',
-      isActive: pathname === '/admin/Dashbord'
+      path: '/admin/dashboard',
+      isActive: pathname.startsWith('/admin/dashboard')
     },
     { 
-      name: 'Utilisateurs', 
-      icon: <FiUsers className="text-xl" />, 
-      path: '/admin/Utilisateurs',
-      isActive: pathname === '/admin/Utilisateurs'
-    },
-    { 
-      name: 'Rapports', 
-      icon: <FiPieChart className="text-xl" />, 
-      path: '/admin/Rapports',
-      isActive: pathname === '/admin/Rapports'
-    },
-    { 
-      name: 'Documents', 
+      name: 'Gestion des articles', 
       icon: <FiFileText className="text-xl" />, 
-      path: '/admin/Documents',
-      isActive: pathname === '/admin/Documents'
-    },
-    { 
-      name: 'Calendrier', 
-      icon: <FiCalendar className="text-xl" />, 
-      path: '/admin/Calendrier',
-      isActive: pathname === '/admin/Calendrier'
-    },
-    { 
-      name: 'Messages', 
-      icon: <FiMail className="text-xl" />, 
-      path: '/admin/Messages',
-      isActive: pathname === '/admin/Messages'
+      path: '/admin/articles',
+      isActive: pathname.startsWith('/admin/articles')
     },
     { 
       name: 'Paramètres', 
       icon: <FiSettings className="text-xl" />, 
-      path: '/admin/Parametres',
-      isActive: pathname === '/admin/Parametres'
-    },
+      path: '/admin/parametres',
+      isActive: pathname.startsWith('/admin/parametres')
+    }
   ];
 
   const toggleBodyClass = (isCollapsed) => {

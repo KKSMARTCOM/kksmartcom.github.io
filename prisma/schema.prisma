@@ -50,3 +50,18 @@ model Article { // J'utilise 'Article' au lieu de 'Post' pour mieux correspondre
 
   @@map("articles") // Le nom de la table sera 'articles'
 }
+
+// 4.Modèle pour les tags utilisés dans les articles
+model Tag {
+  id        Int      @id @default(autoincrement())
+  slug      String   // ex: "web-app", "fintech"
+  label     String   // ex: "Web app", "FinTech"
+  href      String   // ex: "/blog?tags=web-app"
+  category  String   // "projectType" ou "industry"
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Optionnel : Si vous voulez lier des articles à des tags plus tard
+  // articles Article[] 
+}
