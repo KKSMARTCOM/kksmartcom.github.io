@@ -3,7 +3,6 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Cookies from 'js-cookie';
 import { FiMail, FiLock, FiEye, FiEyeOff } from 'react-icons/fi';
 import styles from './LoginForm.module.css';
 import Image from 'next/image';
@@ -44,14 +43,8 @@ export default function LoginForm() {
         
             // Stocker le token dans un cookie pour l'utiliser lors des requêtes ultérieures
             // secure: true (en production), sameSite: 'Strict' pour la sécurité
-        Cookies.set('authToken', token, { 
-                expires: 7, // Expiration dans 7 jours (doit correspondre à l'expiration JWT)
-          secure: process.env.NODE_ENV === 'production', 
-          sameSite: 'Strict' 
-        }); 
-
         // Redirection après connexion réussie
-        router.push('/admin/addArticle');
+        router.push('/admin/dashboard');
         router.refresh();
       } else {
         setError(data.message || 'Identifiants incorrects. Veuillez réessayer.');

@@ -3,8 +3,6 @@
 import { useEffect } from "react";
 
 export default function ContactModal({ open, onClose }) {
-  if (!open) return null;
-
   const stop = (e) => e.stopPropagation();
 
   useEffect(() => {
@@ -12,6 +10,8 @@ export default function ContactModal({ open, onClose }) {
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [onClose]);
+
+  if (!open) return null;
 
   return (
     <div role="dialog" aria-modal="true" onClick={onClose} style={{

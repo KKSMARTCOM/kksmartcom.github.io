@@ -85,7 +85,7 @@
                 "items": [
                   { "text": "A propos", "href": "/apropos" },
                   { "text": "Blog", "href": "/blog" },
-                  { "text": "Carrières", "href": "#" }
+                  { "text": "Carrières", "href": "/carrieres" }
                 ]
               }
             ]
@@ -178,7 +178,7 @@
                 "items": [
                   { "text": "About", "href": "/apropos" },
                   { "text": "Blog", "href": "/blog" },
-                  { "text": "Careers", "href": "#" }
+                  { "text": "Careers", "href": "/carrieres" }
                 ]
               }
             ]

@@ -1,18 +1,15 @@
 // src/lib/clientAuth.js
-import Cookies from 'js-cookie';
-
 export function getAuthHeader() {
-  const token = Cookies.get('authToken');
-  return token ? { 'Authorization': `Bearer ${token}` } : {};
+  return {};
 }
 
 /**
  * Logique globale de déconnexion
  * @param {import('next/navigation').AppRouterInstance} router - L'instance du routeur Next.js
  */
-export function logout(router) {
+export async function logout(router) {
   // 1. Supprimer le cookie de session
-  Cookies.remove('authToken');
+  await fetch('/api/auth/logout', { method: 'POST' });
 
   // 2. Optionnel : Supprimer d'autres données locales si vous en avez (ex: localStorage)
   // localStorage.removeItem('user_info');

@@ -4,6 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import { getProjectTypes, getIndustries } from  '@/lib/dataManager';
 import { getAuthHeader } from '@/lib/clientAuth';
+import { AdminNotice, ConfirmDialog } from '@/components/admin/AdminDialog';
 
 
 export default function AdminTagsPage() {
@@ -13,6 +14,8 @@ export default function AdminTagsPage() {
 
   // État pour le formulaire d'ajout
   const [newTag, setNewTag] = useState({ slug: '', label: '', href: '', category: 'projectType' });
+  const [pendingDelete, setPendingDelete] = useState(null);
+  const [notice, setNotice] = useState('');
 
   const loadTags = async () => {
     setLoading(true);
@@ -24,7 +27,16 @@ export default function AdminTagsPage() {
   };
 
   useEffect(() => {
-    loadTags();
+    let active = true;
+    async function initialLoad() {
+      const [types, inds] = await Promise.all([getProjectTypes(), getIndustries()]);
+      if (!active) return;
+      setProjectTypes(types);
+      setIndustries(inds);
+      setLoading(false);
+    }
+    initialLoad();
+    return () => { active = false; };
   }, []);
 
   const handleAddTag = async (e) => {
@@ -39,23 +51,23 @@ export default function AdminTagsPage() {
       if (response.ok) {
         setNewTag({ slug: '', label: '', href: '', category: 'projectType' });
         loadTags(); // Recharger la liste
+        setNotice('Tag ajouté avec succès.');
       }
     } catch (err) {
-      alert("Erreur lors de l'ajout");
+      setNotice("Erreur lors de l'ajout");
     }
   };
 
-  const handleDelete = async (id) => {
-    if (!confirm("Supprimer ce tag ?")) return;
-    
+  const handleDelete = async () => {
+    if (!pendingDelete) return;
     try {
-      const response = await fetch(`/api/tags/${id}`, {
+      const response = await fetch(`/api/tags/${pendingDelete}`, {
         method: 'DELETE',
         headers: getAuthHeader(),
       });
-      if (response.ok) loadTags();
+      if (response.ok) { setPendingDelete(null); loadTags(); setNotice('Tag supprimé avec succès.'); }
     } catch (err) {
-      alert("Erreur lors de la suppression");
+      setNotice("Erreur lors de la suppression");
     }
   };
 
@@ -93,14 +105,14 @@ export default function AdminTagsPage() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }}>
           <div>
             <h2>Types de Projets</h2>
-            <TagList tags={projectTypes} onDelete={handleDelete} />
+            <TagList tags={projectTypes} onDelete={setPendingDelete} />
           </div>
           <div>
             <h2>Industries</h2>
-            <TagList tags={industries} onDelete={handleDelete} />
+            <TagList tags={industries} onDelete={setPendingDelete} />
           </div>
         </div>
-      )}
+      )}<ConfirmDialog open={Boolean(pendingDelete)} danger title="Supprimer ce tag ?" description="Cette action est définitive." confirmLabel="Supprimer" onClose={() => setPendingDelete(null)} onConfirm={handleDelete} /><AdminNotice message={notice} onClose={() => setNotice('')} />
     </main>
   );
 }

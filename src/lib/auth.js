@@ -8,6 +8,11 @@ import jwt from 'jsonwebtoken';
 const SALT_ROUNDS = 10; 
 const JWT_SECRET = process.env.JWT_SECRET;
 
+export function getJwtSecret() {
+  if (!JWT_SECRET) throw new Error('JWT_SECRET doit être défini.');
+  return JWT_SECRET;
+}
+
 // Hache le mot de passe fourni par l'utilisateur lors de l'inscription.
 export async function hashPassword(password) {
   // Le hachage est asynchrone pour ne pas bloquer le serveur
@@ -32,14 +37,9 @@ export async function verifyPassword(password, hashedPassword) {
  * @returns {object|null} Le payload décodé (ex: { userId, email }) ou null si invalide.
  */
 export function verifyToken(token) {
-  if (!JWT_SECRET) {
-    console.error("JWT_SECRET non défini. Vérifiez votre fichier .env.");
-    return null;
-  }
-  
   try {
     // jwt.verify lance une erreur si le token est invalide ou expiré
-    const decoded = jwt.verify(token, JWT_SECRET);
+    const decoded = jwt.verify(token, getJwtSecret());
     return decoded; // Renvoie le payload (userId, email, etc.)
   } catch (error) {
     // Si la vérification échoue (token expiré, signature invalide)

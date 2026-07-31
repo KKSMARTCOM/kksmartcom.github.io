@@ -1,11 +1,4 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
-
-// 1. Configuration du Provider (sqlite) - utilisez une base de données locale pour le développement
+// SQLite en local — pour la production, remplacer provider par "postgresql"
 datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
@@ -15,53 +8,147 @@ generator client {
   provider = "prisma-client-js"
 }
 
-
-// 2. Modèle Utilisateur (pour l'authentification)
 model User {
-  id        Int      @id @default(autoincrement())
-  email     String   @unique
-  password  String   // Le mot de passe HACHÉ
+  id        Int        @id @default(autoincrement())
+  email     String     @unique
+  password  String
   name      String?
-  articles  Article[]   // Relation : Un utilisateur peut avoir plusieurs articles
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  role      String     @default("ADMIN")
+  articles  Article[]
+  blogPosts BlogPost[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
 }
 
-// 3. Modèle Article de Blog
-model Article { // J'utilise 'Article' au lieu de 'Post' pour mieux correspondre à votre JSON
+model Article {
   id        Int      @id @default(autoincrement())
-  // Champs pour les données simples et l'indexation
-  uniqueId  String   @unique // Utilisé pour le "1" dans votre JSON original
+  uniqueId  String   @unique
   date      DateTime
   author    String
-  
-  // Le champ qui va contenir toutes les données françaises (fr) et anglaises (en)
-  // Utilisation du type Json pour stocker la structure complexe du contenu de l'article.
-  contentFr Json     @map("content_fr") // Mappe à une colonne 'content_fr'
-  contentEn Json?    @map("content_en") // contentEn est optionnel
-
-  // Référence à l'auteur
-  authorUser User @relation(fields: [authorId], references: [id])
+  contentFr Json     @map("content_fr")
+  contentEn Json?    @map("content_en")
+  authorUser User  @relation(fields: [authorId], references: [id])
   authorId   Int
-
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  @@map("articles") // Le nom de la table sera 'articles'
+  @@map("articles")
 }
 
-// 4.Modèle pour les tags utilisés dans les articles
 model Tag {
   id        Int      @id @default(autoincrement())
-  slug      String   // ex: "web-app", "fintech"
-  label     String   // ex: "Web app", "FinTech"
-  href      String   // ex: "/blog?tags=web-app"
-  category  String   // "projectType" ou "industry"
-  
+  slug      String
+  label     String
+  href      String
+  category  String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
 
-  // Optionnel : Si vous voulez lier des articles à des tags plus tard
-  // articles Article[] 
+// ─── Carrières ───────────────────────────────────────────────
+
+model JobOffer {
+  id               Int       @id @default(autoincrement())
+  slug             String    @unique
+  status           String    @default("draft")
+  titleFr          String
+  titleEn          String?
+  descriptionFr    String
+  descriptionEn    String?
+  location         String?
+  contractType     String?
+  department       String?
+  applicationEmail String?
+  publishedAt      DateTime?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+}
+
+// ─── Services ────────────────────────────────────────────────
+
+model ServiceCategory {
+  id        Int       @id @default(autoincrement())
+  slug      String    @unique
+  order     Int       @default(0)
+  titleFr   String
+  titleEn   String?
+  services  Service[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+model Service {
+  id             Int             @id @default(autoincrement())
+  slug           String          @unique
+  categoryId     Int
+  category       ServiceCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  order          Int             @default(0)
+  titleFr        String
+  titleEn        String?
+  descriptionFr  String?
+  descriptionEn  String?
+  href           String          @default("#")
+  imageUrl       String?
+  imageAltFr     String?
+  imageAltEn     String?
+  isPublished    Boolean         @default(true)
+  showInNav      Boolean         @default(true)
+  showOnHomepage Boolean         @default(false)
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+}
+
+// ─── Blog éditorial (phase 4) ─────────────────────────────────
+
+model BlogDepartment {
+  id            Int               @id @default(autoincrement())
+  slug          String            @unique
+  order         Int               @default(0)
+  nameFr        String
+  nameEn        String?
+  subcategories BlogSubcategory[]
+  posts         BlogPost[]
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+}
+
+model BlogSubcategory {
+  id           Int            @id @default(autoincrement())
+  slug         String         @unique
+  departmentId Int
+  department   BlogDepartment @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+  order        Int            @default(0)
+  nameFr       String
+  nameEn       String?
+  posts        BlogPost[]
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+}
+
+model BlogPost {
+  id              Int              @id @default(autoincrement())
+  slug            String           @unique
+  status          String           @default("draft")
+  departmentId    Int?
+  department      BlogDepartment?  @relation(fields: [departmentId], references: [id], onDelete: SetNull)
+  subcategoryId   Int?
+  subcategory     BlogSubcategory? @relation(fields: [subcategoryId], references: [id], onDelete: SetNull)
+  authorId        Int
+  author          User             @relation(fields: [authorId], references: [id])
+  titleFr         String
+  titleEn         String?
+  summaryFr       String?
+  summaryEn       String?
+  introductionFr  String?
+  introductionEn  String?
+  bodyFr          String?
+  bodyEn          String?
+  conclusionFr    String?
+  conclusionEn    String?
+  sectionsFr      Json?
+  sectionsEn      Json?
+  coverImage      String?
+  publishedAt     DateTime?
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
 }

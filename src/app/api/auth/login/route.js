@@ -2,11 +2,10 @@
 
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/db';
-import { verifyPassword } from '@/lib/auth'; // Importe la fonction de vérification
+import { verifyPassword, getJwtSecret } from '@/lib/auth'; // Importe la fonction de vérification
 import jwt from 'jsonwebtoken';
 
 // Accès au secret JWT depuis les variables d'environnement
-const JWT_SECRET = process.env.JWT_SECRET; 
 const JWT_EXPIRATION = '7d'; // Le jeton sera valide pendant 7 jours
 
 // Gère les requêtes POST pour la connexion de l'utilisateur
@@ -49,14 +48,14 @@ export async function POST(request) {
     // 4. Génération du JSON Web Token (JWT)
     // Le 'payload' contient les infos importantes pour identifier l'utilisateur plus tard (ex: user ID)
     const token = jwt.sign(
-      { userId: user.id, email: user.email }, 
-      JWT_SECRET, 
+      { userId: user.id, email: user.email, role: user.role },
+      getJwtSecret(),
       { expiresIn: JWT_EXPIRATION }
     );
 
     // 5. Succès : Retourner le jeton au client
     // Le client devra stocker ce token (souvent dans un cookie ou le localStorage)
-    return NextResponse.json(
+    const response = NextResponse.json(
       { 
         message: 'Connexion réussie', 
         token, 
@@ -64,6 +63,14 @@ export async function POST(request) {
       }, 
       { status: 200 }
     );
+    response.cookies.set('authToken', token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'lax',
+      path: '/',
+      maxAge: 60 * 60 * 24 * 7,
+    });
+    return response;
 
   } catch (error) {
     console.error('Erreur lors de la connexion :', error);

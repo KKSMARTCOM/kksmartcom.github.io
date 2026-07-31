@@ -31,7 +31,7 @@ export default function BackLayout({ children }) {
   };
 
   return (
-    <div className="flex h-screen bg-gray-50">
+    <div className="admin-shell flex h-screen">
       <SideBar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       
       <div 
@@ -41,7 +41,7 @@ export default function BackLayout({ children }) {
       >
         <Header isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
         
-        <main className="flex-1 overflow-y-auto pt-16">
+        <main className="admin-main flex-1 overflow-y-auto pt-16">
           <div className="">
             {children}
           </div>

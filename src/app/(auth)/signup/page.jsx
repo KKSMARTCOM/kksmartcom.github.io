@@ -1,11 +1,6 @@
-// src/app/(auth)/signup/page.jsx
+import { redirect } from 'next/navigation';
 
-import RegisterForm from '@/components/auth/RegisterForm';
-
+// Les comptes sont provisionnés par un administrateur, pas par inscription publique.
 export default function SignupPage() {
-  return (
-    <main className= "screen1 black-background section" id="main-screen-load" >
-      <RegisterForm />
-    </main>
-  );
+  redirect('/login');
 }

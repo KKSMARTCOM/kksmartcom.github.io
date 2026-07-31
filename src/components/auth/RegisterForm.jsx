@@ -36,7 +36,6 @@ export default function RegisterForm() {
 
       if (response.ok) {
         // Succès : Rediriger vers la page de connexion ou la page d'accueil
-        alert('Inscription réussie ! Veuillez vous connecter.');
         router.push('/login');
       } else {
         // Échec : Afficher le message d'erreur du backend

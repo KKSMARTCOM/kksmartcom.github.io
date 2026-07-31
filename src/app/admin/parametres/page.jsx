@@ -1,50 +1,16 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import { FiLock, FiSave, FiShield, FiUser } from 'react-icons/fi';
+import { AdminNotice } from '@/components/admin/AdminDialog';
+import { getAuthHeader } from '@/lib/clientAuth';
+
 export default function ParametresPage() {
-  return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold text-gray-800 mb-6">Paramètres</h1>
-      
-      <div className="bg-white rounded-lg shadow overflow-hidden">
-        <div className="p-6 border-b">
-          <h2 className="text-lg font-medium text-gray-900 mb-6">Profil</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Nom d'utilisateur
-              </label>
-              <input
-                type="text"
-                defaultValue="admin"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-              />
-            </div>
-            
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Adresse email
-              </label>
-              <input
-                type="email"
-                defaultValue="admin@example.com"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-              />
-            </div>
-          </div>
-          
-          <div className="mt-6">
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
-              Enregistrer les modifications
-            </button>
-          </div>
-        </div>
-        
-        <div className="p-6 border-t">
-          <h2 className="text-lg font-medium text-gray-900 mb-6">Sécurité</h2>
-          <button className="text-red-600 hover:text-red-800">
-            Changer de mot de passe
-          </button>
-        </div>
-      </div>
-    </div>
-  );
+  const [profile, setProfile] = useState({ name: '', email: '', role: '' });
+  const [passwords, setPasswords] = useState({ currentPassword: '', newPassword: '', confirmPassword: '' });
+  const [notice, setNotice] = useState(''); const [saving, setSaving] = useState(false);
+  useEffect(() => { fetch('/api/auth/me', { headers: getAuthHeader() }).then((r) => r.json()).then((data) => data.user && setProfile(data.user)); }, []);
+  const saveProfile = async (event) => { event.preventDefault(); setSaving(true); const response = await fetch('/api/auth/me', { method: 'PUT', headers: { 'Content-Type': 'application/json', ...getAuthHeader() }, body: JSON.stringify({ name: profile.name, email: profile.email }) }); const data = await response.json(); setSaving(false); if (!response.ok) return setNotice(data.message || 'Erreur lors de l’enregistrement.'); setProfile(data.user); setNotice(data.message); };
+  const changePassword = async (event) => { event.preventDefault(); if (passwords.newPassword !== passwords.confirmPassword) return setNotice('Les nouveaux mots de passe ne correspondent pas.'); setSaving(true); const response = await fetch('/api/auth/me', { method: 'PUT', headers: { 'Content-Type': 'application/json', ...getAuthHeader() }, body: JSON.stringify(passwords) }); const data = await response.json(); setSaving(false); if (!response.ok) return setNotice(data.message || 'Erreur lors du changement de mot de passe.'); setPasswords({ currentPassword: '', newPassword: '', confirmPassword: '' }); setNotice('Mot de passe modifié avec succès.'); };
+  return <div className="admin-page max-w-5xl mx-auto"><div className="admin-articles-hero"><div><p className="admin-kicker">COMPTE ADMINISTRATEUR</p><h1>Paramètres</h1><p>Gérez vos informations de profil et la sécurité de votre session.</p></div><div className="admin-role-badge"><FiShield /> {profile.role || 'ADMIN'}</div></div><div className="grid lg:grid-cols-2 gap-6 mt-6"><form onSubmit={saveProfile} className="admin-settings-card"><div className="admin-settings-heading"><FiUser /><div><h2>Profil</h2><p>Informations visibles dans l’administration.</p></div></div><label>Nom affiché</label><input value={profile.name || ''} onChange={(e) => setProfile({ ...profile, name: e.target.value })} placeholder="Nom de l’administrateur"/><label>Adresse e-mail</label><input type="email" required value={profile.email || ''} onChange={(e) => setProfile({ ...profile, email: e.target.value })}/><button disabled={saving} className="bg-blue-600 text-white"><FiSave /> Enregistrer le profil</button></form><form onSubmit={changePassword} className="admin-settings-card"><div className="admin-settings-heading"><FiLock /><div><h2>Sécurité</h2><p>Utilisez un mot de passe long et unique.</p></div></div><label>Mot de passe actuel</label><input type="password" required value={passwords.currentPassword} onChange={(e) => setPasswords({ ...passwords, currentPassword: e.target.value })}/><label>Nouveau mot de passe</label><input type="password" minLength="12" required value={passwords.newPassword} onChange={(e) => setPasswords({ ...passwords, newPassword: e.target.value })}/><label>Confirmer le nouveau mot de passe</label><input type="password" minLength="12" required value={passwords.confirmPassword} onChange={(e) => setPasswords({ ...passwords, confirmPassword: e.target.value })}/><button disabled={saving} className="admin-security-action"><FiLock /> Mettre à jour le mot de passe</button></form></div><AdminNotice message={notice} onClose={() => setNotice('')}/></div>;
 }

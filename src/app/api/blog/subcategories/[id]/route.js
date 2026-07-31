@@ -1,0 +1,4 @@
+import { NextResponse } from 'next/server'; import prisma from '@/lib/db'; import { requireAuth } from '@/lib/apiMiddleware';
+async function updateSubcategory(request, { params }) { const { id } = await params; const body = await request.json(); const subcategory = await prisma.blogSubcategory.update({ where: { id: Number(id) }, data: { nameFr: body.nameFr, nameEn: body.nameEn || null, departmentId: Number(body.departmentId), order: Number(body.order) || 0 } }); return NextResponse.json({ subcategory }); }
+async function deleteSubcategory(request, { params }) { const { id } = await params; await prisma.blogSubcategory.delete({ where: { id: Number(id) } }); return NextResponse.json({ message: 'Sous-catégorie supprimée.' }); }
+export const PUT = requireAuth(updateSubcategory); export const DELETE = requireAuth(deleteSubcategory);

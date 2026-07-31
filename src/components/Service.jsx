@@ -1,8 +1,8 @@
 "use client";
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLang } from '@/context/LangContext';
 import { getComponentData } from '@/lib/dataManager';
-
+import Link from 'next/link';
 
 const ServiceCard = ({ href, imgSources, img, name, btnHref, tags, description, consultBtn }) => (
 	<div className="case view textslide delay0">
@@ -34,9 +34,52 @@ const ServiceCard = ({ href, imgSources, img, name, btnHref, tags, description, 
 	</div>
 );
 
+function buildCardFromService(service, consultBtn) {
+	const imgSrc = service.imageUrl || '/assets/projets/digital.png';
+	return {
+		href: service.href,
+		imgSources: [
+			{ media: '(min-width: 1600px)', srcSet: imgSrc },
+			{ media: '(max-width: 1100px)', srcSet: imgSrc },
+			{ media: '(min-width: 1101px) and (max-width:1599px)', srcSet: imgSrc },
+		],
+		img: { src: imgSrc, alt: service.imageAlt || service.title },
+		name: service.title,
+		btnHref: service.href,
+		tags: service.category ? [{ href: service.href, label: service.category.title }] : [],
+		description: service.description || '',
+		consultBtn,
+	};
+}
+
 const Service = () => {
   const { lang } = useLang();
-  const data = getComponentData('Service', lang) || { cards: [], bottomSection: {} };
+  const staticData = getComponentData('Service', lang) || { cards: [], bottomSection: {}, subheading: '', heading: '', cta: 'Voir plus' };
+  const [cards, setCards] = useState(staticData.cards || []);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const load = async () => {
+      try {
+        const res = await fetch(`/api/services?homepage=true&lang=${lang}`);
+        const data = await res.json();
+        if (data.services?.length) {
+          setCards(data.services.map((s) => buildCardFromService(s, lang === 'en' ? 'Consult' : 'Consulter')));
+        }
+      } catch (err) {
+        console.error('Erreur chargement services:', err);
+      } finally {
+        setLoaded(true);
+      }
+    };
+    load();
+  }, [lang]);
+
+  const data = staticData;
+
+  if (!loaded && cards.length === 0) {
+    return null;
+  }
 
   return (
 	<div className="screen2 white-background section is_view">
@@ -50,30 +93,18 @@ const Service = () => {
 				</div>
 			</div>
 			<div className="flex-cases">
-				{data.cards.map((card, idx) => (
+				{cards.map((card, idx) => (
 					<ServiceCard key={idx} {...card} />
 				))}
 			</div>
-			<div className="text-center view textslide"> <a href="projects.html" className="circle-btn black"><span><svg
+			<div className="text-center view textslide"> <Link href="/blog" className="circle-btn black"><span><svg
 							width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fillRule="evenodd" clipRule="evenodd"
 								d="M5.5 0L11 5.5L5.5 11L4.67022 10.1702L8.7537 6H0V5H8.7537L4.67022 0.829781L5.5 0Z"
 								fill="#1F2122" />
-						</svg>{data.cta}</span></a> </div>
+			</svg>{data.cta}</span></Link> </div>
 			<div className="flex-row bottom-row">
 				<div className="w30"> 
-                   {/*  <video 
-                        muted 
-                        loop 
-                        playsInline 
-                        autoPlay 
-                        preload="none"
-                        style={{ clipPath: 'polygon(1px 1px,calc(100% - 1px) 1px,calc(100% - 1px) calc(100% - 1px),1px calc(100% - 1px))' }}
-                    >
-                        <source src="/assets/uploads/2021/10/home-1.mov" type='video/mp4; codecs="hvc1"' />
-                        <source src="/assets/uploads/2021/10/Home-2.webm" type="video/webm" />
-                        <source src="/assets/uploads/2021/10/Home-2.webm" type="video/webm" />
-                    </video>*/}
                     <picture>
 						<source media="(min-width: 1600px)"
 							srcSet="/assets/uploads/2021/10/chain.svg"/>
@@ -86,8 +117,8 @@ const Service = () => {
 					</picture> 
                 </div>
 				<div className="w60">
-					<h2 className="section-heading view textslide">{data.bottomSection.heading}</h2>
-					<p className="view textslide">{data.bottomSection.paragraph}</p>
+					<h2 className="section-heading view textslide">{data.bottomSection?.heading}</h2>
+					<p className="view textslide">{data.bottomSection?.paragraph}</p>
 				</div>
 			</div>
 		</div>

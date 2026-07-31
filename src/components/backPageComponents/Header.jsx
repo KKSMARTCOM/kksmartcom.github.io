@@ -17,7 +17,7 @@ const Header = ({ toggleSidebar, isSidebarOpen }) => {
 
   return (
     <header 
-      className={`fixed top-0 right-0 left-0 z-20 bg-white transition-all duration-300 ${
+      className={`admin-header fixed top-0 right-0 left-0 z-20 transition-all duration-300 ${
         isSidebarOpen ? 'lg:left-64' : 'lg:left-16'
       } ${isScrolled ? 'shadow-sm' : ''}`}
     >

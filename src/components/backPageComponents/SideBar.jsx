@@ -7,10 +7,12 @@ import { useRouter } from 'next/navigation';
 import { FiHome, FiUsers, FiSettings, FiPieChart, FiFileText, FiCalendar, FiMail, FiLogOut } from 'react-icons/fi';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { logout } from '@/lib/clientAuth';
+import { ConfirmDialog } from '@/components/admin/AdminDialog';
 
 const SideBar = ({ isOpen, toggleSidebar }) => {
   const pathname = usePathname();
   const [isMobile, setIsMobile] = useState(false);
+  const [confirmLogout, setConfirmLogout] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -39,6 +41,24 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
       path: '/admin/articles',
       isActive: pathname.startsWith('/admin/articles')
     },
+    {
+      name: 'Structure du blog',
+      icon: <FiFileText className="text-xl" />,
+      path: '/admin/blog-categories',
+      isActive: pathname.startsWith('/admin/blog-categories')
+    },
+    {
+      name: 'Services',
+      icon: <FiPieChart className="text-xl" />,
+      path: '/admin/services',
+      isActive: pathname.startsWith('/admin/services')
+    },
+    {
+      name: 'Carrières',
+      icon: <FiMail className="text-xl" />,
+      path: '/admin/carrieres',
+      isActive: pathname.startsWith('/admin/carrieres')
+    },
     { 
       name: 'Paramètres', 
       icon: <FiSettings className="text-xl" />, 
@@ -60,7 +80,7 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
   }, [isOpen]);
 
   return (
-    <div className={`fixed top-0 left-0 h-full bg-white shadow-lg z-30 transition-all duration-300 ease-in-out ${isOpen ? 'w-64' : 'w-16'}`}>
+    <div className={`admin-sidebar fixed top-0 left-0 h-full z-30 transition-all duration-300 ease-in-out ${isOpen ? 'w-64' : 'w-16'}`}>
       <div className="h-16 flex items-center justify-center border-b border-gray-200">
         {isOpen ? (
           <div className="flex items-center px-4 w-full">
@@ -99,12 +119,13 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
         
         <div className="p-4 border-t border-gray-200">
           <button className={`w-full flex items-center ${isOpen ? 'justify-start' : 'justify-center'} text-gray-600 hover:text-red-600 transition-colors duration-200`}
-                  onClick={() => logout(router)}>
+                  onClick={() => setConfirmLogout(true)}>
             <FiLogOut className="text-xl" />
             {isOpen && <span className="ml-3">Déconnexion</span>}
           </button>
         </div>
       </div>
+      <ConfirmDialog open={confirmLogout} title="Se déconnecter ?" description="Votre session administrateur sera fermée sur cet appareil." confirmLabel="Se déconnecter" onClose={() => setConfirmLogout(false)} onConfirm={() => logout(router)} />
     </div>
   );
 };

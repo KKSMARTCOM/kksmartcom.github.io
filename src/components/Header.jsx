@@ -1,6 +1,8 @@
 "use client";
+import Link from 'next/link';
 import { useLang } from '@/context/LangContext';
 import { getComponentData } from '@/lib/dataManager';
+import { ServicesSubMenu, ServicesMobileMenu } from '@/components/ServicesNav';
 
 export default function Header() {
   const { lang, handleLangChange } = useLang();
@@ -12,7 +14,7 @@ export default function Header() {
 			<div className="header viewed fadein" id="header">
 				<div className="wrap">    	
 					<div className="flex-row">
-						<a href="/" className="logo">
+						<Link href="/" className="logo">
 							{/* SVG logo kept as-is */}
 							<svg id="Calque_1" data-name="Calque 1" height="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1511.51 402.54">
 								<defs>
@@ -54,7 +56,7 @@ export default function Header() {
 								d="M1424.4,300.84c-.06,13.03-10.28,22.76-23.86,22.71-13.41-.05-23.66-10.08-23.61-23.1,.05-13.25,10.65-23.61,23.95-23.41,13.45,.2,23.58,10.46,23.52,23.8Z" />
 						
 							</svg>
-						</a>
+						</Link>
 
 						<nav className="main-menu-wrap">
 							<ul>
@@ -65,39 +67,11 @@ export default function Header() {
                                     </svg>
                                     <div className="sub-menu white-background">
                                         <div className="menu-inner wrap">
-                                            <a href={data.nav.services.href} className="circle-btn lime">
-                                                <span>
-                                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M5.5 0L11 5.5L5.5 11L4.67022 10.1702L8.7537 6H0V5H8.7537L4.67022 0.829781L5.5 0Z" fill="#1F2122"></path>
-                                                    </svg>
-                                                    {data.nav.services.subMenu.cta}
-                                                </span>
-                                            </a>
-                                            <div className="col">
-                                                <div className="menu-title section-title small">{data.nav.services.subMenu.columns[0].title}</div>
-                                                <ul>
-                                                    <li><a href={data.nav.services.subMenu.columns[0].items[0].href} target="_self">{data.nav.services.subMenu.columns[0].items[0].text}</a></li>
-                                                    <li><a href={data.nav.services.subMenu.columns[0].items[1].href} target="_self">{data.nav.services.subMenu.columns[0].items[1].text}</a></li>
-                                                    <li><a href={data.nav.services.subMenu.columns[0].items[2].href} target="_self">{data.nav.services.subMenu.columns[0].items[2].text}</a></li>
-                                                    <li><a href={data.nav.services.subMenu.columns[0].items[3].href} target="_self">{data.nav.services.subMenu.columns[0].items[3].text}</a></li>
-                                                    <li><a href={data.nav.services.subMenu.columns[0].items[4].href} target="_self">{data.nav.services.subMenu.columns[0].items[4].text}</a></li>
-                                                </ul>
-                                            </div>
-                                            <div className="col">
-                                                <div className="menu-title section-title small">{data.nav.services.subMenu.columns[1].title}</div>
-                                                <ul>
-                                                    <li><a href={data.nav.services.subMenu.columns[1].items[0].href} target="_self">{data.nav.services.subMenu.columns[1].items[0].text}</a></li>
-                                                    <li><a href={data.nav.services.subMenu.columns[1].items[1].href} target="_self">{data.nav.services.subMenu.columns[1].items[1].text}</a></li>
-                                                    <li><a href={data.nav.services.subMenu.columns[1].items[2].href} target="_self">{data.nav.services.subMenu.columns[1].items[2].text}</a></li>
-                                                </ul>
-                                            </div>
-                                            <div className="col">
-                                                <div className="menu-title section-title small">{data.nav.services.subMenu.columns[2].title}</div>
-                                                <ul>
-                                                    <li><a href={data.nav.services.subMenu.columns[2].items[0].href} target="_self">{data.nav.services.subMenu.columns[2].items[0].text}</a></li>
-                                                    <li><a href={data.nav.services.subMenu.columns[2].items[1].href} target="_self">{data.nav.services.subMenu.columns[2].items[1].text}</a></li>
-                                                </ul>
-                                            </div>
+                                            <ServicesSubMenu
+                                              staticFallback={data.nav.services}
+                                              ctaHref={data.nav.services.href}
+                                              ctaLabel={data.nav.services.subMenu?.cta}
+                                            />
                                         </div>
                                     </div>
                                 </li>
@@ -302,26 +276,7 @@ export default function Header() {
 					className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7141">
 					<a href={data.nav.services.href}><span className="a-line"><span>{data.nav.services.text}</span></span></a>
 					<ul className="sub-menu">
-						<li id="menu-item-10396"
-							className="menu-item menu-item-type-post_type menu-item-object-page menu-item-10396"><a href={data.nav.services.subMenu.columns[0].items[0].href}><span className="a-line"><span>{data.nav.services.subMenu.columns[0].items[0].text}</span></span></a></li>
-						<li id="menu-item-10294"
-							className="menu-item menu-item-type-post_type menu-item-object-service menu-item-10294"><a href={data.nav.services.subMenu.columns[0].items[1].href}><span className="a-line"><span>{data.nav.services.subMenu.columns[0].items[1].text}</span></span></a></li>
-						<li id="menu-item-10295"
-							className="menu-item menu-item-type-post_type menu-item-object-service menu-item-10295"><a href={data.nav.services.subMenu.columns[0].items[2].href}><span className="a-line"><span>{data.nav.services.subMenu.columns[0].items[2].text}</span></span></a></li>
-						<li id="menu-item-10298"
-							className="menu-item menu-item-type-post_type menu-item-object-service menu-item-10298"><a href={data.nav.services.subMenu.columns[0].items[3].href}><span className="a-line"><span>{data.nav.services.subMenu.columns[0].items[3].text}</span></span></a></li>
-						<li id="menu-item-10296"
-							className="menu-item menu-item-type-post_type menu-item-object-service menu-item-10296"><a href={data.nav.services.subMenu.columns[0].items[4].href}><span className="a-line"><span>{data.nav.services.subMenu.columns[0].items[4].text}</span></span></a></li>
-						<li id="menu-item-10297"
-							className="menu-item menu-item-type-post_type menu-item-object-service menu-item-10297"><a href={data.nav.services.subMenu.columns[1].items[0].href}><span className="a-line"><span>{data.nav.services.subMenu.columns[1].items[0].text}</span></span></a></li>
-						<li id="menu-item-10299"
-							className="menu-item menu-item-type-post_type menu-item-object-service menu-item-10299"><a href={data.nav.services.subMenu.columns[1].items[1].href}><span className="a-line"><span>{data.nav.services.subMenu.columns[1].items[1].text}</span></span></a></li>
-						<li id="menu-item-10300"
-							className="menu-item menu-item-type-post_type menu-item-object-service menu-item-10300"><a href={data.nav.services.subMenu.columns[1].items[2].href}><span className="a-line"><span>{data.nav.services.subMenu.columns[1].items[2].text}</span></span></a></li>
-						<li id="menu-item-10301"
-							className="menu-item menu-item-type-post_type menu-item-object-service menu-item-10301"><a href={data.nav.services.subMenu.columns[2].items[0].href}><span className="a-line"><span>{data.nav.services.subMenu.columns[2].items[0].text}</span></span></a></li>
-						<li id="menu-item-10302"
-							className="menu-item menu-item-type-post_type menu-item-object-service menu-item-10302"><a href={data.nav.services.subMenu.columns[2].items[1].href}><span className="a-line"><span>{data.nav.services.subMenu.columns[2].items[1].text}</span></span></a></li>
+						<ServicesMobileMenu staticFallback={data.nav.services} />
 					</ul><span className="sub-menu-opener"></span>
 				</li>
 				<li id="menu-item-150" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href={data.nav.projects.href}>{data.nav.projects.text}</a></li>

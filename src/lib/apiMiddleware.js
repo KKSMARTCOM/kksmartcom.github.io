@@ -11,18 +11,15 @@ import { verifyToken } from './auth';
  */
 export function requireAuth(handler) {
   return async (request, context) => {
-    // 1. Récupérer le jeton depuis le header Authorization
     const authHeader = request.headers.get('Authorization');
-    
-    // Le format attendu est : "Bearer <token>"
-    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+    const bearerToken = authHeader?.startsWith('Bearer ') ? authHeader.slice(7) : null;
+    const token = request.cookies.get('authToken')?.value || bearerToken;
+    if (!token) {
       return NextResponse.json(
         { message: 'Authentification requise. Jeton manquant.' }, 
         { status: 401 }
       );
     }
-
-    const token = authHeader.split(' ')[1];
 
     // 2. Vérifier le jeton
     const decodedPayload = verifyToken(token);
@@ -32,6 +29,10 @@ export function requireAuth(handler) {
         { message: 'Jeton invalide ou expiré.' }, 
         { status: 403 } // Forbidden
       );
+    }
+
+    if (decodedPayload.role !== 'ADMIN') {
+      return NextResponse.json({ message: 'Accès administrateur requis.' }, { status: 403 });
     }
 
     // 3. Jeton valide : Injecter les informations de l'utilisateur (payload)

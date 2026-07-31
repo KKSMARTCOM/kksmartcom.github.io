@@ -1,4 +1,5 @@
 "use client";
+import { Suspense } from 'react';
 import "./globals.css";
 import { LangProvider } from '@/context/LangContext';
 import Header from "../../components/Header";
@@ -56,7 +57,9 @@ const RootComponent = ({ children }) => {
         </noscript>
 
         <Header />
-        <GtmRouteTracker />
+        <Suspense fallback={null}>
+          <GtmRouteTracker />
+        </Suspense>
         <div className="page-preloader" id="pageloader" data-src="wp-content/themes/kksmartcom/img/black-bg.png">
           <div className="wrap">
             <div className="preloader-wrap">
